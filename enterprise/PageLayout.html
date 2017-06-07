@@ -1,0 +1,22 @@
+<div class="page">
+	{{ header }}
+	
+	<!-- Search and page links for the page -->
+	{% if portal.current_tab %}
+		<section class="search-container rounded-6 shadow">		
+			<div class="search-box-wrapper">
+				{% snippet search_form %}
+			</div>
+		</section>
+	{% endif %}
+
+	<!-- Notification Messages -->
+	{{ page_message }}
+
+	<div class="c-wrapper shadow">		
+		{{ content_for_layout }}
+	</div>
+ 
+	{{ footer }}
+
+</div>
