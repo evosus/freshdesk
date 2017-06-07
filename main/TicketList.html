@@ -1,6 +1,9 @@
 <section class="content min-height-on-desktop rounded-6 ticket-page">
-    <div class="hc-nav {% if portal.contact_info %} nav-with-contact {% endif %}">        
-          <a href="https://evosus.freshdesk.com/support/tickets/new">Create a new ticket</a>
+  <div class="ui-bar ui-primary f-row">
+    <div class="ui-bar-title">Tickets</div>
+      <div style="text-align: right;">
+            <a href="https://evosus.freshdesk.com/support/tickets/new">Create a new ticket</a>
+      </div>
   </div>
   <div class="ticket-toolbar pull-right">
     <a href="{{ portal.ticket_export_url }}" data-target="#export-modal"
