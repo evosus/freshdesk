@@ -119,6 +119,17 @@
     flex-direction: row;
 }
 
+.ai-center {
+	-webkit-box-align: center;
+	align-items: center;
+}
+.jc-center {
+	-webkit-box-pack: center;
+    justify-content: center;
+}
+
+
+
 /* THEME COLORS */
 /* EVOSUS THEME */
 .ui-primary,.ui-secondary,.ui-accent,.ui-active,.ui-inactive,.ui-valid,.ui-invalid { color:white; }
