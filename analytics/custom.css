@@ -248,3 +248,15 @@
   right: 0;
   transition: all 0.5s ease;
 }
+
+
+.media-object-section {
+	vertical-align: middle;
+}
+
+.media-object-section > img {
+	max-height: 200px;
+}
+
+
+
