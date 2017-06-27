@@ -1,4 +1,9 @@
 /* Replaces $(docuemnt).ready()*/
+  $(document).ready(function(){
+    $('.collapsible').collapsible();
+  });
+       
+
 document.addEventListener("DOMContentLoaded", function(event) { 
   
 
