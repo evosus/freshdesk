@@ -1,4 +1,6 @@
-$(document).ready(function(){
+/* Replaces $(docuemnt).ready()*/
+document.addEventListener("DOMContentLoaded", function(event) { 
+  
 
 	var acc = document.getElementsByClassName("accordion");
 	var i;
