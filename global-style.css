@@ -19,7 +19,7 @@ h4,
 }
 
 .content {
-	margin-top: 0;
+	margin-top: 0!important;
 }
 
 /* VIDEO WRAPPER */
@@ -51,10 +51,6 @@ h4,
 .hover-underline-menu  {
   width: 100%;
   min-width: 625px;
-}
-
-.hover-underline-menu .menu li .active{
-  background-color: #000000;
 }
 
 .hover-underline-menu .menu a {
