@@ -261,5 +261,19 @@
 	max-height: 200px;
 }
 
+/* override background of nav */
+nav.banner-nav {
+	background-color: transparent;
+	color: #333;
+	box-shadow: none;
+}
+
+nav {
+	background-color: #02708C;
+}
+
+.page-footer {
+	background-color: #02708C;
+}
 
 
