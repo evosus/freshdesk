@@ -48,12 +48,8 @@ h4,
 }
 
 /* MENU */
-.hover-underline-menu {
+.hover-underline-menu  {
   width: 100%;
-}
-
-.hover-underline-menu .menu {
-  background-color: #2C3840;
 }
 
 .hover-underline-menu .menu a {
