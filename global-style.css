@@ -53,8 +53,8 @@ h4,
 
 /* OVERRIDE FRESHDESK STYLES */
 .banner {
-  border-top-right-radius: 0;
-  border-top-left-radius: 0;
+  border-top-right-radius: 0 !important;
+  border-top-left-radius: 0 !important;
 }
 
 
