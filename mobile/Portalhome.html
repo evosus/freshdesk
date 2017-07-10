@@ -171,12 +171,11 @@
 	  </ul>
 	</div>
 	<!-- begin links to topics -->
-	{% if portal.has_solutions %}
+	
 	<div class="divider"></div>
 	<div class="section">
 		<h1>Solutions</h1>
 			<div class="row">
-				
 				<div class="col s12">
 					<div class="card horizontal ui-secondary">
 						<div class="card-image"> 	
@@ -196,51 +195,22 @@
 						</div><!-- end card-image -->
 						<div class="card-content white-text">
 							<span class="card-title">Getting Started</span>
-							{% if folder.name == 'Getting Started' %}
-								{{ folder | article_list:10 }}
-							{% endfor %}
+								{% for category in portal.solution_categories %}
+									{% for folder in category.folders %}
+										{% if folder.name == 'Getting Started' %}
+												{{ folder | article_list:10 }}
+										{% endif %}
+									{% endfor %}
+								{% endfor %}
 						</div><!-- end card-content -->
 					</div><!-- end card -->
 				</div><!-- end col -->
 			</div><!-- end row -->
 	
 	</div><!-- end section -->
-	{% endif %}
+	
 	<!-- end links to topics -->
 
-	<div class="divider"></div>
-	<div class="section">
-
-
-	<div class="section">
-		{% for category in portal.solution_categories %}
-			{% if category.folders_count > 0 %}
-			<h1>Solutions</h1>
-				{% for folder in category.folders %}
-				<div class="row">
-					<div class="col s12">
-						<div class="card horizontal ui-secondary">
-							<div class="card-image">
-						    	
-					 
-
-
-						    </div>
-							<div class="card-content white-text">
-								<span class="card-title">{{ folder.name }}</span>
-								{{ folder | article_list:10 }}
-							</div><!-- end card-content -->
-						</div><!-- end card -->
-					</div><!-- end col -->
-				</div><!-- end row -->
-				{% else %}
-					{{ portal | filler_for_solutions }}
-				{% endfor %}
-			</div><!-- end row -->
-			{% endif %}
-		{% endfor %}
-	</div><!-- end section -->
-	{% endif %}
 	<!-- end links to topics -->
 	<div class="divider"></div>
 	<div class="section">
