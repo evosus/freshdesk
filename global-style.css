@@ -195,7 +195,7 @@ h4,
 #star0 {
   width: 10px;
   position: absolute;
-  z-index: 500;a
+  z-index: 500;
   animation-name: starmove;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
