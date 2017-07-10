@@ -174,19 +174,65 @@
 	{% if portal.has_solutions %}
 	<div class="divider"></div>
 	<div class="section">
+		<h1>Solutions</h1>
+			<div class="row">
+				
+				<div class="col s12">
+					<div class="card horizontal ui-secondary">
+						<div class="card-image"> 	
+				    	     <div id="rocketship-stars">
+				              <img id="star1" src="https://cdn.rawgit.com/evosus/freshdesk/Phase-1/img/star.svg" />
+				              <img id="star2" src="https://cdn.rawgit.com/evosus/freshdesk/Phase-1/img/star.svg" />
+				              <img id="star3" src="https://cdn.rawgit.com/evosus/freshdesk/Phase-1/img/star.svg" />
+				              <img id="star4" src="https://cdn.rawgit.com/evosus/freshdesk/Phase-1/img/star.svg" />
+				              <img id="star5" src="https://cdn.rawgit.com/evosus/freshdesk/Phase-1/img/star.svg" />
+				              <img id="star6" src="https://cdn.rawgit.com/evosus/freshdesk/Phase-1/img/star.svg" />
+				              <img id="star7" src="https://cdn.rawgit.com/evosus/freshdesk/Phase-1/img/star.svg" />
+				              <img id="star8" src="https://cdn.rawgit.com/evosus/freshdesk/Phase-1/img/star.svg" />
+				              <img id="star9" src="https://cdn.rawgit.com/evosus/freshdesk/Phase-1/img/star.svg" />
+				              <img id="star0" src="https://cdn.rawgit.com/evosus/freshdesk/Phase-1/img/star.svg" />
+				              <img id="rocket" src="https://cdn.rawgit.com/evosus/freshdesk/Phase-1/img/rocket.svg">
+				            </div>
+						</div><!-- end card-image -->
+						<div class="card-content white-text">
+							<span class="card-title">Getting Started</span>
+							{% if folder.name == 'Getting Started' %}
+								{{ folder | article_list:10 }}
+							{% endfor %}
+						</div><!-- end card-content -->
+					</div><!-- end card -->
+				</div><!-- end col -->
+			</div><!-- end row -->
+	
+	</div><!-- end section -->
+	{% endif %}
+	<!-- end links to topics -->
+
+	<div class="divider"></div>
+	<div class="section">
+
+
+	<div class="section">
 		{% for category in portal.solution_categories %}
 			{% if category.folders_count > 0 %}
 			<h1>Solutions</h1>
-			<div class="row">
 				{% for folder in category.folders %}
-					<div class="col s12 m6">
-						<div class="card ui-secondary">
+				<div class="row">
+					<div class="col s12">
+						<div class="card horizontal ui-secondary">
+							<div class="card-image">
+						    	
+					 
+
+
+						    </div>
 							<div class="card-content white-text">
 								<span class="card-title">{{ folder.name }}</span>
 								{{ folder | article_list:10 }}
 							</div><!-- end card-content -->
 						</div><!-- end card -->
 					</div><!-- end col -->
+				</div><!-- end row -->
 				{% else %}
 					{{ portal | filler_for_solutions }}
 				{% endfor %}
