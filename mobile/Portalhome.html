@@ -206,7 +206,27 @@
 					</div><!-- end card -->
 				</div><!-- end col -->
 			</div><!-- end row -->
-	
+			<div class="row">
+				<div class="col s12">
+					<div class="card horizontal ui-secondary">
+						<div class="card-image"> 	
+			    	      <div id="life-preserver">
+				              <img id="life" src="life.svg">
+				           </div><!-- end life-preserver -->
+						</div><!-- end card-image -->
+						<div class="card-content white-text">
+							<span class="card-title">Problems?</span>
+								{% for category in portal.solution_categories %}
+									{% for folder in category.folders %}
+										{% if folder.name == 'Problems?' %}
+												{{ folder | article_list:10 }}
+										{% endif %}
+									{% endfor %}
+								{% endfor %}
+						</div><!-- end card-content -->
+					</div><!-- end card -->
+				</div><!-- end col -->
+			</div><!-- end row -->
 	</div><!-- end section -->
 	
 	<!-- end links to topics -->
