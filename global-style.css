@@ -260,19 +260,19 @@ h4,
 }
 
 /* floating life-preserver mobile portal page */
-      #life-preserver {
-        position: relative;
-        min-width: 200px; 
-        background: radial-gradient(ellipse at bottom, #8a7ea1 0%, #524B60 100%);
-        overflow: hidden;   
-      }
-      #life {
-        transform: translatey(10px);
-        animation: float 6s ease-in-out infinite;
-      }
-      @keyframes float {
-        50% {
-          transform: translatey(-10px);
-        }
-      }
+#life-preserver {
+  position: relative;
+  min-width: 200px; 
+  background: radial-gradient(ellipse at bottom, #8a7ea1 0%, #524B60 100%);
+  overflow: hidden;   
+}
+#life {
+  transform: translatey(10px);
+  animation: float 6s ease-in-out infinite;
+}
+@keyframes float {
+  50% {
+    transform: translatey(-10px);
+  }
+}
 
