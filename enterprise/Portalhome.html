@@ -1,4 +1,3 @@
-{% if portal.has_solutions %}
 <section class="main content min-height-on-desktop" id="solutions-index-home">
 	<div class="section">
 	<!-- begin row #1 -->
@@ -6,10 +5,10 @@
 	        <div class="col s12 m6">
 	          <div class="card ui-secondary">
 	            <div class="card-image">
-	              <img src="https://cdn.rawgit.com/evosus/freshdesk/Phase-1/img/dashboard.svg">
-	              <span class="card-title">Dashboard</span>
+	              <img style="height: 300px;" src="https://cdn.rawgit.com/evosus/freshdesk/Phase-1/img/dashboard.svg">
+	              <span class="card-title"><i class="medium material-icons">new_releases</i>Dashboard</span>
 	            </div>
-	            <div class="card-content white-text">
+	            <div class="card-content white-text" style="min-height:125px;">
 	              <p>The dashboard gives you a high-level snapshot of your organization. It's all of the key information that you need, in one place.</p>	
 	            </div>
 	            <div class="card-action">
@@ -20,10 +19,10 @@
 	         <div class="col s12 m6">
 	          <div class="card ui-secondary">
 	            <div class="card-image">
-	              <img src="https://cdn.rawgit.com/evosus/freshdesk/Phase-1/img/service-routing.svg">
-	              <span class="card-title">Service Routing</span>
+	              <img style="height: 300px;" src="https://cdn.rawgit.com/evosus/freshdesk/Phase-1/img/service-routing.svg">
+	              <span class="card-title"><i class="medium material-icons">new_releases</i>Service Routing</span>
 	            </div>
-	            <div class="card-content white-text">
+	            <div class="card-content white-text" style="min-height:125px;">
 	              <p>Use the new Service Routing feature to optimize the stops on a tech's route using Google Maps, or view the route of all techs to see the distribution of stops.</p>
 	            </div>
 	            <div class="card-action">
@@ -32,48 +31,18 @@
 	          </div><!-- end card -->
 	        </div><!-- end col #1 -->
 	      </div><!-- end row #1 -->
-
-
-
-
-			<div class="row">
-				<div class="col s12">
-					<div class="card horizontal ui-secondary">
-						<div class="card-image"> 	
-				    	     <div id="rocketship-stars">
-				              <img id="star1" src="https://cdn.rawgit.com/evosus/freshdesk/Phase-1/img/star.svg" />
-				              <img id="star2" src="https://cdn.rawgit.com/evosus/freshdesk/Phase-1/img/star.svg" />
-				              <img id="star3" src="https://cdn.rawgit.com/evosus/freshdesk/Phase-1/img/star.svg" />
-				              <img id="star4" src="https://cdn.rawgit.com/evosus/freshdesk/Phase-1/img/star.svg" />
-				              <img id="star5" src="https://cdn.rawgit.com/evosus/freshdesk/Phase-1/img/star.svg" />
-				              <img id="star6" src="https://cdn.rawgit.com/evosus/freshdesk/Phase-1/img/star.svg" />
-				              <img id="star7" src="https://cdn.rawgit.com/evosus/freshdesk/Phase-1/img/star.svg" />
-				              <img id="star8" src="https://cdn.rawgit.com/evosus/freshdesk/Phase-1/img/star.svg" />
-				              <img id="star9" src="https://cdn.rawgit.com/evosus/freshdesk/Phase-1/img/star.svg" />
-				              <img id="star0" src="https://cdn.rawgit.com/evosus/freshdesk/Phase-1/img/star.svg" />
-				              <img id="rocket" src="https://cdn.rawgit.com/evosus/freshdesk/Phase-1/img/rocket.svg">
-				            </div><!-- end card-image -->
-						</div><!-- end card-image -->
-						<div class="card-content white-text">
-							<span class="card-title">Getting Started</span>
-								{% for category in portal.solution_categories %}
-									{% for folder in category.folders %}
-										{% if folder.name == 'Getting Started' %}
-												{{ folder | article_list:10 }}
-										{% endif %}
-									{% endfor %}
-								{% endfor %}
-						</div><!-- end card-content -->
-					</div><!-- end card -->
-				</div><!-- end col -->
-			</div><!-- end row -->
-			<div class="row">
-				<div class="col s12">
-					<div class="card horizontal ui-secondary">
-						<div class="card-image"> 	
-			    	      <div id="life-preserver">
-				              <img src="https://cdn.rawgit.com/evosus/freshdesk/Phase-1/img/download.svg">
-				           </div><!-- end life-preserver -->
+		<div class="row">
+			<div class="col s12 m7">
+				<div class="card ui-secondary">
+					<div class="video-container">
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/4XR1L5-_dfU" frameborder="0" allowfullscreen></iframe>
+					</div>
+				</div><!-- end card -->
+			</div><!-- end col -->
+			<div class="col s12 m5">
+					<div class="card ui-secondary">
+						<div class="card-image"> 	 
+				              <img src="https://rawgit.com/evosus/freshdesk/Phase-1/img/download.svg" style="height:150px;">
 						</div><!-- end card-image -->
 						<div class="card-stacked">
 							<div class="card-content white-text">
@@ -82,73 +51,38 @@
 									
 							</div><!-- end card-content -->
 							<div class="card-action">
-								<a href="#">Release Notes</a>
-								<a href="#">Download/Installation Instructions</a>
+								<a href="http://ee-support.evosus.com/support/solutions/articles/14000065691-evosus-business-management-software-release-notes-version-6-6">Release Notes</a>
+								<a href="https://evosus.freshdesk.com/support/solutions/articles/14000067160-evosus-business-management-software-version-6-6-download-and-installation-instructions">Install</a>
 							</div><!-- end card-action -->
 						</div><!-- end card-stacked -->
 					</div><!-- end card -->
 				</div><!-- end col -->
-			</div><!-- end row -->
-		
-	
-
-			<div class="row">
-				<div class="col s12 m8">
-					<div class="card ui-secondary">
-						<div class="card-content white-text">
-							<span class="card-title">A quick tour!</span>
-							<div class="video-container">
-								<iframe width="560" height="315" src="https://www.youtube.com/embed/4XR1L5-_dfU" frameborder="0" allowfullscreen></iframe>
-							</div>	
-						</div><!-- end card-content -->
-					</div><!-- end card -->
-				</div><!-- end col -->
-			</div><!-- end row -->
-
-
-			<div class="row">
-				<div class="col s12 m8">
-					<div class="card ui-secondary">
-						<div class="card-content white-text">
-							<span class="card-title">A quick tour!</span>
-							<div class="video-container">
-								<iframe width="100%" height="420" src="https://www.youtube.com/embed/videoseries?list=PLGNyxm4TBvf801-j-KzI_T_oDaj7TH8T8" frameborder="0" allowfullscreen></iframe>
-							</div>	
-						</div><!-- end card-content -->
-					</div><!-- end card -->
-				</div><!-- end col -->
-			</div><!-- end row -->
-
-
-
-
-
-
+		</div><!-- end row #2 -->
+		<div class="row"><!-- begin row #3 -->
+			<div class="col s12 m5">
+				<div class="card ui-secondary">
+					<div class="card-image"> 	 
+				              <img src="https://rawgit.com/evosus/freshdesk/Phase-1/img/download.svg" style="height:150px;"">
+						</div><!-- end card-image -->
+						<div class="card-stacked">
+							<div class="card-content white-text">
+								<span class="card-title">Webinars</span>
+								<p>For Active New and Experienced Evosus Clients: Learn how to Optimize your Evosus Setup Register Now for an Interactive Webinar!</p>
+							</div><!-- end card-content -->
+							<div class="card-action">
+								<a href="https://www.evosus.com/webinars">Register</a>
+							</div><!-- end card-action -->
+						</div><!-- end card-stacked -->
+				</div><!-- end card -->
+			</div><!-- end col -->
+			<div class="col s12 m7">
+				<div class="card ui-secondary">
+					<div class="video-container">
+						<iframe width="100%" height="420" src="https://www.youtube.com/embed/videoseries?list=PLGNyxm4TBvf801-j-KzI_T_oDaj7TH8T8" frameborder="0" allowfullscreen></iframe>
+						</div>	
+				</div><!-- end card -->
+			</div><!-- end col -->
+		</div><!-- end row #3 -->
 	</div><!-- end section -->
-	
 
-
-
-
-
-	{% for category in portal.solution_categories %}
-		{% if category.folders_count > 0 %}
-		<div class="cs-s">
-			<h3 class="heading">{{ category.name | link_to: category.url }}</h3>
-			<div class="cs-g-c">
-				{% for folder in category.folders %}
-					<section class="cs-g article-list">
-						<div class="list-lead">
-							{{ folder | link_to_folder_with_count }}
-						</div>
-						{{ folder | article_list:5 }}
-					</section>
-				{% else %}
-					{{ portal | filler_for_solutions }}
-				{% endfor %}
-			</div>
-		</div>	
-		{% endif %}
-	{% endfor %}
 </section>
-{% endif %}
