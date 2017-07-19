@@ -1,8 +1,8 @@
 <section class="main content min-height-on-desktop" id="article-show-{{ article.id }}">
-	<div class="breadcrumb">
-		<a href="{{ portal.solutions_home_url }}"> {% translate portal.solutions_home %} </a>
-		<a href="{{ article.category.url }}">{{ article.category.name | h}}</a>
-		<a href="{{ article.folder.url }}">{{ article.folder.name | h}}</a>
+	<div class="breadcrumb-menu">
+		<span>{{ article.category.name | h}}</span>
+		<i class="tiny material-icons">chevron_right</i>
+		<span>{{ article.folder.name | h}}</span>
 	</div>
 	<b class="page-stamp page-stamp-article">
 		<b class="icon-page-article"></b>
@@ -35,5 +35,5 @@
 		
 </section>
 <section class="sidebar content">
-	{{ article | related_articles: 10, 'related_articles' }}
+	{{ article | related_articles: 15, 'related_articles' }}
 </section>

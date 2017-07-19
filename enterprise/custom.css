@@ -23,6 +23,11 @@ nav {
 	color: #fff;
 }
 
+.breadcrumb-menu {
+	color: #666666;
+	margin-bottom: 20px;
+}
+
 /* Search box text */
 input[type="text"] {
 	color: #fff;
