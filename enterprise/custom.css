@@ -22,3 +22,51 @@ nav {
 .card-content a {
 	color: #fff;
 }
+
+/* Search box text */
+input[type="text"] {
+	color: #fff;
+}
+input[type=text]:not(.browser-default) {
+	font-size: 2em;
+}
+input[type="text"]:focus {
+	border-color: transparent;
+}
+
+/* button */
+.btn, 
+.btn:hover,
+.btn:active {
+	background-color: #02708C;
+	background-image: none;
+	text-shadow: none;
+	color: #ffffff;
+	border-radius: 2px;
+	border: none;
+	font-size: 1rem;
+	display: inline-block;
+    height: 36px;
+    line-height: 36px;
+    padding: 0 2rem;
+    text-transform: uppercase;
+    vertical-align: middle;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.hc-search-button .btn {
+	background-color: #02708C;
+
+	color: #ffffff;
+	border-radius: 2px;
+	border: none;
+	font-size: 1rem;
+	display: inline-block;
+    height: 36px;
+    line-height: 36px;
+    padding: 0 2rem;
+    text-transform: uppercase;
+    vertical-align: middle;
+    -webkit-tap-highlight-color: transparent;
+    width: initial;
+}
