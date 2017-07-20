@@ -1,53 +1,32 @@
-{% if portal.has_solutions %}
-<section class="main content rounded-6 min-height-on-desktop" id="solutions-index-home">
-	<h2 class="heading">Articles</h2>
-	{% for category in portal.solution_categories %}
-		{% if category.folders_count > 0 %}
-		<div class="cs-s">
-			<h3 class="heading">{{ category.name | link_to: category.url }}</h3>
-			<div class="cs-g-c">
-				{% for folder in category.folders %}
-					<section class="cs-g article-list">
-						<div class="list-lead">
-							{{ folder | link_to_folder_with_count }}
-						</div>
-						{{ folder | article_list:5 }}
-					</section>
-				{% else %}
-					{{ portal | filler_for_solutions }}
-				{% endfor %}
-			</div>
-		</div>	
-		{% endif %}
-	{% endfor %}
-</section>
-{% endif %}
+<div class="row">
+	<div class="col m6">
+	 <div class="card">
+        <div class="card-image">
+          <img src="images/sample-1.jpg">
+          <span class="card-title">Training</span>
+        </div><!-- end card-image -->
+        <div class="card-content">
+          <p>I am a very simple card. I am good at containing small bits of information.
+          I am convenient because I require little markup to use effectively.</p>
+        </div><!-- end card-content -->
+        <div class="card-action">
 
-{% if portal.has_forums %}
-<section class="sidebar content community-sidebar rounded-6 min-height-on-desktop" id="home-community-sidebar">
-	<h2 class="heading">{% translate portal.community_forums %}</h2>
-	{% if portal.topics_count > 0 %}
-		<p class="intro">{% translate portal.showing_recent_updates %}</p>
-		<div>{{ portal | link_to_start_topic }}</div>
-		{% for category in portal.forum_categories %}
-			{% if category.forums_count > 0 %}
-				<div class="cs-s">
-					<h3 class="heading">{{ category.name | link_to: category.url }}</h3>
-					<div class="cs-g-c">
-					{% for forum in category.forums %}
-						<section class="cs-g topic-list">
-							<div class="list-lead badge-{{ forum.type_name }}">
-								{{ forum | link_to_forum_with_count }}
-							</div>
-							{{ forum | topic_list:3 }}
-						</section>
-					{% endfor %}
-					</div>
-				</div>
-			{% endif %}
-		{% endfor %}
-	{% else %}
-		{{ portal | filler_for_forums }}
-	{% endif %}
-</section>
-{% endif %}
+        	<a href="https://shopevosus.com/pages/self-paced-video-training">Self-paced training</a>
+         	<a href="https://evosus.litmos.com/account/login/">Launch Litmos</a>
+        </div><!-- end card-action -->
+      </div><!-- end card -->
+	</div><!-- end col -->
+	<div class="col m6">
+		
+	</div><!-- end col -->
+</div>
+<div class="row">
+	
+	<div class="col m6">
+		<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fevosussoftware%2F&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="340" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+	</div><!-- end facebook -->
+	<div class="col m6">
+		<a class="twitter-timeline" data-link-color="#fa9345 " href="https://twitter.com/TwitterDev">Tweets by TwitterDev</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+	</div><!-- end twitter -->
+</div>
+
