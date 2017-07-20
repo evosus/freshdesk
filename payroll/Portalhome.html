@@ -1,8 +1,25 @@
 <div class="row">
-
-
+	<div class="col s12">
+	    <div class="card horizontal">
+	      <div class="card-image">
+	        <img src="https://cdn.rawgit.com/evosus/freshdesk/Phase-1/img/forms.svg">
+	      </div>
+	      <div class="card-stacked">
+	        <div class="card-content">
+	          <ul class="collection">
+			      <li class="collection-item"><a href="https://cdn.rawgit.com/evosus/freshdesk/Phase-1/forms/Direct Deposit Authorization.pdf" target="_blank">Direct Deposit Authorization</a></li>
+			      <li class="collection-item"><a href="https://cdn.rawgit.com/evosus/freshdesk/Phase-1/forms/4th Qtr_Evosus.pdf" target="_blank">Pay-As-You-Go! Workers Compensation</a></li>
+			      <li class="collection-item"><a href="https://cdn.rawgit.com/evosus/freshdesk/Phase-1/forms/Evosus Payroll Implementation Guide- 2016.pdf" target="_blank">Evosus Payroll Implementation Guide</a></li>
+			      <li class="collection-item"><a href="https://cdn.rawgit.com/evosus/freshdesk/Phase-1/forms/EPS Payroll Card Enrollment Form.doc" target="_blank">EPS Payroll Card Enrollment Form</a></li>
+			      <li class="collection-item"><a href="https://cdn.rawgit.com/evosus/freshdesk/Phase-1/forms/Ordering Guide for W2s and 1099 Forms.pdf" target="_blank">Illustrated Ordering Guide for W2s and 1099 Forms</a></li>
+			  </ul>
+	        </div><!-- end card-content -->
+	      </div><!-- end card-stacked -->
+	    </div><!-- end card -->
+	</div><!-- end col -->
+</div><!-- end row -->
 {% if portal.has_solutions %}
-<section class="main content rounded-6 min-height-on-desktop" id="solutions-index-home">
+<section class="main content min-height-on-desktop" id="solutions-index-home">
 	<h2 class="heading">{% translate portal.knowledge_base %}</h2>
 	{% for category in portal.solution_categories %}
 		{% if category.folders_count > 0 %}
@@ -23,34 +40,5 @@
 		</div>	
 		{% endif %}
 	{% endfor %}
-</section>
-{% endif %}
-
-{% if portal.has_forums %}
-<section class="sidebar content community-sidebar rounded-6 min-height-on-desktop" id="home-community-sidebar">
-	<h2 class="heading">{% translate portal.community_forums %}</h2>
-	{% if portal.topics_count > 0 %}
-		<p class="intro">{% translate portal.showing_recent_updates %}</p>
-		<div>{{ portal | link_to_start_topic }}</div>
-		{% for category in portal.forum_categories %}
-			{% if category.forums_count > 0 %}
-				<div class="cs-s">
-					<h3 class="heading">{{ category.name | link_to: category.url }}</h3>
-					<div class="cs-g-c">
-					{% for forum in category.forums %}
-						<section class="cs-g topic-list">
-							<div class="list-lead badge-{{ forum.type_name }}">
-								{{ forum | link_to_forum_with_count }}
-							</div>
-							{{ forum | topic_list:3 }}
-						</section>
-					{% endfor %}
-					</div>
-				</div>
-			{% endif %}
-		{% endfor %}
-	{% else %}
-		{{ portal | filler_for_forums }}
-	{% endif %}
 </section>
 {% endif %}
