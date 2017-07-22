@@ -56,41 +56,10 @@
 	<div class="row">
 		<div class="col s12">
 			<div class="card horizontal ui-secondary">
-				<div class="card-image"> 	
-		    	     <div id="rocketship-stars">
-		              <img id="star1" src="https://cdn.rawgit.com/evosus/freshdesk/Phase-1/img/star.svg" />
-		              <img id="star2" src="https://cdn.rawgit.com/evosus/freshdesk/Phase-1/img/star.svg" />
-		              <img id="star3" src="https://cdn.rawgit.com/evosus/freshdesk/Phase-1/img/star.svg" />
-		              <img id="star4" src="https://cdn.rawgit.com/evosus/freshdesk/Phase-1/img/star.svg" />
-		              <img id="star5" src="https://cdn.rawgit.com/evosus/freshdesk/Phase-1/img/star.svg" />
-		              <img id="star6" src="https://cdn.rawgit.com/evosus/freshdesk/Phase-1/img/star.svg" />
-		              <img id="star7" src="https://cdn.rawgit.com/evosus/freshdesk/Phase-1/img/star.svg" />
-		              <img id="star8" src="https://cdn.rawgit.com/evosus/freshdesk/Phase-1/img/star.svg" />
-		              <img id="star9" src="https://cdn.rawgit.com/evosus/freshdesk/Phase-1/img/star.svg" />
-		              <img id="star0" src="https://cdn.rawgit.com/evosus/freshdesk/Phase-1/img/star.svg" />
-		              <img id="rocket" src="https://cdn.rawgit.com/evosus/freshdesk/Phase-1/img/rocket.svg">
-		            </div><!-- end card-image -->
-				</div><!-- end card-image -->
-				<div class="card-content white-text">
-					<span class="card-title">Frequently Asked Questions</span>
-						<div class="white-text">
-						{% for category in portal.solution_categories %}
-							{% for folder in category.folders %}
-								{% if folder.name == 'FAQ' %}
-										{{ folder | article_list:10 }}
-								{% endif %}
-							{% endfor %}
-						{% endfor %}
-						</div>
-				</div><!-- end card-content -->
-			</div><!-- end card -->
-		</div><!-- end col -->
-	</div><!-- end row -->
-	<div class="row">
-		<div class="col s12">
-			<div class="card horizontal ui-secondary">
-				<div class="card-image"> 	
-		              <img src="https://cdn.rawgit.com/evosus/freshdesk/Phase-1/img/timecards.svg">
+				<div class="card-image"> 
+					<div class="timecards-image">	
+		              <img src="https://rawgit.com/evosus/freshdesk/Phase-1/img/timecards.svg">
+					</div>
 				</div><!-- end card-image -->
 				<div class="card-content white-text">
 					<span class="card-title">Timecards</span>
@@ -107,4 +76,28 @@
 			</div><!-- end card -->
 		</div><!-- end col -->
 	</div><!-- end row -->
+	<div class="row">
+		<div class="col s12">
+			<div class="card horizontal ui-secondary">
+				<div class="card-image"> 	
+					<div id="life-preserver">
+				    	<img id="life" src="https://cdn.rawgit.com/evosus/freshdesk/Phase-1/img/life.svg">
+				    </div><!-- end life-preserver -->
+				</div><!-- end card-image -->
+				<div class="card-content white-text">
+					<span class="card-title">Problems?</span>
+						<div class="white-text">
+						{% for category in portal.solution_categories %}
+							{% for folder in category.folders %}
+								{% if folder.name == 'Problems?' %}
+										{{ folder | article_list:10 }}
+								{% endif %}
+							{% endfor %}
+						{% endfor %}
+						</div>
+				</div><!-- end card-content -->
+			</div><!-- end card -->
+		</div><!-- end col -->
+	</div><!-- end row -->
+
 </section>
