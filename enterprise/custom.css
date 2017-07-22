@@ -8,15 +8,15 @@ nav.banner-nav {
 }
 
 nav {
-	background-color: #02708C;
+	background-color: #aaaaaa;
 }
 
 .hover-underline-menu .menu li .active{
-  background-color: #015369;
+  background-color: #999999;
 }
 
 .page-footer {
-	background-color: #02708C;
+	background-color: #aaaaaa;
 }
 
 .card-content a {

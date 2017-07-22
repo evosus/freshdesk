@@ -33,48 +33,43 @@
 		</div><!-- end col -->
 	</div><!-- end row -->
 	<div class="row">
-		<div class="col s12">
-		    <div class="card horizontal ui-secondary">
-		      <div class="card-image">
-		        	<div class="forms-image">
-		        		<img src="https://cdn.rawgit.com/evosus/freshdesk/Phase-1/img/forms.svg">
-		      		</div>
-		      </div> 
-		        <div class="card-content white-text">
-		          <span class="card-title">Forms</span>
-		     		<ul>
-				      <li><a class="white-text" href="https://cdn.rawgit.com/evosus/freshdesk/Phase-1/forms/Direct Deposit Authorization.pdf" target="_blank">Direct Deposit Authorization</a></li>
-				      <li><a class="white-text" href="https://cdn.rawgit.com/evosus/freshdesk/Phase-1/forms/4th Qtr_Evosus.pdf" target="_blank">Pay-As-You-Go! Workers Compensation</a></li>
-				      <li><a class="white-text" href="https://cdn.rawgit.com/evosus/freshdesk/Phase-1/forms/Evosus Payroll Implementation Guide- 2016.pdf" target="_blank">Evosus Payroll Implementation Guide</a></li>
-				      <li><a class="white-text" href="https://cdn.rawgit.com/evosus/freshdesk/Phase-1/forms/EPS Payroll Card Enrollment Form.doc" target="_blank">EPS Payroll Card Enrollment Form</a></li>
-				      <li><a class="white-text" href="https://cdn.rawgit.com/evosus/freshdesk/Phase-1/forms/Ordering Guide for W2s and 1099 Forms.pdf" target="_blank">Illustrated Ordering Guide for W2s and 1099 Forms</a></li>
+		<div class="col m6">
+			 <div class="card hoverable">
+			    <div class="card-image waves-effect waves-block waves-light ui-primary">
+			      	<img class="activator" src="https://cdn.rawgit.com/evosus/freshdesk/Phase-1/img/forms.svg">
+			      	<span class="card-title activator white-text">Forms</span>
+			    </div>
+			    <div class="card-reveal">
+			      <span class="card-title grey-text text-darken-4">Forms<i class="material-icons right">close</i></span>
+			      <ul>
+				      <li><a class="grey-text text-darken-4" href="https://cdn.rawgit.com/evosus/freshdesk/Phase-1/forms/Direct Deposit Authorization.pdf" target="_blank">Direct Deposit Authorization</a></li>
+				      <li><a class="grey-text text-darken-4" href="https://cdn.rawgit.com/evosus/freshdesk/Phase-1/forms/4th Qtr_Evosus.pdf" target="_blank">Pay-As-You-Go! Workers Compensation</a></li>
+				      <li><a class="grey-text text-darken-4" href="https://cdn.rawgit.com/evosus/freshdesk/Phase-1/forms/Evosus Payroll Implementation Guide- 2016.pdf" target="_blank">Evosus Payroll Implementation Guide</a></li>
+				      <li><a class="grey-text text-darken-4" href="https://cdn.rawgit.com/evosus/freshdesk/Phase-1/forms/EPS Payroll Card Enrollment Form.doc" target="_blank">EPS Payroll Card Enrollment Form</a></li>
+				      <li><a class="grey-text text-darken-4" href="https://cdn.rawgit.com/evosus/freshdesk/Phase-1/forms/Ordering Guide for W2s and 1099 Forms.pdf" target="_blank">Illustrated Ordering Guide for W2s and 1099 Forms</a></li>
 				  </ul>
-		        </div><!-- end card-content -->
-		    </div><!-- end card -->
-		</div><!-- end col -->
-	</div><!-- end row -->
-	<div class="row">
-		<div class="col s12">
-			<div class="card horizontal ui-secondary">
-				<div class="card-image"> 
-					<div class="timecards-image">	
-		              <img src="https://rawgit.com/evosus/freshdesk/Phase-1/img/timecards.svg">
-					</div>
-				</div><!-- end card-image -->
-				<div class="card-content white-text">
-					<span class="card-title">Timecards</span>
-						<div class="white-text">
-						{% for category in portal.solution_categories %}
-							{% for folder in category.folders %}
-								{% if folder.name == 'Timecards' %}
-										{{ folder | article_list:20 }}
-								{% endif %}
-							{% endfor %}
+			    </div><!-- end card-reveal -->
+			  </div><!-- end card-->
+		</div><!-- end col --> 
+
+		<div class="col m6">
+			 <div class="card hoverable">
+			    <div class="card-image waves-effect waves-block waves-light ui-secondary">
+			      <img class="activator" src="https://rawgit.com/evosus/freshdesk/Phase-1/img/timecards.svg">
+			      <span class="card-title activator white-text">Timecards</span>
+			    </div>
+			    <div class="card-reveal">
+			      <span class="card-title grey-text text-darken-4">Timecards<i class="material-icons right">close</i></span>
+			      	{% for category in portal.solution_categories %}
+						{% for folder in category.folders %}
+							{% if folder.name == 'Timecards' %}
+									{{ folder | article_list:20 }}
+							{% endif %}
 						{% endfor %}
-						</div>
-				</div><!-- end card-content -->
-			</div><!-- end card -->
-		</div><!-- end col -->
+					{% endfor %}
+			    </div><!-- end card-reveal -->
+			  </div><!-- end card-->
+		</div><!-- end col --> 
 	</div><!-- end row -->
 	<div class="row">
 		<div class="col s12">
@@ -99,5 +94,4 @@
 			</div><!-- end card -->
 		</div><!-- end col -->
 	</div><!-- end row -->
-
 </section>

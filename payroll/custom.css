@@ -21,7 +21,7 @@ nav.banner-nav {
 
 nav,
 .page-footer {
-	background-color: #02708C;
+	background-color: #aaaaaa;
 }
 
 /* Search box text */
@@ -74,20 +74,6 @@ input[type="text"]:focus {
     vertical-align: middle;
     -webkit-tap-highlight-color: transparent;
     width: initial;
-}
-
-/* Forms card */
-.forms-image {
- 	width:250px; 
- 	height:250px; 
- 	background: radial-gradient(ellipse at bottom, #007F9C 0%, #02708C 100%);
-}
-
-.timecards-image {
-	width:250px; 
- 	height:450px; 
- 	padding: 90px 0;
- 	background: radial-gradient(ellipse at bottom, #007F9C 0%, #02708C 100%);
 }
 
 .white-text a{
