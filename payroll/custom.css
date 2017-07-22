@@ -76,3 +76,13 @@ input[type="text"]:focus {
     width: initial;
 }
 
+/* Forms card */
+.forms-image {
+ 	width:250px; 
+ 	height:250px; 
+ 	background: radial-gradient(ellipse at bottom, #007F9C 0%, #02708C 100%);
+}
+
+.white-text a{
+	color: #fff;
+}

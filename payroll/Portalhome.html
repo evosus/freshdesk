@@ -19,6 +19,7 @@
 				</div><!-- end card-image -->
 				<div class="card-content white-text">
 					<span class="card-title">Getting Started</span>
+						<div class="white-text">
 						{% for category in portal.solution_categories %}
 							{% for folder in category.folders %}
 								{% if folder.name == 'Getting Started' %}
@@ -26,47 +27,84 @@
 								{% endif %}
 							{% endfor %}
 						{% endfor %}
+						</div>
 				</div><!-- end card-content -->
 			</div><!-- end card -->
 		</div><!-- end col -->
 	</div><!-- end row -->
 	<div class="row">
 		<div class="col s12">
-		    <div class="card horizontal">
-		      <div class="card-image valign-wrapper ui-secondary">
-		        <img src="https://cdn.rawgit.com/evosus/freshdesk/Phase-1/img/forms.svg" style="width:250px; height:250px; margin:25px;">
+		    <div class="card horizontal ui-secondary">
+		      <div class="card-image">
+		        	<div class="forms-image">
+		        		<img src="https://cdn.rawgit.com/evosus/freshdesk/Phase-1/img/forms.svg">
+		      		</div>
 		      </div> 
 		        <div class="card-content white-text">
 		          <span class="card-title">Forms</span>
-		          <ul class="collection">
-				      <li class="collection-item"><a href="https://cdn.rawgit.com/evosus/freshdesk/Phase-1/forms/Direct Deposit Authorization.pdf" target="_blank">Direct Deposit Authorization</a></li>
-				      <li class="collection-item"><a href="https://cdn.rawgit.com/evosus/freshdesk/Phase-1/forms/4th Qtr_Evosus.pdf" target="_blank">Pay-As-You-Go! Workers Compensation</a></li>
-				      <li class="collection-item"><a href="https://cdn.rawgit.com/evosus/freshdesk/Phase-1/forms/Evosus Payroll Implementation Guide- 2016.pdf" target="_blank">Evosus Payroll Implementation Guide</a></li>
-				      <li class="collection-item"><a href="https://cdn.rawgit.com/evosus/freshdesk/Phase-1/forms/EPS Payroll Card Enrollment Form.doc" target="_blank">EPS Payroll Card Enrollment Form</a></li>
-				      <li class="collection-item"><a href="https://cdn.rawgit.com/evosus/freshdesk/Phase-1/forms/Ordering Guide for W2s and 1099 Forms.pdf" target="_blank">Illustrated Ordering Guide for W2s and 1099 Forms</a></li>
+		     		<ul>
+				      <li><a class="white-text" href="https://cdn.rawgit.com/evosus/freshdesk/Phase-1/forms/Direct Deposit Authorization.pdf" target="_blank">Direct Deposit Authorization</a></li>
+				      <li><a class="white-text" href="https://cdn.rawgit.com/evosus/freshdesk/Phase-1/forms/4th Qtr_Evosus.pdf" target="_blank">Pay-As-You-Go! Workers Compensation</a></li>
+				      <li><a class="white-text" href="https://cdn.rawgit.com/evosus/freshdesk/Phase-1/forms/Evosus Payroll Implementation Guide- 2016.pdf" target="_blank">Evosus Payroll Implementation Guide</a></li>
+				      <li><a class="white-text" href="https://cdn.rawgit.com/evosus/freshdesk/Phase-1/forms/EPS Payroll Card Enrollment Form.doc" target="_blank">EPS Payroll Card Enrollment Form</a></li>
+				      <li><a class="white-text" href="https://cdn.rawgit.com/evosus/freshdesk/Phase-1/forms/Ordering Guide for W2s and 1099 Forms.pdf" target="_blank">Illustrated Ordering Guide for W2s and 1099 Forms</a></li>
 				  </ul>
 		        </div><!-- end card-content -->
 		    </div><!-- end card -->
 		</div><!-- end col -->
 	</div><!-- end row -->
-	<h2 class="heading">{% translate portal.knowledge_base %}</h2>
-	{% for category in portal.solution_categories %}
-		{% if category.folders_count > 0 %}
-		<div class="cs-s">
-			<h3 class="heading">{{ category.name | link_to: category.url }}</h3>
-			<div class="cs-g-c">
-				{% for folder in category.folders %}
-					<section class="cs-g article-list">
-						<div class="list-lead">
-							{{ folder | link_to_folder_with_count }}
+	<div class="row">
+		<div class="col s12">
+			<div class="card horizontal ui-secondary">
+				<div class="card-image"> 	
+		    	     <div id="rocketship-stars">
+		              <img id="star1" src="https://cdn.rawgit.com/evosus/freshdesk/Phase-1/img/star.svg" />
+		              <img id="star2" src="https://cdn.rawgit.com/evosus/freshdesk/Phase-1/img/star.svg" />
+		              <img id="star3" src="https://cdn.rawgit.com/evosus/freshdesk/Phase-1/img/star.svg" />
+		              <img id="star4" src="https://cdn.rawgit.com/evosus/freshdesk/Phase-1/img/star.svg" />
+		              <img id="star5" src="https://cdn.rawgit.com/evosus/freshdesk/Phase-1/img/star.svg" />
+		              <img id="star6" src="https://cdn.rawgit.com/evosus/freshdesk/Phase-1/img/star.svg" />
+		              <img id="star7" src="https://cdn.rawgit.com/evosus/freshdesk/Phase-1/img/star.svg" />
+		              <img id="star8" src="https://cdn.rawgit.com/evosus/freshdesk/Phase-1/img/star.svg" />
+		              <img id="star9" src="https://cdn.rawgit.com/evosus/freshdesk/Phase-1/img/star.svg" />
+		              <img id="star0" src="https://cdn.rawgit.com/evosus/freshdesk/Phase-1/img/star.svg" />
+		              <img id="rocket" src="https://cdn.rawgit.com/evosus/freshdesk/Phase-1/img/rocket.svg">
+		            </div><!-- end card-image -->
+				</div><!-- end card-image -->
+				<div class="card-content white-text">
+					<span class="card-title">Frequently Asked Questions</span>
+						<div class="white-text">
+						{% for category in portal.solution_categories %}
+							{% for folder in category.folders %}
+								{% if folder.name == 'FAQ' %}
+										{{ folder | article_list:10 }}
+								{% endif %}
+							{% endfor %}
+						{% endfor %}
 						</div>
-						{{ folder | article_list:5 }}
-					</section>
-				{% else %}
-					{{ portal | filler_for_solutions }}
-				{% endfor %}
-			</div>
-		</div>	
-		{% endif %}
-	{% endfor %}
+				</div><!-- end card-content -->
+			</div><!-- end card -->
+		</div><!-- end col -->
+	</div><!-- end row -->
+	<div class="row">
+		<div class="col s12">
+			<div class="card horizontal ui-secondary">
+				<div class="card-image"> 	
+		              <img src="https://cdn.rawgit.com/evosus/freshdesk/Phase-1/img/timecards.svg">
+				</div><!-- end card-image -->
+				<div class="card-content white-text">
+					<span class="card-title">Timecards</span>
+						<div class="white-text">
+						{% for category in portal.solution_categories %}
+							{% for folder in category.folders %}
+								{% if folder.name == 'Timecards' %}
+										{{ folder | article_list:20 }}
+								{% endif %}
+							{% endfor %}
+						{% endfor %}
+						</div>
+				</div><!-- end card-content -->
+			</div><!-- end card -->
+		</div><!-- end col -->
+	</div><!-- end row -->
 </section>
