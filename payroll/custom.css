@@ -79,3 +79,81 @@ input[type="text"]:focus {
 .white-text a{
 	color: #fff;
 }
+
+/* fixes to dropdown menu on mobile */
+@media (max-width: 45em) {
+	nav ul li {
+    	line-height: 55px;
+	}
+}
+
+@media (max-width: 45em) {
+	li {
+    	line-height: inherit;
+	}
+}
+
+.dropdown-button:hover {
+	color: #ffffff;
+	text-decoration: none;
+}
+
+.dropdown-content li>a, 
+.dropdown-content li>span {
+	color: #333333; 	
+}
+/* new ticket form fixes*/
+.redactor_editor {
+	height: 175px!important;
+}
+.ticket-form input[type="text"] {
+	color: #333;
+}
+#view-tickets {
+	background-color: #02708C;
+}
+.btn-large {
+    line-height: 54px;
+    border-radius: 50%;
+    padding: inherit;
+
+}
+.btn-large:hover {
+	text-decoration: none;
+}
+
+#view-tickets li {
+	line-height: inherit;
+}
+
+#ticket-filters,
+#ticket-sub-toolbar,
+.dropdown-toggle
+ {
+	display: inline;
+	font-weight: normal;
+	line-height: 60px;
+	color: #ffffff;
+	font-size: 18px;
+}
+a.dropdown-toggle:hover
+{
+    color: #fff;
+    background-color: transparent;
+}
+#view-tickets .caret {
+	display: none;
+}
+.content .lead {
+	margin: 100px 0;
+    text-align: center;
+    color: #999;
+}
+.ticket-brief a {
+	color: #333;
+	font-weight: normal;
+}
+.ticket-brief .help-text {
+	color: #666;
+	font-weight: normal;
+}

@@ -11,7 +11,7 @@
 		</div>
 	</header>
 	<nav class="hover-underline-menu">
-	  <ul class="menu align-left">
+	  <ul class="menu align-left hide-on-small-only">
 	    <li><a href="https://evosus.freshdesk.com/support/home">Home</a></li>
 	    <li class="active"><a href="http://ee-support.evosus.com/support/home">Enterprise</a></li>
 	    <li><a href="https://payroll.evosus.com/support/home">Payroll</a></li>
@@ -19,7 +19,24 @@
 	     <li><a href="http://ea-support.evosus.com/support/home">Analytics</a></li>
 	     <li><a href="http://ewa-support.evosus.com/support/home">Web Services</a></li>
 	  </ul>
+	
+	  	  <!-- Dropdown Structure only appears on mobile-->
+		<ul id="dropdown1" class="dropdown-content">
+		  <li><a href="https://evosus.freshdesk.com/support/home">Home</a></li>
+		  <li><a href="http://ee-support.evosus.com/support/home">Enterprise</a></li>
+		  <li><a href="https://payroll.evosus.com/support/home">Payroll</a></li>
+		  <li><a href="http://ems-support.evosus.com/support/home">Mobile</a></li>
+		  <li><a href="http://ea-support.evosus.com/support/home">Analytics</a></li>
+		  <li><a href="http://ewa-support.evosus.com/support/home">Web Services</a></li>
+		</ul>
+
+	<!-- mobile dropdown menu -->
+	  <ul class="right hide-on-med-and-up">
+	  	 <!-- Dropdown Trigger -->
+      	<li><a class="dropdown-button" href="#!" data-activates="dropdown1">Product<i class="material-icons right">arrow_drop_down</i></a></li>
+	  </ul>
 	</nav>
+
 {% else %} 
 	<header class="banner">
 		<div class="banner-wrapper">

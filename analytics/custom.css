@@ -38,3 +38,19 @@ nav {
     vertical-align: middle;
     -webkit-tap-highlight-color: transparent;
 }
+/* fixes to dropdown menu on mobile */
+@media (max-width: 45em) {
+	li {
+    	line-height: 55px;
+	}
+}
+
+.dropdown-button:hover {
+	color: #ffffff;
+	text-decoration: none;
+}
+
+.dropdown-content li>a, 
+.dropdown-content li>span {
+	color: #333333; 	
+}
