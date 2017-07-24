@@ -22,3 +22,8 @@ nav {
 .card-content a {
 	color: #fff;
 }
+@media (max-width: 45em) {
+	li {
+    	line-height: 55px;
+	}
+}
