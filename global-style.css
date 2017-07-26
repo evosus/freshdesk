@@ -131,48 +131,23 @@ h4,
 .ui-purple-dk, .ui-purple-lt { color:white; } 
 .ui-black { background:black; }
 .ui-gray { background:#444444; }
-.ui-red { background:firebrick; }
-.ui-red-dk { background:darkred; }
+.ui-red { background: #FF6347; }
+.ui-red-dk { background: #B22222; }
 .ui-red-lt { background:tomato; }
 .ui-orange { background:orange; }
 .ui-orange-dk { background:darkorange; }
 .ui-orange-lt { background:sandybrown; }
-.ui-gold { background:goldenrod; }
+.ui-gold { background: #FFA500; }
 .ui-gold-dk { background:darkgoldenrod; }
 .ui-gold-lt { background:burlywood; }
-.ui-green { background:olivedrab; }
-.ui-green-dk { background:darkolivegreen; }
-.ui-green-lt { background:darkkhaki; }
+.ui-green { background: #228B22; }
+.ui-green-dk { background: #6D8D24; }
+.ui-green-lt { background: #66CDAA; }
 .ui-teal { background: #20B2AA; }
-.ui-teal-dk { background:darkcyan; }
-.ui-teal-lt { background:mediumaquamarine; }
 .ui-blue { background:#1E90FF; }
 .ui-blue-dk { background:#4169E1; }
-.ui-blue-lt { background:dodgerblue; }
 .ui-purple { background:#9370DB; }
 .ui-purple-dk { background:#663399; }
-.ui-purple-lt { background:mediumpurple; }
-.fg-red { color: #FF6347; }
-.fg-red-dk { color: #B22222; }
-.fg-red-lt { color:tomato; }
-.fg-orange { color:orange; }
-.fg-orange-dk { color:darkorange; }
-.fg-orange-lt { color:sandybrown; }
-.fg-gold { color: #FFA500; }
-.fg-gold-dk { color:darkgoldenrod; }
-.fg-gold-lt { color:burlywood; }
-.fg-green { color:olivedrab; }
-.fg-green-dk { color:darkolivegreen; }
-.fg-green-lt { color:darkkhaki; }
-.fg-teal { color:lightseagreen; }
-.fg-teal-dk { color:darkcyan; }
-.fg-teal-lt { color:mediumaquamarine; }
-.fg-blue { color:royalblue; }
-.fg-blue-dk { color:darkslateblue; }
-.fg-blue-lt { color:dodgerblue; }
-.fg-purple { color:rebeccapurple; }
-.fg-purple-dk { color:indigo; }
-.fg-purple-lt { color:mediumpurple; }
 
 
 /*Rocketship on mobile portalpage */
