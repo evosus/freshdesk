@@ -8,15 +8,24 @@ nav.banner-nav {
 }
 
 nav {
-	background-color: #aaaaaa;
+	background-color: #444444;
 }
 
 .hover-underline-menu .menu li .active{
   background-color: #999999;
 }
 
+.hover-underline-menu .menu a:hover, 
+.hover-underline-menu .menu .active,
+.page-footer .footer-copyright
+{
+    background-color: #333;
+}
+
+
+
 .page-footer {
-	background-color: #aaaaaa;
+	background-color: #444444;
 }
 
 .card-content a {
