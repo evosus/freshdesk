@@ -32,7 +32,6 @@ h4,
 }
 
 @media print {
-
   .video-wrapper {
     display: none; 
   }
@@ -49,6 +48,12 @@ h4,
 	padding-top: 125px;
 	margin: 0 auto;
 	max-width: 600px;   
+}
+
+@media only screen and (max-width: 600px) {
+  .hc-search-form {
+    margin: 0 15px;
+  }
 }
 
 /* OVERRIDE FRESHDESK STYLES */
