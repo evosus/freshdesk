@@ -38,13 +38,13 @@ nav {
 /* SEARCH CONTAINER */
 .search-container {
   	min-height: 300px;
-	background: no-repeat center url("https://cdn.rawgit.com/evosus/freshdesk/Phase-1/img/search-enterprise.jpg");
+	background: no-repeat center url("https://rawgit.com/evosus/freshdesk/Phase-1/img/search-enterprise.jpg");
 	background-size: cover;
 }
 
 /* Search box text */
 input[type="text"] {
-	color: #fff;
+	color: #333;
 }
 input[type=text]:not(.browser-default) {
 	font-size: 2em;
