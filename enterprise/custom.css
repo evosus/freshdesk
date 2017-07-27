@@ -22,8 +22,6 @@ nav {
     background-color: #333;
 }
 
-
-
 .page-footer {
 	background-color: #444444;
 }
@@ -35,6 +33,12 @@ nav {
 .breadcrumb-menu {
 	color: #666666;
 	margin-bottom: 20px;
+}
+
+/* SEARCH CONTAINER */
+.search-container {
+  	min-height: 300px;
+	background: no-repeat center url("https://cdn.rawgit.com/evosus/freshdesk/Phase-1/img/search-enterprise.jpg");
 }
 
 /* Search box text */
@@ -105,4 +109,12 @@ input[type="text"]:focus {
 .dropdown-content li>a, 
 .dropdown-content li>span {
 	color: #333333; 	
+}
+
+/* CARD ACTION COLOR FIX */
+.card .card-action a:not(.btn):not(.btn-large):not(.btn-large):not(.btn-floating) {
+	color: #fff;
+}
+.card .card-action a:not(.btn):not(.btn-large):not(.btn-large):not(.btn-floating):hover {
+	color: #fff;
 }

@@ -38,3 +38,19 @@ nav {
 .dropdown-content li>span {
 	color: #333333; 	
 }
+
+/* CARD ACTION COLOR FIX */
+.card .card-action a:not(.btn):not(.btn-large):not(.btn-large):not(.btn-floating) {
+	color: #fff;
+}
+.card .card-action a:not(.btn):not(.btn-large):not(.btn-large):not(.btn-floating):hover {
+	color: #fff;
+}
+/* ROCKETSHIP CUSTOM */
+#rocketship-stars {
+    background: radial-gradient(ellipse at bottom, #9370DB 0%, #663399 100%);
+}
+/* PROBLEMS CUSTOM */
+#life-preserver {
+    background: radial-gradient(ellipse at bottom, #1E90FF 0%, #4169E1 100%);
+}

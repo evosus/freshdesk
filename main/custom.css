@@ -153,6 +153,11 @@ a.dropdown-toggle:hover
 .brand-logo {
 	margin-left: 10px;
 }
-.brand-logo {
-	margin-left: 10px;
+
+/* CARD ACTION COLOR FIX */
+.card .card-action a:not(.btn):not(.btn-large):not(.btn-large):not(.btn-floating) {
+	color: #fff;
+}
+.card .card-action a:not(.btn):not(.btn-large):not(.btn-large):not(.btn-floating):hover {
+	color: #fff;
 }
