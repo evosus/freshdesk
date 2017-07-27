@@ -54,6 +54,9 @@ h4,
   .hc-search-form {
     margin: 0 15px;
   }
+  .search-container input[type=text]:not(.browser-default) {
+    font-size: 1.3em;
+  }
 }
 
 /* OVERRIDE FRESHDESK STYLES */
