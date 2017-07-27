@@ -74,6 +74,8 @@ h4,
 /* MENU */
 .hover-underline-menu  {
   width: 100%;
+  overflow: hidden;
+  height: 60px;
 }
 
 .hover-underline-menu .menu a {
