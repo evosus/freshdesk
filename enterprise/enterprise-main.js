@@ -1,7 +1,7 @@
 /* Randomly pick a tip to load*/
 jQuery_2_1_1( document ).ready(function() {
 
-	var selection = Math.round(23 * (Math.random());
+	var selection = Math.round(23 * (Math.random()));
 	console.log(selection);
 
 	switch(selection) {
