@@ -50,6 +50,12 @@ h4,
   background-color: #02708C!important;
   color: #fff;
 }
+.pagination li.active span {
+    border: 1px solid #02808c;
+}
+.pagination li.disabled {
+  background-color: #efefef!important;
+}
 
 /* SEARCH CONTAINER */
 .search-container {
