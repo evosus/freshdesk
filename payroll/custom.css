@@ -76,6 +76,16 @@ input[type="text"]:focus {
     width: initial;
 }
 
+/* FIX TO THE LOGIN FORM */
+.alt-login-button a.btn:hover {
+    display: block;
+}
+
+/* Fix to submit button on survey form */
+input#survey_handle_submit:hover {
+    display: inherit;
+}
+
 .white-text a{
 	color: #fff;
 }

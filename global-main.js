@@ -10,4 +10,14 @@ jQuery_2_1_1( document ).ready(function() {
 		jQuery_2_1_1('#login-form-new').removeClass("hide");
 		jQuery_2_1_1('#forgot-form-new').addClass("hide");
 	});
+/* lazy load of cards */
+  var options = [
+     {selector: '#jsSectionA1', offset: 0, callback: function(el) {
+        Materialize.fadeInImage(jQuery_2_1_1(el));
+      } },
+    {selector: '#jsSectionAb', offset: 50, callback: function(el) {
+        Materialize.showStaggeredList(jQuery_2_1_1(el));
+    } }
+    ];
+    Materialize.scrollFire(options);
 });

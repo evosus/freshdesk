@@ -72,6 +72,16 @@ nav,
     width: initial;
 }
 
+/* FIX TO THE LOGIN FORM */
+.alt-login-button a.btn:hover {
+    display: block;
+}
+/* Fix to submit button on survey form */
+input#survey_handle_submit:hover {
+    display: inherit;
+}
+
+
 /* fixes to dropdown menu on mobile */
 @media (max-width: 45em) {
 	li {
