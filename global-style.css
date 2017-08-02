@@ -46,7 +46,7 @@ h4,
   display: inline-block!important;
   background-color: transparent!important;
 }
-.pagination li .active {
+.pagination li.active {
   background-color: #02708C!important;
   color: #fff;
 }
