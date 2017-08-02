@@ -37,15 +37,19 @@ h4,
   }
 }
 
-/* Pagination fix */
+/* Pagination fix - css so ugly it hurts*/
 .pagination li a {
   line-height: 41.75px;
 }
 .pagination li {
   height: 43px;
-  display: inline-block;
+  display: inline-block!important;
+  background-color: transparent!important;
 }
-
+.pagination li .active {
+  background-color: #02708C!important;
+  color: #fff;
+}
 
 /* SEARCH CONTAINER */
 .search-container {
