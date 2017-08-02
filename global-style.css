@@ -80,6 +80,12 @@ h4,
     text-decoration: none;
 }
 
+/* FIX TO THE LOGIN FORM */
+.alt-login-button a.btn:hover {
+    display: block;
+}
+
+
 /* MENU */
 .hover-underline-menu  {
   width: 100%;
