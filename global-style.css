@@ -41,6 +41,11 @@ h4,
 .pagination li a {
   line-height: 41.75px;
 }
+.pagination li {
+  height: 43px;
+  display: inline-block;
+}
+
 
 /* SEARCH CONTAINER */
 .search-container {
