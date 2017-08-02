@@ -37,6 +37,11 @@ h4,
   }
 }
 
+/* Pagination fix */
+.pagination li a {
+  line-height: 41.75px;
+}
+
 /* SEARCH CONTAINER */
 .search-container {
   	min-height: 300px;
