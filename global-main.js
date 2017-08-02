@@ -14,9 +14,11 @@ jQuery_2_1_1( document ).ready(function() {
   var options = [
      {selector: '#jsSectionA1', offset: 0, callback: function(el) {
         Materialize.fadeInImage(jQuery_2_1_1(el));
+        console.log("tripped one");
       } },
-    {selector: '#jsSectionAb', offset: 50, callback: function(el) {
+    {selector: '#jsSectionA2', offset: 50, callback: function(el) {
         Materialize.showStaggeredList(jQuery_2_1_1(el));
+        console.log("tripped two");
     } }
     ];
     Materialize.scrollFire(options);
