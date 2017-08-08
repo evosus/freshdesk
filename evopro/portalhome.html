@@ -1,53 +1,96 @@
-{% if portal.has_solutions %}
-<section class="main content rounded-6 min-height-on-desktop" id="solutions-index-home">
-	<h2 class="heading">{% translate portal.knowledge_base %}</h2>
-	{% for category in portal.solution_categories %}
-		{% if category.folders_count > 0 %}
-		<div class="cs-s">
-			<h3 class="heading">{{ category.name | link_to: category.url }}</h3>
-			<div class="cs-g-c">
-				{% for folder in category.folders %}
-					<section class="cs-g article-list">
-						<div class="list-lead">
-							{{ folder | link_to_folder_with_count }}
-						</div>
-						{{ folder | article_list:5 }}
-					</section>
-				{% else %}
-					{{ portal | filler_for_solutions }}
-				{% endfor %}
-			</div>
-		</div>	
-		{% endif %}
-	{% endfor %}
-</section>
-{% endif %}
+<section class="main content min-height-on-desktop" id="solutions-index-home">
+  <div class="section">
+    <div class="row"><!-- begin row #3 -->
+      <div class="col s12 m6">
+        <div class="card">
+          <div class="card-image">   
+                      <img src="https://rawgit.com/evosus/freshdesk/Phase-1/img/webinar.svg" style="height:130px;"">
+            </div><!-- end card-image -->
+            <div class="card-stacked">
+              <div class="card-content">
+                <span class="card-title">Live Webinars</span>
+                <p>For Active New and Experienced Evosus Clients, learn how to Optimize your Evosus Setup Register Now for an Interactive Webinar!</p>
+              </div><!-- end card-content -->
+              <div class="card-action">
+                <a href="https://www.evosus.com/webinars">Register Now!</a>
+              </div><!-- end card-action -->
+            </div><!-- end card-stacked -->
+        </div><!-- end card -->
+      </div><!-- end col -->
+      <div class="col s12 m6">
+        <div class="card">
+          <div class="card-image">   
+                      <img src="https://rawgit.com/evosus/freshdesk/Phase-1/img/howtovideos.svg" style="height:130px;"">
+            </div><!-- end card-image -->
+            <div class="card-stacked">
+              <div class="card-content">
+                <span class="card-title">How To Videos</span>
+                <p>Pre-recorded screen captures and detailed instructions to answer specific questions. Many of these videos are included in the topics on this site.</p>
+              </div><!-- end card-content -->
+              <div class="card-action">
+                <a href="https://evosus.litmos.com">Log In</a>
+              </div><!-- end card-action -->
+            </div><!-- end card-stacked -->
+        </div><!-- end card -->
+      </div><!-- end col -->
+    </div><!-- end row #3 -->
+    <div class="row">
+      <div class="col s12 m6">
+          <div class="row">
+            <div class="card">
+              <div class="card-image">   
+                        <img src="https://rawgit.com/evosus/freshdesk/Phase-1/img/download.svg" style="height:170px;">
+              </div><!-- end card-image -->
+              <div class="card-stacked">
+                <div class="card-content">
+                  <span class="card-title">Get the latest release!</span>
+                  <p>Version 6.6.130 is available now. Go here for information about downloading and installing it.</p>
+                    
+                </div><!-- end card-content -->
+                <div class="card-action">
+                  <a href="http://ee-support.evosus.com/support/solutions/articles/14000065691-evosus-business-management-software-release-notes-version-6-6">Release Notes</a>
+                  <a href="https://evosus.freshdesk.com/support/solutions/articles/14000067160-evosus-business-management-software-version-6-6-download-and-installation-instructions">Install</a>
+                </div><!-- end card-action -->
+              </div><!-- end card-stacked -->
+            </div><!-- end card -->
+          </div><!-- end row -->
+          <div class="row">
+            <div class="card">
+              <div class="card-image">   
+                        <img src="https://rawgit.com/evosus/freshdesk/Phase-1/img/am.svg" style="height:175px;">
+              </div><!-- end card-image -->
+              <div class="card-stacked">
+                <div class="card-content">
+                  <span class="card-title">Contact your Account Manager</span>
+                  <p>Our team is available Monday through Friday, 6AM - 6PM Pacific Time.</p>
+                  <p>You can either create a ticket, or call us at (866) 235-5103.</p>
+                </div><!-- end card-content -->
+                <div class="card-action">
+                  <a href="https://evosus.freshdesk.com/support/tickets/new">Create a ticket</a>
+                  <a href="https://evosus.freshdesk.com/support/tickets">View all tickets</a>
+                </div><!-- end card-action -->
+              </div><!-- end card-stacked -->
+            </div><!-- end card -->
+          </div><!-- end row -->
+        </div><!-- end col -->
+    	<div class="col s12 m6">
+         <div class="card">
+          <div class="card-content grey lighten-4">
+               <div class="fb-page" data-href="https://www.facebook.com/Evosussoftware" data-tabs="timeline" data-width="500" data-height="700" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/Evosussoftware"><a href="https://www.facebook.com/Evosussoftware">Evosus Software</a></blockquote></div></div>
+          </div>
+        </div>
 
-{% if portal.has_forums %}
-<section class="sidebar content community-sidebar rounded-6 min-height-on-desktop" id="home-community-sidebar">
-	<h2 class="heading">{% translate portal.community_forums %}</h2>
-	{% if portal.topics_count > 0 %}
-		<p class="intro">{% translate portal.showing_recent_updates %}</p>
-		<div>{{ portal | link_to_start_topic }}</div>
-		{% for category in portal.forum_categories %}
-			{% if category.forums_count > 0 %}
-				<div class="cs-s">
-					<h3 class="heading">{{ category.name | link_to: category.url }}</h3>
-					<div class="cs-g-c">
-					{% for forum in category.forums %}
-						<section class="cs-g topic-list">
-							<div class="list-lead badge-{{ forum.type_name }}">
-								{{ forum | link_to_forum_with_count }}
-							</div>
-							{{ forum | topic_list:3 }}
-						</section>
-					{% endfor %}
-					</div>
-				</div>
-			{% endif %}
-		{% endfor %}
-	{% else %}
-		{{ portal | filler_for_forums }}
-	{% endif %}
+    	</div><!-- end col -->
+    </div><!-- end row -->
+  </div>
 </section>
-{% endif %}
+
+<!-- facebook script -->
+ <div id="fb-root"></div>
+ <script>(function(d, s, id) {
+   var js, fjs = d.getElementsByTagName(s)[0];
+   if (d.getElementById(id)) return;
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.4";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));</script>

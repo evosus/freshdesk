@@ -1,34 +1,45 @@
 {% if  portal.current_page != 'csat_survey' %}
-	<header class="banner">
-		<div class="banner-wrapper">
-			<div class="banner-title">
-				{{ portal | logo }}
-				<h1 class="ellipsis heading">{{portal.name|h}}</h1>
-			</div>
-			<nav class="banner-nav">
-				{{ portal | welcome_navigation }}
-			</nav>
-		</div>
-	</header>
-	<nav class="page-tabs" >
-		{% if portal.tabs.size > 0 %}
-			<a data-toggle-dom="#header-tabs" href="#" data-animated="true" class="mobile-icon-nav-menu show-in-mobile"></a>
-			<div class="nav-link" id="header-tabs">
-				{% for tab in portal.tabs %}
-					{% if tab.url %}
-						<a href="{{tab.url}}" class="{% if tab.tab_type == portal.current_tab %}active{% endif %}">{{ tab.label }}</a>
-					{% endif %}
-				{% endfor %}
-			</div>
-		{% endif %}
+	<!-- Dropdown Structure -->
+	<ul id="dropdown1" class="dropdown-content">
+	  <li><a href="#!">Enterprise</a></li>
+	  <li><a href="#!">Payroll</a></li>
+	  <li><a href="#!">Mobile</a></li>
+	  <li><a href="#!">Analytics</a></li>
+	   <li><a href="#!">Web Services</a></li>
+	</ul>
+	<!-- Side menu -->
+	  <ul id="slide-out" class="side-nav">
+	    <li><div class="user-view">
+	      <div class="background">
+	        <img src="images/office.jpg">
+	      </div>
+	      {{ portal | welcome_navigation }}
+	    </div></li>
+	    <li><a href="#!"><i class="material-icons">cloud</i>First Link With Icon</a></li>
+	    <li><a href="#!">Second Link</a></li>
+	    <li><div class="divider"></div></li>
+	    <li><a class="subheader">Subheader</a></li>
+	    <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
+	  </ul>
+	<nav>
+	  <div class="nav-wrapper">
+		    <a href="#!" class="brand-logo"><img src="https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/14018521700/logo/FdFg_s88Xd4u4x4mV1YmNR-yGSkyWFhYHQ.png" />{{portal.name|h}}</a>
+		    <ul class="right">
+		      <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Products<i class="material-icons right">arrow_drop_down</i></a></li>
+		      <!--
+		      <li><a class="dropdown-button" data-beloworigin="true" href="#!" data-activates="accountInfo"><i class="material-icons right">account_circle</i></a></li>
+		      -->
+		    </ul>
+	
+	  </div><!-- end nav-wrapper -->
 	</nav>
+
+<div>	
+	<a href="#" data-activates="slide-out" class="button-collapse">MENU<i class="material-icons right">menu</i></a>
+</div>
+
 {% else %} 
-	<header class="banner">
-		<div class="banner-wrapper">
-			<div class="banner-title">
-				{{ portal | logo : true }}
-				<h1 class="ellipsis heading">{{portal.name|h}}</h1>
-			</div>
-		</div>
-	</header>
+
+	{{ portal | logo : true }}
+
 {% endif %}
