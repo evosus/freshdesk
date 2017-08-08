@@ -165,8 +165,20 @@ a.dropdown-toggle:hover
 
 /* CARD ACTION COLOR FIX */
 .card .card-action a:not(.btn):not(.btn-large):not(.btn-large):not(.btn-floating) {
-	color: #fff;
+	color: #333;
 }
 .card .card-action a:not(.btn):not(.btn-large):not(.btn-large):not(.btn-floating):hover {
-	color: #fff;
+	color: #333;
+}
+
+/*BREADCRUMBS FIX */
+a.breadcrumb-item {
+	color: #666666;
+	font-size: .9em;
+}
+a.breadcrumb-item:hover {
+	color: #666666;
+	font-size: .9em;
+	font-weight: bold;
+	text-decoration: none;
 }
