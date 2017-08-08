@@ -1,5 +1,5 @@
 body {
-  background-image: none;
+  background-image: none!important;
 }
 h1 {
 	font-size: 2em;

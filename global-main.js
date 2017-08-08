@@ -12,11 +12,6 @@ jQuery_2_1_1( document ).ready(function() {
 		jQuery_2_1_1('#forgot-form-new').addClass("hide");
 	});
 
-  // Initialize collapse button
-  jQuery_2_1_1(".button-collapse").sideNav();
-  // Initialize collapsible (uncomment the line below if you use the dropdown variation)
-  //$('.collapsible').collapsible();
-
 /* lazy load of cards */
   var options = [
      {selector: '#jsSectionA1', offset: 0, callback: function(el) {
@@ -29,4 +24,11 @@ jQuery_2_1_1( document ).ready(function() {
     } }
     ];
     Materialize.scrollFire(options);
+});
+
+$(document).ready (function (){
+   // Initialize collapse button
+  $(".button-collapse").sideNav();
+  // Initialize collapsible (uncomment the line below if you use the dropdown variation)
+  //$('.collapsible').collapsible();
 });
