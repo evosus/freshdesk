@@ -5,7 +5,7 @@
 	 viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve">
 <g>
 	<g>
-		<circle fill="#3eaba4" cx="256" cy="256" r="254"/>
+		<circle fill="none" cx="256" cy="256" r="254"/>
 	</g>
 	<g>
 		<path fill="#FFFFFF" d="M265.3,89.5c-86.8,0-157.2,70.4-157.2,157.2c0,27.2,6.9,52.8,19.1,75.1l-19.1,82.1l82.1-19.1

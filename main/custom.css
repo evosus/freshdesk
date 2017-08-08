@@ -182,3 +182,8 @@ a.breadcrumb-item:hover {
 	font-weight: bold;
 	text-decoration: none;
 }
+
+/* CARD FIX */
+.card-image {
+	background-color: #3eaba4;
+}
