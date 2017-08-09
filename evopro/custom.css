@@ -25,7 +25,27 @@ nav.banner-nav {
 
 nav,
 .page-footer {
-	background-color: #3eaba4;
+	background-color: rgb(0,127,156);
+}
+
+nav.sub-nav {
+    height: 3.5em;
+    line-height: 3.5em;
+    padding-left: 10px;
+    background-color: rgb(2,138,168);
+}
+#logo-header {
+	height: 1.5em;
+	margin-left: 75px;
+}
+
+@media only screen and (min-width: 993px) {
+	nav a.button-collapse {
+		display: block!important;
+	}
+}
+nav a.button-collapse:hover {
+	text-decoration: none!important;
 }
 
 /* Search box text */
@@ -162,9 +182,6 @@ a.dropdown-toggle:hover
 .ticket-brief .help-text {
 	color: #666;
 	font-weight: normal;
-}
-.brand-logo {
-	margin-left: 10px;
 }
 
 /* CARD ACTION COLOR FIX */

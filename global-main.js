@@ -17,4 +17,5 @@ jQuery_2_1_1 ( document ).ready(function($) {
   $(".button-collapse").sideNav();
   // Initialize collapsible (uncomment the line below if you use the dropdown variation)
   //$('.collapsible').collapsible();
+   $('.parallax').parallax();
 });
