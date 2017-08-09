@@ -1,4 +1,4 @@
-( document ).ready(function($) {
+jQuery_2_1_1 ( document ).ready(function($) {
 	// replace search text
   $('#support-search-input').attr("placeholder", "Search all products...");
 	
