@@ -220,6 +220,12 @@ a.breadcrumb-item:hover {
     width: 100%;
   }
 
+.header {
+	margin-top: 50px;
+	font-size: 3em;
+	color: #ffffff;
+}
+
 @media only screen and (max-width : 992px) {
   .parallax-container .section {
     position: absolute;
