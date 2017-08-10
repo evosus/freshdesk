@@ -12,7 +12,7 @@
 
 .shadow { box-shadow:0 5px 10px rgba(0,0,0,0.25); }
 
-/* override background of nav */
+/* NAV */
 nav.banner-nav {
 	background-color: transparent;
 	color: #333;
@@ -35,10 +35,13 @@ nav.sub-nav {
     padding-left: 10px;
     background-color: #58C5BE;
 }
+
 #logo-header {
 	height: 100%;
 	margin-left: 75px;
 }
+
+
 
 @media only screen and (min-width: 993px) {
 	nav a.button-collapse {
@@ -49,7 +52,7 @@ nav a.button-collapse:hover {
 	text-decoration: none!important;
 }
 
-/* Search box text */
+/* Search box text - Header*/
 #search-main input[type="text"],
 .search-container input[type="text"] {
 	color: #fff;
@@ -61,6 +64,31 @@ nav a.button-collapse:hover {
 #search-main input[type="text"]:focus,
 .search-container input[type="text"]:focus {
 	border-color: transparent;
+}
+
+/* Search Box - Portal Homepage */
+.searchbox-header {
+	font-size: 3.5em;
+	color: #ffffff;
+}
+
+.searchbox-subheader {
+	font-size: 1.75em;
+	color: #ffffff;
+	margin-bottom: 30px;
+}
+
+@media only screen and (max-width: 992px) {
+	.parallax-container .section {
+    	top: inherit!important;
+	}
+	.searchbox-header {
+		font-size: 2.5em;
+		color: #ffffff;
+	}
+	.searchbox-subheader {
+		font-size: 1.25em;
+	}
 }
 
 /* button */
