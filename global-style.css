@@ -170,10 +170,11 @@ h4,
 .ui-purple-dk, .ui-purple-lt { color:white; } 
 .ui-black { background:black; }
 .ui-gray { background:#444444; }
+.ui-gray-lt { background:#aaaaaa; }
 .ui-red { background: #FF6347; }
 .ui-red-dk { background: #B22222; }
 .ui-red-lt { background:tomato; }
-.ui-orange { background:orange; }
+.ui-orange { background: #FA9345; }
 .ui-orange-dk { background:darkorange; }
 .ui-orange-lt { background:sandybrown; }
 .ui-gold { background: #FFA500; }
@@ -182,7 +183,7 @@ h4,
 .ui-green { background: #228B22; }
 .ui-green-dk { background: #6D8D24; }
 .ui-green-lt { background: #66CDAA; }
-.ui-teal { background: #20B2AA; }
+.ui-teal { background: #3eaba4; }
 .ui-blue { background:#1E90FF; }
 .ui-blue-dk { background:#4169E1; }
 .ui-purple { background:#9370DB; }

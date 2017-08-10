@@ -91,6 +91,18 @@ nav a.button-collapse:hover {
 	}
 }
 
+/*CAROUSEL */
+.carousel-item {
+	height:250px; 
+	width: 250px;  
+	text-align: center; 
+	line-height: 250px;
+}
+.carousel-item-title {
+	color: #fff; 
+	font-size: 30px;
+}
+
 /* button */
 .btn, 
 .btn:hover,
