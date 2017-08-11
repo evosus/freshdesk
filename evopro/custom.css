@@ -265,9 +265,16 @@ a.breadcrumb-item:hover {
   height: auto;
   color: rgba(255,255,255,.9);
 }
-  .parallax-container .section {
+.parallax-container .section {
     width: 100%;
-  }
+}
+.parallax-text {
+	margin: 10px 0;
+	line-height: 1em;
+	font-weight: 400;
+}
+
+
 
 .header {
 	margin-top: 50px;
