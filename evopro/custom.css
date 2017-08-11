@@ -92,11 +92,16 @@ nav a.button-collapse:hover {
 }
 
 /*CAROUSEL */
+.carousel {
+    height: 200px!important;
+}
 .carousel-item {
-	height:250px; 
-	width: 250px;  
 	text-align: center; 
-	line-height: 250px;
+	line-height: 100px;
+	height: 100px!important;
+}
+.carousel-item:hover {
+	text-decoration: none;
 }
 .carousel-item-title {
 	color: #fff; 
