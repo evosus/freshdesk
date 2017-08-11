@@ -274,6 +274,12 @@ a.breadcrumb-item:hover {
 	font-weight: 400;
 }
 
+.social-media {
+	min-height: 800px;
+	background-image: url(https://cdn.rawgit.com/evosus/freshdesk/Phase-1/img/social-media.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
 
 
 .header {
