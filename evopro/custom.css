@@ -280,10 +280,11 @@ a.breadcrumb-item:hover {
 	background-size: cover;
 	background-repeat: no-repeat;
 }
-
+.container-content {
+	padding: 75px 0 50px;
+}
 
 .header {
-	margin-top: 50px;
 	font-size: 3em;
 	color: #ffffff;
 }
