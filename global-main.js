@@ -20,4 +20,5 @@ jQuery_2_1_1 ( document ).ready(function($) {
    //COMPONENT INIT
    $('.parallax').parallax();
    $('.carousel').carousel();
+   $('.carousel.carousel-slider').carousel({fullWidth: true});
 });
