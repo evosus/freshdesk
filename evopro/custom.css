@@ -127,9 +127,19 @@ nav a.button-collapse:hover {
 	background-size: cover;
 	background-repeat: no-repeat;
 }
+.bg-routing {
+	background-color: #333333;
+	background-image: url(https://cdn.rawgit.com/evosus/freshdesk/Phase-1/img/routing-bg.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
 .carousel-header {
 	margin-top: 100px;
 	margin-bottom: 25px;
+}
+.carousel-slider p {
+	font-size: 1.2em!important;
+    margin-bottom: 25px;
 }
 
 /* button */
