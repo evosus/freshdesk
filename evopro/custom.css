@@ -91,21 +91,45 @@ nav a.button-collapse:hover {
 	}
 }
 
-/*CAROUSEL */
-.carousel {
+/*CAROUSEL - Product*/
+.carousel-product {
     height: 200px!important;
 }
-.carousel-item {
+.carousel-product-item {
 	text-align: center; 
 	line-height: 100px;
 	height: 100px!important;
 }
-.carousel-item:hover {
+.carousel-product-item:hover {
 	text-decoration: none;
 }
 .carousel-item-title {
 	color: #fff; 
 	font-size: 30px;
+}
+
+/* CAROUSEL - Header*/
+.bg-fun {
+	background-color: #0000000;
+	background-image: url(https://cdn.rawgit.com/evosus/freshdesk/Phase-1/img/social-media.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.bg-computer {
+	background-color: #333333;
+	background-image: url(https://cdn2.hubspot.net/hubfs/1835951/Evosus-Dec2015-Image/schedule-a-demo-bg.jpg?t=1496207419083);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.bg-dashboard {
+	background-color: #333333;
+	background-image: url(https://cdn.rawgit.com/evosus/freshdesk/Phase-1/img/dashboard-bg.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.carousel-header {
+	margin-top: 100px;
+	margin-bottom: 25px;
 }
 
 /* button */
