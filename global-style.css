@@ -141,6 +141,18 @@ h4,
   transition: all 0.5s ease;
 }
 
+/* SIDE MENU */
+.user-view {
+  background-color: #FA9346;
+  color: #fff;
+}
+.user-view a,
+.user-view a:hover {
+  color: #fff;
+}
+
+
+
 /* EVOSUS THEME COLORS */
 .ui-primary,.ui-secondary,.ui-accent,.ui-active,.ui-inactive,.ui-valid,.ui-invalid { color:white; }
 .ui-inactive { opacity:0.5; }
