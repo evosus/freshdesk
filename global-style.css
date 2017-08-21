@@ -142,16 +142,20 @@ h4,
 }
 
 /* SIDE MENU */
+.welcome {
+  font-size: 1.4em;
+  line-height: 3.5em;
+}
 .user-view {
   background-color: #FA9346;
   color: #fff;
+  padding: 0 10px!important;
 }
 .user-view a,
 .user-view a:hover {
   color: #fff;
+  font-size: .9em;
 }
-
-
 
 /* EVOSUS THEME COLORS */
 .ui-primary,.ui-secondary,.ui-accent,.ui-active,.ui-inactive,.ui-valid,.ui-invalid { color:white; }
