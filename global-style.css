@@ -170,13 +170,18 @@ nav.main-nav {
   text-decoration: none;
 }
 
+.main-nav a.button-collapse i {
+  margin-left: -5px;
+}
+
 .main-nav a.button-collapse,
 .main-nav a.button-collapse i
 {
   border-radius: 50%;
-   height: 2.3em!important;
-    line-height: 1.8em!important;
-    font-size: 1.4em!important; /* So hack it hurts!*/
+  height: 2.3em!important;
+  width: 2.3em!important;
+  line-height: 1.8em!important;
+  font-size: 1.4em!important; /* So hack it hurts!*/
 }
 
 .main-nav a.button-collapse:hover {
