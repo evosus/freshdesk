@@ -108,7 +108,7 @@ h4,
     display: block;
 }
 
-/* MENU */
+/* OLD MENU */
 .hover-underline-menu  {
   width: 100%;
   overflow: hidden;
@@ -156,6 +156,17 @@ h4,
   color: #fff;
   font-size: .9em;
 }
+
+.main-nav a.button-collapse{
+  border-radius: 50%;
+}
+
+.main-nav a.button-collapse:hover {
+  color: #fff;
+  background-color: transparent;
+  box-shadow:0 5px 10px rgba(0,0,0,0.25);
+}
+
 
 /* EVOSUS THEME COLORS */
 .ui-primary,.ui-secondary,.ui-accent,.ui-active,.ui-inactive,.ui-valid,.ui-invalid { color:white; }
