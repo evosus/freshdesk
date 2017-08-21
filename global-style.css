@@ -165,13 +165,11 @@ nav.main-nav {
   font-size: .9em;
 }
 
-nav.main-nv .button-collapse i {
-  height: 3.5em!important;
-  line-height: 3.5em!important;
-}
-
 .main-nav a.button-collapse{
   border-radius: 50%;
+   height: 2.3em!important;
+    line-height: 1.8em;
+    font-size: 1.4em;
 }
 
 .main-nav a.button-collapse:hover {
@@ -179,7 +177,6 @@ nav.main-nv .button-collapse i {
   background-color: transparent;
   box-shadow:0 5px 10px rgba(0,0,0,0.25);
 }
-
 
 /* EVOSUS THEME COLORS */
 .ui-primary,.ui-secondary,.ui-accent,.ui-active,.ui-inactive,.ui-valid,.ui-invalid { color:white; }
