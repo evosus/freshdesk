@@ -152,7 +152,7 @@ nav.main-nav {
 }
 .welcome {
   font-size: 1.4em;
-  line-height: 3.5em;
+  height: 3.5em;
 }
 .user-view {
   background-color: #FA9346;
@@ -163,6 +163,11 @@ nav.main-nav {
 .user-view a:hover {
   color: #fff;
   font-size: .9em;
+}
+
+nav.main-nv .button-collapse i {
+  height: 3.5em!important;
+  line-height: 3.5em!important;
 }
 
 .main-nav a.button-collapse{
