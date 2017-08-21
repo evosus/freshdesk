@@ -40,6 +40,11 @@ h4,
   }
 }
 
+/*REMOVE AGENT ICON*/
+.helpdesk_view .agent_view {
+  display: none!important;
+}
+
 /* Pagination fix - css so ugly it hurts*/
 .pagination li a {
   line-height: 41.75px;
@@ -142,6 +147,9 @@ h4,
 }
 
 /* SIDE MENU */
+nav.main-nav {
+  height: 3.5em;
+}
 .welcome {
   font-size: 1.4em;
   line-height: 3.5em;

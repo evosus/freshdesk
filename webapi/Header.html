@@ -1,49 +1,50 @@
 {% if  portal.current_page != 'csat_survey' %}
-	<header class="banner">
-		<div class="banner-wrapper">
-			<div class="banner-title">
-				{{ portal | logo }}
-				<h1 class="ellipsis heading">{{portal.name|h}}</h1>
-			</div>
-			<nav class="banner-nav">
-				{{ portal | welcome_navigation }}
-			</nav>
-		</div>
-	</header>
-	<nav class="hover-underline-menu">
-
-	  <ul class="menu align-left hide-on-small-only">
-	    <li><a href="https://evosus.freshdesk.com/support/home">Home</a></li>
-	    <li><a href="http://ee-support.evosus.com/support/home">Enterprise</a></li>
-	    <li><a href="https://payroll.evosus.com/support/home">Payroll</a></li>
-	    <li><a href="http://ems-support.evosus.com/support/home">Mobile</a></li>
-	    <li><a href="http://ea-support.evosus.com/support/home">Analytics</a></li>
-	    <li class="active"><a href="http://ewa-support.evosus.com/support/home">Web Services</a></li>
+	<!-- Side menu -->
+	  <ul id="slide-out" class="side-nav">
+	    <li>
+	    	<div class="user-view">
+	      		{{ portal | welcome_navigation }}
+	    	</div>
+	    </li>
+	    <li><a class="waves-effect" href="https://evosus.freshdesk.com/support/home">Home</a></li>
+	    <li><div class="divider"></div></li>
+	    <li><a class="subheader">Products</a></li>
+	    <li><a class="waves-effect" href="http://ee-support.evosus.com/support/home">Enterprise</a></li>
+	    <!--
+	    <li><a class="waves-effect" href="http://ep-support.evosus.com/support/home">Evosus Retail Pro</a></li>
+	    -->
+	    <li><a class="waves-effect" href="https://payroll.evosus.com/support/home">Payroll</a></li>
+	    <li><a class="waves-effect" href="http://ems-support.evosus.com/support/home">Mobile</a></li>
+	    <li><a class="waves-effect" href="http://ea-support.evosus.com/support/home">Analytics</a></li>
+	    <li><a class="waves-effect" href="http://ewa-support.evosus.com/support/home">Web API</a></li>
+	    <li><div class="divider"></div></li>
+	    <li><a class="subheader">Training</a></li>
+	    <li><a class="waves-effect" href="https://www.evosus.com/webinars">Live Webinars</a></li>
+	    <li><a class="waves-effect" href="https://shopevosus.com/pages/self-paced-video-training">How To Videos(Purchase)</a></li>
+	    <li><a class="waves-effect" href="https://evosus.litmos.com/account/login/?">How To Videos(Log In)</a></li>
+	    <li><div class="divider"></div></li>
+	    <li><a class="subheader">Tickets</a></li>
+	    <li><a class="waves-effect" href="https://evosus.freshdesk.com/support/tickets/new">Create a ticket</a></li>
+	    <li><a class="waves-effect" href="https://evosus.freshdesk.com/support/tickets">View tickets</a></li>
 	  </ul>
+	<!-- end side menu -->
 
-	  <!-- Dropdown Structure only appears on mobile-->
-		<ul id="dropdown1" class="dropdown-content">
-		  <li><a href="https://evosus.freshdesk.com/support/home">Home</a></li>
-		  <li><a href="http://ee-support.evosus.com/support/home">Enterprise</a></li>
-		  <li><a href="https://payroll.evosus.com/support/home">Payroll</a></li>
-		  <li><a href="http://ems-support.evosus.com/support/home">Mobile</a></li>
-		  <li><a href="http://ea-support.evosus.com/support/home">Analytics</a></li>
-		  <li><a href="http://ewa-support.evosus.com/support/home">Web Services</a></li>
-		</ul>
-
-	<!-- mobile dropdown menu -->
-	  <ul class="right hide-on-med-and-up">
-	  	 <!-- Dropdown Trigger -->
-      	<li><a class="dropdown-button" href="#!" data-activates="dropdown1">Product<i class="material-icons right">arrow_drop_down</i></a></li>
-	  </ul>
+	<nav class="main-nav">
+	  <div class="nav-wrapper">
+	    	<img id="logo-header" class="brand-logo" src="http://lib.evosus.com/img/evosus_logo-mixed-white.svg" />
+	    <ul class="left">
+      	<li><a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a></li>
+      </ul>
+	  </div><!-- end nav-wrapper -->
 	</nav>
+	<nav class="sub-nav">
+	  <div class="nav-wrapper">
+	    {{portal.name|h}}
+	  </div><!-- end nav-wrapper -->
+	</nav>
+
 {% else %} 
-	<header class="banner">
-		<div class="banner-wrapper">
-			<div class="banner-title">
-				{{ portal | logo : true }}
-				<h1 class="ellipsis heading">{{portal.name|h}}</h1>
-			</div>
-		</div>
-	</header>
+
+	{{ portal | logo : true }}
+
 {% endif %}
