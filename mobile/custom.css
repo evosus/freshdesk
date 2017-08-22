@@ -54,11 +54,6 @@ nav a.button-collapse:hover {
 input#survey_handle_submit:hover {
     display: inherit;
 }
-/* BREADCRUMB FIX */
-.breadcrumb-menu {
-	color: #666666;
-	margin: 10px 0 10px -5%;
-}
 
 /* PARALLAX SCROLLER */
 .parallax-container {

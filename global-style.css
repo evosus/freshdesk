@@ -102,6 +102,10 @@ h3 {
     color: rgba(51,51,51,0.9);
     text-decoration: none;
 }
+.breadcrumb-menu {
+  color: #666666;
+  margin: 10px 0 10px -5%;
+}
 
 /* FIX TO THE LOGIN FORM */
 .alt-login-button a.btn:hover {

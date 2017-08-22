@@ -1,49 +1,41 @@
-.article-body h2 {
- font-size: 1.5em; 
+/* NAV */
+nav {
+	 background-color: #444;
 }
-.article-body h3 {
- font-size: 1.17em; 
-  font-weight: bold;
-}
-.article-body h4 {
- font-size: 1.12em;
-  font-weight: bold;
-}
-
-.shadow { box-shadow:0 5px 10px rgba(0,0,0,0.25); }
-
-/* override background of nav */
-nav.banner-nav {
-	background-color: transparent;
-	color: #333;
-	box-shadow: none;
-}
-
-nav,
 .page-footer {
-	background-color: #aaaaaa;
+	background-color: rgba(0,0,0,.65);
+}
+.footer-copyright {
+	background-color: #444;
 }
 
-/* Search box text */
-input[type="text"] {
-	color: #fff;
-}
-input[type=text]:not(.browser-default) {
-	font-size: 2em;
-}
-input[type="text"]:focus {
-	border-color: transparent;
+nav.sub-nav {
+    height: 2.5em;
+    line-height: 2.5em;
+    font-size: 1.4em;
+    padding-left: 10px;
+    background-color: rgba(0,0,0,.65);
 }
 
-.ticket-form input[type="text"] {
-	color: #333;
+#logo-header {
+	height: 100%;
+	margin-left: 75px;
+}
+
+@media only screen and (min-width: 993px) {
+	nav a.button-collapse {
+		display: block!important;
+	}
+}
+nav a.button-collapse:hover {
+	text-decoration: none!important;
 }
 
 /* button */
 .btn, 
 .btn:hover,
 .btn:active {
-	background-color: #02708C;
+	background-color: #444444;
 	background-image: none;
 	text-shadow: none;
 	color: #ffffff;
@@ -59,59 +51,69 @@ input[type="text"]:focus {
     -webkit-tap-highlight-color: transparent;
 }
 
-.hc-search-button .btn {
-	background-color: #02708C;
 
-	color: #ffffff;
-	border-radius: 2px;
-	border: none;
-	font-size: 1rem;
-	display: inline-block;
-    height: 36px;
-    line-height: 36px;
-    padding: 0 2rem;
-    text-transform: uppercase;
-    vertical-align: middle;
-    -webkit-tap-highlight-color: transparent;
-    width: initial;
-}
 
 /* FIX TO THE LOGIN FORM */
 .alt-login-button a.btn:hover {
     display: block;
 }
-
 /* Fix to submit button on survey form */
 input#survey_handle_submit:hover {
     display: inherit;
 }
 
-.white-text a{
-	color: #fff;
+/* PARALLAX SCROLLER */
+.parallax-container {
+  min-height: 380px;
+  line-height: 0;
+  height: auto;
+  color: rgba(255,255,255,.9);
+}
+.parallax-container .section {
+    width: 100%;
+}
+.parallax-text {
+	margin: 10px 0;
+	line-height: 1em;
+	font-weight: 400;
 }
 
-/* fixes to dropdown menu on mobile */
-@media (max-width: 45em) {
-	nav ul li {
-    	line-height: 55px;
-	}
+.container-content {
+	padding: 75px 0 50px;
 }
 
-@media (max-width: 45em) {
-	li {
-    	line-height: inherit;
-	}
+.header {
+	margin: 25px 0;
 }
 
-.dropdown-button:hover {
-	color: #ffffff;
-	text-decoration: none;
+@media only screen and (max-width : 992px) {
+  .parallax-container .section {
+    position: absolute;
+    top: 40%;
+  }
+  #index-banner .section {
+    top: 10%;
+  }
 }
 
-.dropdown-content li>a, 
-.dropdown-content li>span {
-	color: #333333; 	
+@media only screen and (max-width : 600px) {
+  #index-banner .section {
+    top: 0;
+  }
 }
+
+.img-block {
+  padding: 25px 15px;
+}
+.img-block img {
+	height: 150px;
+}
+
+footer.page-footer {
+  margin: 0;
+}
+
+
 /* new ticket form fixes*/
 .redactor_editor {
 	height: 175px!important;
@@ -166,4 +168,31 @@ a.dropdown-toggle:hover
 .ticket-brief .help-text {
 	color: #666;
 	font-weight: normal;
+}
+
+/* Article-Links color fix*/
+.article-links a:hover {
+  color: #444!important;
+}
+
+/* collapse-body fix*/
+.collapsible-body {
+  background-color: #ffffff;
+}
+
+/* section backgrounds */
+.tech-bg {
+  background-image: url(https://cdn.rawgit.com/evosus/freshdesk/Phase-1/img/mobile-tech.jpg); 
+  background-repeat: no-repeat;  
+  background-size: cover;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.mobile-bg {
+  background-image: url(https://cdn.rawgit.com/evosus/freshdesk/Phase-1/img/mobile-bg.jpg); 
+  background-repeat: no-repeat;  
+  background-size: cover;
+  padding-top: 75px;
+  padding-bottom: 75px;
 }
