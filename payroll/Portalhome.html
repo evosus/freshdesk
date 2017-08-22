@@ -1,13 +1,14 @@
 <!-- Getting Started parallax image -->
-  <div id="index-banner" class="parallax-container">
-    <div class="section no-pad-bot">
-      <div class="container">
-        <div class="container-content">
-
-          <h1 class="header center">Getting started?</h1>
-          <div class="row center">
-            
-			{% for category in portal.solution_categories %}
+  <!--   forms and  timecards  -->
+  <div class="container">
+    <div class="section">
+      <div class="row">
+        <div class="col s12 m6">
+          <div class="img-block center">
+            <img src="https://cdn.rawgit.com/evosus/freshdesk/Phase-1/img/rocket-primary-bg.svg">
+           
+            <h3>Getting Started</h3>
+           	{% for category in portal.solution_categories %}
 				{% for folder in category.folders %}
 					{% if folder.name == 'Getting Started' %}
 							{{ folder | article_list:10 }}
@@ -16,11 +17,42 @@
 			{% endfor %}
 
           </div>
+        </div>
+
+        <div class="col s12 m6">
+          <div class="img-block center">
+            <img src="https://cdn.rawgit.com/evosus/freshdesk/Phase-1/img/life.svg">
+            <h3>Problems</h3>
+
+            {% for category in portal.solution_categories %}
+				{% for folder in category.folders %}
+					{% if folder.name == 'Problems?' %}
+							{{ folder | article_list:10 }}
+					{% endif %}
+				{% endfor %}
+			{% endfor %}
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div id="index-banner" class="parallax-container">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <div class="container-content">
+
+        <div style="height: 200px;"></div>
+
         </div><!-- end container-content -->
       </div><!-- end container -->
     </div><!-- end section -->
     <div class="parallax"><img src="https://cdn.rawgit.com/evosus/freshdesk/Phase-1/img/search-enterprise.jpg" alt=""></div>
   </div>
+
+
 
 
 
@@ -65,8 +97,6 @@
 
 
 
-
-
 <!-- Payroll Team parallax image -->
   <div id="index-banner" class="parallax-container">
     <div class="section no-pad-bot">
@@ -83,35 +113,3 @@
     </div><!-- end section -->
     <div class="parallax"><img src="https://cdn.rawgit.com/evosus/freshdesk/Phase-1/img/payroll-team.jpg" alt=""></div>
   </div>
-
-
-
-
-
-
-
-
-	<div class="row">
-		<div class="col s12">
-			<div class="card horizontal ui-secondary">
-				<div class="card-image"> 	
-					<div id="life-preserver">
-				    	<img id="life" src="https://cdn.rawgit.com/evosus/freshdesk/Phase-1/img/life.svg">
-				    </div><!-- end life-preserver -->
-				</div><!-- end card-image -->
-				<div class="card-content white-text">
-					<span class="card-title">Problems?</span>
-						<div class="white-text">
-						{% for category in portal.solution_categories %}
-							{% for folder in category.folders %}
-								{% if folder.name == 'Problems?' %}
-										{{ folder | article_list:10 }}
-								{% endif %}
-							{% endfor %}
-						{% endfor %}
-						</div>
-				</div><!-- end card-content -->
-			</div><!-- end card -->
-		</div><!-- end col -->
-	</div><!-- end row -->
-</section>
