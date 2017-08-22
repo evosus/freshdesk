@@ -1,20 +1,11 @@
-/* HEADINGS */
-h1 {
-	font-size: 4.2em!important;
-	line-height: 110%!important;
-}
-h2 {
-	font-size: 3.56em!important;
-	line-height: 110%!important;
-}
-h3 {
-	font-size: 2.92em !important;
-	line-height: 110%!important;
-}
-
 /* NAV */
-nav,
+nav {
+	 background-color: #444;
+}
 .page-footer {
+	background-color: rgba(0,0,0,.65);
+}
+.footer-copyright {
 	background-color: #444;
 }
 
