@@ -181,43 +181,26 @@
       <div class="row">
         <div class="col s12 m6">
           <div class="img-block center">
-      
-            	<div id="rocketship-stars">
-	              <img id="star1" src="https://cdn.rawgit.com/evosus/freshdesk/Phase-1/img/star.svg" />
-	              <img id="star2" src="https://cdn.rawgit.com/evosus/freshdesk/Phase-1/img/star.svg" />
-	              <img id="star3" src="https://cdn.rawgit.com/evosus/freshdesk/Phase-1/img/star.svg" />
-	              <img id="star4" src="https://cdn.rawgit.com/evosus/freshdesk/Phase-1/img/star.svg" />
-	              <img id="star5" src="https://cdn.rawgit.com/evosus/freshdesk/Phase-1/img/star.svg" />
-	              <img id="star6" src="https://cdn.rawgit.com/evosus/freshdesk/Phase-1/img/star.svg" />
-	              <img id="star7" src="https://cdn.rawgit.com/evosus/freshdesk/Phase-1/img/star.svg" />
-	              <img id="star8" src="https://cdn.rawgit.com/evosus/freshdesk/Phase-1/img/star.svg" />
-	              <img id="star9" src="https://cdn.rawgit.com/evosus/freshdesk/Phase-1/img/star.svg" />
-	              <img id="star0" src="https://cdn.rawgit.com/evosus/freshdesk/Phase-1/img/star.svg" />
-	              <img id="rocket" src="https://cdn.rawgit.com/evosus/freshdesk/Phase-1/img/rocket.svg">
-	            </div><!-- end card-image -->
-
+	        <img id="rocket" src="https://cdn.rawgit.com/evosus/freshdesk/Phase-1/img/rocket-purple-bg.svg">
             <h3>Getting Started</h3>
 
-            	{% for category in portal.solution_categories %}
-					{% for folder in category.folders %}
-						{% if folder.name == 'Getting Started' %}
-								{{ folder | article_list:10 }}
-						{% endif %}
-					{% endfor %}
+        	{% for category in portal.solution_categories %}
+				{% for folder in category.folders %}
+					{% if folder.name == 'Getting Started' %}
+							{{ folder | article_list:10 }}
+					{% endif %}
 				{% endfor %}
+			{% endfor %}
             
-
           </div>
         </div>
 
         <div class="col s12 m6">
           <div class="img-block center">
-            <div id="life-preserver">
-              <img id="life" src="https://cdn.rawgit.com/evosus/freshdesk/Phase-1/img/life.svg">
-           </div><!-- end life-preserver -->
-
+            <img id="life" src="https://cdn.rawgit.com/evosus/freshdesk/Phase-1/img/life-primary-bg.svg">
             <h3>Problems/</h3>
-           	 {% for category in portal.solution_categories %}
+           	
+           	{% for category in portal.solution_categories %}
 				{% for folder in category.folders %}
 					{% if folder.name == 'Problems?' %}
 							{{ folder | article_list:10 }}
@@ -231,19 +214,21 @@
     </div>
   </div>
 
+<!-- Account Management parallax image -->
+  <div id="index-banner" class="parallax-container">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <div class="container-content">
 
-<!-- end links to topics -->
-<div class="divider"></div>
-	<div class="section mobile-bg">
-	    <h1>Minimum Requirements</h1>
-    	<div class="container">
-		    <table class="bordered striped centered">
+          <div class="row center" style="padding-top:100px; padding-bottom: 100px;">
+            <h1 class="white-text">What are the minimum requirements?</h1>
+             <table class="bordered striped centered" style="color: #444!important;">
 			    <tbody>
 			    <tr>
 			        <td><img src="https://cdn.rawgit.com/evosus/freshdesk/Phase-1/img/apple.png" alt="iOS" /></td>
 			        <td><img src="https://cdn.rawgit.com/evosus/freshdesk/Phase-1/img/android.png" alt="Android" /></td>
 			    </tr>
-			    <tr>
+			    <tr style="background-color: #ffffff;">
 				    <td>iOS 8.0 or later</td>
 				    <td>Android 5.0 or later</td>
 			    </tr>
@@ -252,10 +237,17 @@
 			    </tr>
 			    </tbody>
 		    </table>
-		</div><!-- end container -->
-	</div><!-- end section -->
 
-</div><!-- end container -->
+          </div>
+          
+  
+        </div><!-- end container-content -->
+      </div><!-- end container -->
+    </div><!-- end section -->
+    <div class="parallax"><img src="https://cdn.rawgit.com/evosus/freshdesk/Phase-1/img/mobile-bg.jpg" alt=""></div>
+  </div>
+
+</div>
 
  <!--   Training   -->
   <div class="container">
@@ -284,6 +276,3 @@
       </div>
     </div>
   </div>
-
-
-
