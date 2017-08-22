@@ -9,7 +9,7 @@ nav.sub-nav {
     line-height: 2.5em;
     font-size: 1.4em;
     padding-left: 10px;
-    background-color: rgba(0,0,0,.2);
+    background-color: rgb(2,138,168);
 }
 
 #logo-header {
@@ -30,7 +30,7 @@ nav a.button-collapse:hover {
 .btn, 
 .btn:hover,
 .btn:active {
-	background-color: #3eaba4;
+	background-color: #02708C;
 	background-image: none;
 	text-shadow: none;
 	color: #ffffff;
@@ -81,8 +81,7 @@ input#survey_handle_submit:hover {
 }
 
 .header {
-	font-size: 3em;
-	color: #ffffff;
+	margin: 25px 0;
 }
 
 @media only screen and (max-width : 992px) {
@@ -112,21 +111,9 @@ footer.page-footer {
   margin: 0;
 }
 
-/* ROCKETSHIP CUSTOM */
-#rocketship-stars {
-    background: radial-gradient(ellipse at bottom, #9370DB 0%, #663399 100%);
-}
-/* PROBLEMS CUSTOM */
-#life-preserver {
-    background: radial-gradient(ellipse at bottom, #1E90FF 0%, #4169E1 100%);
-}
-
-/* CARD ACTION COLOR FIX */
-.card .card-action a:not(.btn):not(.btn-large):not(.btn-large):not(.btn-floating) {
-	color: #fff;
-}
-.card .card-action a:not(.btn):not(.btn-large):not(.btn-large):not(.btn-floating):hover {
-	color: #fff;
+/* Article-Links color fix*/
+.article-links a:hover {
+  color: #444!important;
 }
 
 /* collapse-body fix*/
@@ -134,6 +121,7 @@ footer.page-footer {
   background-color: #ffffff;
 }
 
+/* section backgrounds */
 .tech-bg {
   background-image: url(https://cdn.rawgit.com/evosus/freshdesk/Phase-1/img/mobile-tech.jpg); 
   background-repeat: no-repeat;  
