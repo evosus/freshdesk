@@ -38,12 +38,12 @@ nav a.button-collapse:hover {
 	border: none;
 	font-size: 1rem;
 	display: inline-block;
-    height: 36px;
-    line-height: 36px;
-    padding: 0 2rem;
-    text-transform: uppercase;
-    vertical-align: middle;
-    -webkit-tap-highlight-color: transparent;
+  height: 36px;
+  line-height: 36px;
+  padding: 0 2rem;
+  text-transform: uppercase;
+  vertical-align: middle;
+  -webkit-tap-highlight-color: transparent;
 }
 
 /* FIX TO THE LOGIN FORM */
@@ -127,4 +127,21 @@ footer.page-footer {
 }
 .card .card-action a:not(.btn):not(.btn-large):not(.btn-large):not(.btn-floating):hover {
 	color: #fff;
+}
+
+/* collapse-body fix*/
+.collapsible-body {
+  background-color: #ffffff;
+}
+
+.tech-bg {
+  background-image: url(https://cdn.rawgit.com/evosus/freshdesk/Phase-1/img/mobile-tech.jpg); 
+  background-repeat: no-repeat;  
+  background-size: cover;
+}
+
+.mobile-bg {
+  background-image: url(https://cdn.rawgit.com/evosus/freshdesk/Phase-1/img/mobile-bg.jpg); 
+  background-repeat: no-repeat;  
+  background-size: cover;
 }
