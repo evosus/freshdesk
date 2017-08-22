@@ -15,7 +15,7 @@ h3 {
 /* NAV */
 nav,
 .page-footer {
-	background-color: #FA9345;
+	background-color: #444;
 }
 
 nav.sub-nav {
@@ -23,7 +23,7 @@ nav.sub-nav {
     line-height: 2.5em;
     font-size: 1.4em;
     padding-left: 10px;
-    background-color: rgba(0,0,0,.2);
+    background-color: rgba(0,0,0,.65);
 }
 
 #logo-header {
