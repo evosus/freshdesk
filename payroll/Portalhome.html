@@ -1,50 +1,32 @@
 <!-- Getting Started parallax image -->
-  <!--   forms and  timecards  -->
-  <div class="container">
-    <div class="section">
-      <div class="row">
-        <div class="col s12 m6">
-          <div class="img-block center">
-            <img src="https://cdn.rawgit.com/evosus/freshdesk/Phase-1/img/rocket-primary-bg.svg">
-           
-            <h3>Getting Started</h3>
-           	{% for category in portal.solution_categories %}
-				{% for folder in category.folders %}
-					{% if folder.name == 'Getting Started' %}
-							{{ folder | article_list:10 }}
-					{% endif %}
-				{% endfor %}
-			{% endfor %}
-
-          </div>
-        </div>
-
-        <div class="col s12 m6">
-          <div class="img-block center">
-            <img src="https://cdn.rawgit.com/evosus/freshdesk/Phase-1/img/life.svg">
-            <h3>Problems</h3>
-
-            {% for category in portal.solution_categories %}
-				{% for folder in category.folders %}
-					{% if folder.name == 'Problems?' %}
-							{{ folder | article_list:10 }}
-					{% endif %}
-				{% endfor %}
-			{% endfor %}
-
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
 
   <div id="index-banner" class="parallax-container">
     <div class="section no-pad-bot">
       <div class="container">
         <div class="container-content">
 
-        <div style="height: 200px;"></div>
+        
+          <div class="row center">
+              <div class="col s12 m6 offset-m6">
+                 <div class="img-block center">
+                    <img src="https://cdn.rawgit.com/evosus/freshdesk/Phase-1/img/rocket-primary-bg.svg">
+
+
+                    <h3 class="grey-text text-darken-2">Getting Started</h3>
+            
+                   <div class="article-links-dk">
+                    {% for category in portal.solution_categories %}
+                      {% for folder in category.folders %}
+                        {% if folder.name == 'Getting Started' %}
+                            {{ folder | article_list:10 }}
+                        {% endif %}
+                      {% endfor %}
+                    {% endfor %}
+                  </div>
+
+                </div>
+              </div>
+          </div>
 
         </div><!-- end container-content -->
       </div><!-- end container -->
@@ -52,47 +34,90 @@
     <div class="parallax"><img src="https://cdn.rawgit.com/evosus/freshdesk/Phase-1/img/search-enterprise.jpg" alt=""></div>
   </div>
 
-
-
-
-
  <!--   forms and  timecards  -->
-  <div class="container">
-    <div class="section">
-      <div class="row">
-        <div class="col s12 m6">
-          <div class="img-block center">
-            <img src="https://cdn.rawgit.com/evosus/freshdesk/Phase-1/img/forms-primary-bg.svg">
-            <h3>Forms</h3>
-      		<ul>
-		      <li><a href="https://cdn.rawgit.com/evosus/freshdesk/Phase-1/forms/Direct Deposit Authorization.pdf" target="_blank">Direct Deposit Authorization</a></li>
-		      <li><a href="https://cdn.rawgit.com/evosus/freshdesk/Phase-1/forms/4th Qtr_Evosus.pdf" target="_blank">Pay-As-You-Go! Workers Compensation</a></li>
-		      <li><a href="https://cdn.rawgit.com/evosus/freshdesk/Phase-1/forms/Evosus Payroll Implementation Guide- 2016.pdf" target="_blank">Evosus Payroll Implementation Guide</a></li>
-		      <li><a href="https://cdn.rawgit.com/evosus/freshdesk/Phase-1/forms/EPS Payroll Card Enrollment Form.doc" target="_blank">EPS Payroll Card Enrollment Form</a></li>
-		      <li><a href="https://cdn.rawgit.com/evosus/freshdesk/Phase-1/forms/Ordering Guide for W2s and 1099 Forms.pdf" target="_blank">Illustrated Ordering Guide for W2s and 1099 Forms</a></li>
-		  </ul>	
+ <div class="section" style="background-color: #444444;">
+    <div class="container">
 
+
+     <div class="row center">
+        <div class="col s12 m6 offset-m3">
+          <div class="img-block center">
+            <img src="https://cdn.rawgit.com/evosus/freshdesk/Phase-1/img/forms.svg">
+
+            <h3 class="white-text">Forms</h3>
+            <ul>
+              <li><a class="white-text" href="https://cdn.rawgit.com/evosus/freshdesk/Phase-1/forms/Direct Deposit Authorization.pdf" target="_blank">Direct Deposit Authorization</a></li>
+              <li><a class="white-text" href="https://cdn.rawgit.com/evosus/freshdesk/Phase-1/forms/4th Qtr_Evosus.pdf" target="_blank">Pay-As-You-Go! Workers Compensation</a></li>
+              <li><a class="white-text" href="https://cdn.rawgit.com/evosus/freshdesk/Phase-1/forms/Evosus Payroll Implementation Guide- 2016.pdf" target="_blank">Evosus Payroll Implementation Guide</a></li>
+              <li><a class="white-text" href="https://cdn.rawgit.com/evosus/freshdesk/Phase-1/forms/EPS Payroll Card Enrollment Form.doc" target="_blank">EPS Payroll Card Enrollment Form</a></li>
+              <li><a class="white-text" href="https://cdn.rawgit.com/evosus/freshdesk/Phase-1/forms/Ordering Guide for W2s and 1099 Forms.pdf" target="_blank">Illustrated Ordering Guide for W2s and 1099 Forms</a></li>
+          </ul> 
+        
+            
+                  
           </div>
         </div>
+    </div>
 
-        <div class="col s12 m6">
+
+  </div>
+</div>
+
+ <div class="section mobile-bg">
+    <div class="container">
+
+      <div class="row">
+        <div class="col s12 m6 offset-m6">
           <div class="img-block center">
-            <img src="https://rawgit.com/evosus/freshdesk/Phase-1/img/timecards.svg">
-            <h3>Timecards</h3>
+            <img src="https://cdn.rawgit.com/evosus/freshdesk/Phase-1/img/life.svg">
+            <h3 class="white-text">Problems</h3>
 
-	 		{% for category in portal.solution_categories %}
-				{% for folder in category.folders %}
-					{% if folder.name == 'Timecards' %}
-							{{ folder | article_list:20 }}
-					{% endif %}
-				{% endfor %}
-			{% endfor %}
+            <div class="article-links">
+              {% for category in portal.solution_categories %}
+                {% for folder in category.folders %}
+                  {% if folder.name == 'Problems?' %}
+                      {{ folder | article_list:10 }}
+                  {% endif %}
+                {% endfor %}
+              {% endfor %}
+            </div>
 
           </div>
         </div>
       </div>
+  
+
     </div>
   </div>
+
+ <!--   forms and  timecards  -->
+ <div class="section" style="background-color: #444444;">
+    <div class="row center">
+        
+        <div class="col s12 m6 offset-m3">
+          <div class="img-block center">
+
+            <img src="https://rawgit.com/evosus/freshdesk/Phase-1/img/timecards.svg">
+
+            <h3 class="white-text">Timecards</h3>
+            
+            <div class="article-links">
+              {% for category in portal.solution_categories %}
+                {% for folder in category.folders %}
+                  {% if folder.name == 'Timecards' %}
+                      {{ folder | article_list:20 }}
+                  {% endif %}
+                {% endfor %}
+              {% endfor %}
+            </div>
+        </div>
+      </div>
+
+  </div>
+</div>
+
+
+
 
 <!-- Payroll Team parallax image -->
   <div id="index-banner" class="parallax-container">
