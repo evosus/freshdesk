@@ -1,17 +1,3 @@
-.article-body h2 {
- font-size: 1.5em; 
-}
-.article-body h3 {
- font-size: 1.17em; 
-  font-weight: bold;
-}
-.article-body h4 {
- font-size: 1.12em;
-  font-weight: bold;
-}
-
-.shadow { box-shadow:0 5px 10px rgba(0,0,0,0.25); }
-
 /* NAV */
 nav.banner-nav {
 	background-color: transparent;
@@ -115,7 +101,7 @@ nav a.button-collapse:hover {
 }
 .bg-computer {
 	background-color: #333333;
-	background-image: url(https://cdn2.hubspot.net/hubfs/1835951/Evosus-Dec2015-Image/schedule-a-demo-bg.jpg?t=1496207419083);
+	background-image: url(https://cdn.rawgit.com/evosus/freshdesk/Phase-1/img/computer-bg.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
 }

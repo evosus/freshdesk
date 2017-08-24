@@ -1,63 +1,136 @@
-.shadow { box-shadow:0 5px 10px rgba(0,0,0,0.25); }
-
-/* override background of nav */
+/* NAV */
 nav.banner-nav {
 	background-color: transparent;
 	color: #333;
 	box-shadow: none;
 }
 
-nav {
-	background-color: #444444;
+.nav-wrapper a.dropdown-button{
+    line-height: 64px;
 }
 
-.hover-underline-menu .menu li .active{
-  background-color: #999999;
-}
-
-.hover-underline-menu .menu a:hover, 
-.hover-underline-menu .menu .active,
-.page-footer .footer-copyright
-{
-    background-color: #333;
-}
-
+nav,
 .page-footer {
-	background-color: #444444;
+	background-color: #3eaba4;
 }
 
-.card-content a {
+nav.sub-nav {
+    height: 2.5em;
+    line-height: 2.5em;
+    font-size: 1.4em;
+    padding-left: 10px;
+    background-color: #58C5BE;
+}
+
+#logo-header {
+	height: 100%;
+	margin-left: 75px;
+}
+
+@media only screen and (min-width: 993px) {
+	nav a.button-collapse {
+		display: block!important;
+	}
+}
+nav a.button-collapse:hover {
+	text-decoration: none!important;
+}
+
+/* Search box text - Header*/
+#search-main input[type="text"],
+.search-container input[type="text"] {
 	color: #fff;
 }
-
-.breadcrumb-menu {
-	color: #666666;
-	margin-bottom: 20px;
-}
-
-/* SEARCH CONTAINER */
-.search-container {
-  	min-height: 300px;
-	background: no-repeat center url("https://rawgit.com/evosus/freshdesk/Phase-1/img/search-enterprise.jpg");
-	background-size: cover;
-}
-
-/* Search box text */
-input[type="text"] {
-	color: #333;
-}
-input[type=text]:not(.browser-default) {
+#search-main input[type=text]:not(.browser-default),
+.search-container input[type=text]:not(.browser-default) {
 	font-size: 2em;
 }
-input[type="text"]:focus {
+#search-main input[type="text"]:focus,
+.search-container input[type="text"]:focus {
 	border-color: transparent;
+}
+
+/* Search Box - Portal Homepage */
+.searchbox-header {
+	font-size: 3.5em;
+	color: #ffffff;
+}
+
+.searchbox-subheader {
+	font-size: 1.75em;
+	color: #ffffff;
+	margin-bottom: 30px;
+}
+
+@media only screen and (max-width: 992px) {
+	.parallax-container .section {
+    	top: inherit!important;
+	}
+	.searchbox-header {
+		font-size: 2.5em;
+		color: #ffffff;
+	}
+	.searchbox-subheader {
+		font-size: 1.25em;
+	}
+}
+
+/*CAROUSEL - Product*/
+.carousel-product {
+    height: 200px!important;
+}
+.carousel-product-item {
+	text-align: center; 
+	line-height: 100px;
+	height: 100px!important;
+}
+.carousel-product-item:hover {
+	text-decoration: none;
+}
+.carousel-item-title {
+	color: #fff; 
+	font-size: 30px;
+}
+
+/* CAROUSEL - Header*/
+.bg-fun {
+	background-color: #0000000;
+	background-image: url(https://cdn.rawgit.com/evosus/freshdesk/Phase-1/img/social-media.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.bg-computer {
+	background-color: #333333;
+	background-image: url(https://cdn.rawgit.com/evosus/freshdesk/Phase-1/img/computer-bg.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.bg-dashboard {
+	background-color: #333333;
+	background-image: url(https://cdn.rawgit.com/evosus/freshdesk/Phase-1/img/dashboard-bg.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.bg-routing {
+	background-color: #333333;
+	background-image: url(https://cdn.rawgit.com/evosus/freshdesk/Phase-1/img/routing-bg.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.carousel-header {
+	margin-top: 100px;
+	margin-bottom: 25px;
+}
+.carousel-slider p {
+	font-size: 1.2em!important;
+    margin-bottom: 25px;
 }
 
 /* button */
 .btn, 
 .btn:hover,
 .btn:active {
-	background-color: #02708C;
+	background-color: #3eaba4;
 	background-image: none;
 	text-shadow: none;
 	color: #ffffff;
@@ -74,8 +147,7 @@ input[type="text"]:focus {
 }
 
 .hc-search-button .btn {
-	background-color: #02708C;
-
+	background-color: #3eaba4;
 	color: #ffffff;
 	border-radius: 2px;
 	border: none;
@@ -89,6 +161,17 @@ input[type="text"]:focus {
     -webkit-tap-highlight-color: transparent;
     width: initial;
 }
+
+/* FIX TO THE LOGIN FORM */
+.alt-login-button a.btn:hover {
+    display: block;
+}
+/* Fix to submit button on survey form */
+input#survey_handle_submit:hover {
+    display: inherit;
+}
+
+
 /* fixes to dropdown menu on mobile */
 @media (max-width: 45em) {
 	li {
@@ -112,10 +195,133 @@ input[type="text"]:focus {
 	color: #333333; 	
 }
 
-/* CARD ACTION COLOR FIX */
-.card .card-action a:not(.btn):not(.btn-large):not(.btn-large):not(.btn-floating) {
-	color: #fff;
+/* new ticket form fixes*/
+.redactor_editor {
+	height: 175px!important;
 }
-.card .card-action a:not(.btn):not(.btn-large):not(.btn-large):not(.btn-floating):hover {
-	color: #fff;
+.ticket-form input[type="text"] {
+	color: #333;
+}
+#view-tickets {
+	background-color: #02708C;
+}
+.btn-large {
+    line-height: 54px;
+    border-radius: 50%;
+    padding: inherit;
+
+}
+.btn-large:hover {
+	text-decoration: none;
+}
+
+#view-tickets li {
+	line-height: inherit;
+}
+
+#ticket-filters,
+#ticket-sub-toolbar,
+.dropdown-toggle
+ {
+	display: inline;
+	font-weight: normal;
+	line-height: 60px;
+	color: #ffffff;
+	font-size: 18px;
+}
+a.dropdown-toggle:hover
+{
+    color: #fff;
+    background-color: transparent;
+}
+#view-tickets .caret {
+	display: none;
+}
+.content .lead {
+	margin: 100px 0;
+    text-align: center;
+    color: #999;
+}
+.ticket-brief a {
+	color: #333;
+	font-weight: normal;
+}
+.ticket-brief .help-text {
+	color: #666;
+	font-weight: normal;
+}
+
+/*BREADCRUMBS FIX */
+a.breadcrumb-item {
+	color: #666666;
+	font-size: .9em;
+}
+a.breadcrumb-item:hover {
+	color: #666666;
+	font-size: .9em;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+/* CARD FIX */
+.card-image {
+	background-color: #3eaba4;
+}
+
+/* PARALLAX SCROLLER */
+.parallax-container {
+  min-height: 380px;
+  line-height: 0;
+  height: auto;
+  color: rgba(255,255,255,.9);
+}
+.parallax-container .section {
+    width: 100%;
+}
+.parallax-text {
+	margin: 10px 0;
+	line-height: 1em;
+	font-weight: 400;
+}
+
+.social-media {
+	min-height: 800px;
+	background-image: url(https://cdn.rawgit.com/evosus/freshdesk/Phase-1/img/social-media.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.container-content {
+	padding: 75px 0 50px;
+}
+
+.header {
+	font-size: 3em;
+	color: #ffffff;
+}
+
+@media only screen and (max-width : 992px) {
+  .parallax-container .section {
+    position: absolute;
+    top: 40%;
+  }
+  #index-banner .section {
+    top: 10%;
+  }
+}
+
+@media only screen and (max-width : 600px) {
+  #index-banner .section {
+    top: 0;
+  }
+}
+
+.img-block {
+  padding: 25px 15px;
+}
+.img-block img {
+	height: 150px;
+}
+
+footer.page-footer {
+  margin: 0;
 }

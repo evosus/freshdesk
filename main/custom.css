@@ -1,22 +1,12 @@
-.article-body h2 {
- font-size: 1.5em; 
-}
-.article-body h3 {
- font-size: 1.17em; 
-  font-weight: bold;
-}
-.article-body h4 {
- font-size: 1.12em;
-  font-weight: bold;
-}
-
-.shadow { box-shadow:0 5px 10px rgba(0,0,0,0.25); }
-
-/* override background of nav */
+/* NAV */
 nav.banner-nav {
 	background-color: transparent;
 	color: #333;
 	box-shadow: none;
+}
+
+.nav-wrapper a.dropdown-button{
+    line-height: 64px;
 }
 
 nav,
@@ -24,15 +14,116 @@ nav,
 	background-color: #3eaba4;
 }
 
-/* Search box text */
+nav.sub-nav {
+    height: 2.5em;
+    line-height: 2.5em;
+    font-size: 1.4em;
+    padding-left: 10px;
+    background-color: #58C5BE;
+}
+
+#logo-header {
+	height: 100%;
+	margin-left: 75px;
+}
+
+@media only screen and (min-width: 993px) {
+	nav a.button-collapse {
+		display: block!important;
+	}
+}
+nav a.button-collapse:hover {
+	text-decoration: none!important;
+}
+
+/* Search box text - Header*/
+#search-main input[type="text"],
 .search-container input[type="text"] {
 	color: #fff;
 }
+#search-main input[type=text]:not(.browser-default),
 .search-container input[type=text]:not(.browser-default) {
 	font-size: 2em;
 }
+#search-main input[type="text"]:focus,
 .search-container input[type="text"]:focus {
 	border-color: transparent;
+}
+
+/* Search Box - Portal Homepage */
+.searchbox-header {
+	font-size: 3.5em;
+	color: #ffffff;
+}
+
+.searchbox-subheader {
+	font-size: 1.75em;
+	color: #ffffff;
+	margin-bottom: 30px;
+}
+
+@media only screen and (max-width: 992px) {
+	.parallax-container .section {
+    	top: inherit!important;
+	}
+	.searchbox-header {
+		font-size: 2.5em;
+		color: #ffffff;
+	}
+	.searchbox-subheader {
+		font-size: 1.25em;
+	}
+}
+
+/*CAROUSEL - Product*/
+.carousel-product {
+    height: 200px!important;
+}
+.carousel-product-item {
+	text-align: center; 
+	line-height: 100px;
+	height: 100px!important;
+}
+.carousel-product-item:hover {
+	text-decoration: none;
+}
+.carousel-item-title {
+	color: #fff; 
+	font-size: 30px;
+}
+
+/* CAROUSEL - Header*/
+.bg-fun {
+	background-color: #0000000;
+	background-image: url(https://cdn.rawgit.com/evosus/freshdesk/Phase-1/img/social-media.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.bg-computer {
+	background-color: #333333;
+	background-image: url(https://cdn2.hubspot.net/hubfs/1835951/Evosus-Dec2015-Image/schedule-a-demo-bg.jpg?t=1496207419083);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.bg-dashboard {
+	background-color: #333333;
+	background-image: url(https://cdn.rawgit.com/evosus/freshdesk/Phase-1/img/dashboard-bg.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.bg-routing {
+	background-color: #333333;
+	background-image: url(https://cdn.rawgit.com/evosus/freshdesk/Phase-1/img/routing-bg.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.carousel-header {
+	margin-top: 100px;
+	margin-bottom: 25px;
+}
+.carousel-slider p {
+	font-size: 1.2em!important;
+    margin-bottom: 25px;
 }
 
 /* button */
@@ -78,30 +169,6 @@ nav,
 /* Fix to submit button on survey form */
 input#survey_handle_submit:hover {
     display: inherit;
-}
-
-
-/* fixes to dropdown menu on mobile */
-@media (max-width: 45em) {
-	li {
-    	line-height: 55px;
-	}
-}
-
-@media (max-width: 45em) {
-	li {
-    	line-height: inherit;
-	}
-}
-
-.dropdown-button:hover {
-	color: #ffffff;
-	text-decoration: none;
-}
-
-.dropdown-content li>a, 
-.dropdown-content li>span {
-	color: #333333; 	
 }
 
 /* new ticket form fixes*/
@@ -159,9 +226,6 @@ a.dropdown-toggle:hover
 	color: #666;
 	font-weight: normal;
 }
-.brand-logo {
-	margin-left: 10px;
-}
 
 /* CARD ACTION COLOR FIX */
 .card .card-action a:not(.btn):not(.btn-large):not(.btn-large):not(.btn-floating) {
@@ -186,4 +250,62 @@ a.breadcrumb-item:hover {
 /* CARD FIX */
 .card-image {
 	background-color: #3eaba4;
+}
+
+/* PARALLAX SCROLLER */
+.parallax-container {
+  min-height: 380px;
+  line-height: 0;
+  height: auto;
+  color: rgba(255,255,255,.9);
+}
+.parallax-container .section {
+    width: 100%;
+}
+.parallax-text {
+	margin: 10px 0;
+	line-height: 1em;
+	font-weight: 400;
+}
+
+.social-media {
+	min-height: 800px;
+	background-image: url(https://cdn.rawgit.com/evosus/freshdesk/Phase-1/img/social-media.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.container-content {
+	padding: 75px 0 50px;
+}
+
+.header {
+	font-size: 3em;
+	color: #ffffff;
+}
+
+@media only screen and (max-width : 992px) {
+  .parallax-container .section {
+    position: absolute;
+    top: 40%;
+  }
+  #index-banner .section {
+    top: 10%;
+  }
+}
+
+@media only screen and (max-width : 600px) {
+  #index-banner .section {
+    top: 0;
+  }
+}
+
+.img-block {
+  padding: 25px 15px;
+}
+.img-block img {
+	height: 150px;
+}
+
+footer.page-footer {
+  margin: 0;
 }

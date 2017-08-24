@@ -1,12 +1,8 @@
-<section class="main content min-height-on-desktop" id="article-show-{{ article.id }}">
+<div class="container" id="article-show-{{ article.id }}">
 	<div class="breadcrumb-menu">
-		<span>{{ article.category.name | h}}</span>
-		<i class="tiny material-icons">chevron_right</i>
-		<span>{{ article.folder.name | h}}</span>
+		<a href="/support/home"><i class="tiny material-icons">arrow_back</i> Back to home </a>
+		<span><i class="tiny material-icons">chevron_right</i><a href="{{ article.folder.url }}">{{ article.folder.name | h}}</a></span>
 	</div>
-	<b class="page-stamp page-stamp-article">
-		<b class="icon-page-article"></b>
-	</b>
 
 	<h2 class="heading">{{ article.title | h}}
 		<a href="javascript:print();" class="icon-print solution-print-icon" title="{% translate portal.print_title %}"></a>
@@ -33,7 +29,6 @@
 
 		{{article | article_voting }}
 		
-</section>
-<section class="sidebar content">
-	{{ article | related_articles: 15, 'related_articles' }}
-</section>
+		{{ article | related_articles: 15, 'related_articles' }}
+</div>
+
