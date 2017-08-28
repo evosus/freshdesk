@@ -29,7 +29,7 @@ function _classCallCheck(t,e){if(!(t instanceof e))throw new TypeError("Cannot c
 
 
 	$(document).ready(function(){
-			// replace search text
+		  // replace search text
 		  $('#support-search-input').attr("placeholder", "Search all products...");
 			
 		  // login page button fix 
@@ -42,6 +42,12 @@ function _classCallCheck(t,e){if(!(t instanceof e))throw new TypeError("Cannot c
 				$('#login-form-new').removeClass("hide");
 				$('#forgot-form-new').addClass("hide");
 			});
+
+
+		  // Fix reply to ticket on ticket detail
+		    $('#add-note-form-proxy').addClass('hide');
+  			$('#add-note-form').removeClass('hide');
+
 
 		  //SIDE MENU
 		  $(".button-collapse").sideNav();
