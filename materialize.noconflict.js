@@ -25,9 +25,6 @@ function _classCallCheck(t,e){if(!(t instanceof e))throw new TypeError("Cannot c
 				$('#forgot-form-new').addClass("hide");
 			});
 
-
-
-
 		  //SIDE MENU
 		  $(".button-collapse").sideNav();
 		  // Initialize collapsible (uncomment the line below if you use the dropdown variation)
