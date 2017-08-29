@@ -13,6 +13,11 @@ jQuery_2_1_1 ( document ).ready(function($) {
 		$('#forgot-form-new').addClass("hide");
 	});
 
+     // Fix reply to ticket on ticket detail
+    $('#add-note-form-proxy').addClass('hide');
+    $('#add-note-form').removeClass('hide');
+
+
   //SIDE MENU
   $(".button-collapse").sideNav();
   // Initialize collapsible (uncomment the line below if you use the dropdown variation)
