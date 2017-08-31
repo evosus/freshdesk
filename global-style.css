@@ -14,6 +14,7 @@ h2 {
 h3 {
   font-size: 2.6em !important;
   line-height: 110%!important;
+  padding: 15px;
 }
 
 .page-content {
@@ -108,6 +109,10 @@ h3 {
 .breadcrumb-menu {
   color: #666666;
   margin: 10px 0 10px -5%;
+}
+
+#related_articles {
+  margin-top: 50px;
 }
 
 /* FIX TO THE LOGIN FORM */
