@@ -16,6 +16,9 @@ h3 {
   line-height: 110%!important;
 }
 
+.page-content {
+  margin-top: 25px;
+}
 .content {
 	margin-top: 0!important;
 }
