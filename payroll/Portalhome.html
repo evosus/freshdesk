@@ -69,18 +69,28 @@
       <div class="row">
         <div class="col s12 m6 offset-m6">
           <div class="img-block center">
-            <img src="https://cdn.rawgit.com/evosus/freshdesk/Phase-1/img/life.svg">
-            <h3 class="white-text">Problems</h3>
 
+
+
+
+            <img src="https://rawgit.com/evosus/freshdesk/Phase-1/img/timecards.svg">
+
+            <h3 class="white-text">Timecards</h3>
+            
             <div class="article-links">
               {% for category in portal.solution_categories %}
                 {% for folder in category.folders %}
-                  {% if folder.name == 'Problems?' %}
-                      {{ folder | article_list:10 }}
+                  {% if folder.name == 'Timecards' %}
+                      {{ folder | article_list:20 }}
                   {% endif %}
                 {% endfor %}
               {% endfor %}
             </div>
+
+
+
+
+         
 
           </div>
         </div>
@@ -97,19 +107,25 @@
         <div class="col s12 m6 offset-m3">
           <div class="img-block center">
 
-            <img src="https://rawgit.com/evosus/freshdesk/Phase-1/img/timecards.svg">
+       
 
-            <h3 class="white-text">Timecards</h3>
-            
+            <img src="https://cdn.rawgit.com/evosus/freshdesk/Phase-1/img/life.svg">
+            <h3 class="white-text">Problems</h3>
+
             <div class="article-links">
               {% for category in portal.solution_categories %}
                 {% for folder in category.folders %}
-                  {% if folder.name == 'Timecards' %}
-                      {{ folder | article_list:20 }}
+                  {% if folder.name == 'Problems?' %}
+                      {{ folder | article_list:10 }}
                   {% endif %}
                 {% endfor %}
               {% endfor %}
             </div>
+
+
+
+
+
         </div>
       </div>
 
