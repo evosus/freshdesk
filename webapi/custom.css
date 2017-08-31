@@ -61,6 +61,7 @@ input#survey_handle_submit:hover {
   line-height: 0;
   height: auto;
   color: rgba(255,255,255,.9);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, .9);
 }
 .parallax-container .section {
     width: 100%;
@@ -68,6 +69,7 @@ input#survey_handle_submit:hover {
 .parallax-text {
 	margin: 10px 0;
 	line-height: 1em;
+  font-size: 1.2em;
 	font-weight: 400;
 }
 
@@ -106,12 +108,3 @@ input#survey_handle_submit:hover {
 footer.page-footer {
   margin: 0;
 }
-
-/* Life-preserver custom */
-#life {
-	margin-top: 0;
-}
-#life-preserver {
-	background-image: none;
-}
-
