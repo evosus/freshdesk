@@ -40,6 +40,7 @@ nav a.button-collapse:hover {
 #search-main input[type=text]:not(.browser-default),
 .search-container input[type=text]:not(.browser-default) {
 	font-size: 2em;
+	color: #fff;
 }
 #search-main input[type="text"]:focus,
 .search-container input[type="text"]:focus {
@@ -50,12 +51,6 @@ nav a.button-collapse:hover {
 .searchbox-header {
 	font-size: 3.5em;
 	color: #ffffff;
-}
-
-.searchbox-subheader {
-	font-size: 1.75em;
-	color: #ffffff;
-	margin-bottom: 30px;
 }
 
 @media only screen and (max-width: 992px) {
@@ -257,11 +252,6 @@ a.breadcrumb-item:hover {
 	font-size: .9em;
 	font-weight: bold;
 	text-decoration: none;
-}
-
-/* CARD FIX */
-.card-image {
-	background-color: #3eaba4;
 }
 
 /* PARALLAX SCROLLER */
