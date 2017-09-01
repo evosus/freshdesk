@@ -1,10 +1,10 @@
 <div class="page-content">
 
 	<div class="container" id="solutions-category-{{ category.id }}">
-		<div class="breadcrumb">
-			<a href="{{ portal.solutions_home_url }}">{% translate portal.solutions_home %}</a>
+		<div class="breadcrumb-menu">
+			<a href="/support/home"><i class="tiny material-icons">arrow_back</i> Back to home </a>
 		</div>
-		<h2 class="heading">{{ category.name | h}}</h2>
+		<h2 class="heading">List of all topics</h2>
 		<div class="cs-g-c">
 			{% for folder in category.folders %}
 				{% if folder.articles_count > 0 %}
@@ -13,7 +13,7 @@
 							{{ folder | link_to_folder_with_count }}
 						</div>
 						<ul>
-							{% for article in folder.articles limit:5 %}
+							{% for article in folder.articles limit:10 %}
 							<li>
 								<div class="ellipsis">
 									<a href="{{article.url}}" title="{{article.title | h}}">{{article.title |h}}</a>
@@ -21,7 +21,7 @@
 							</li>
 							{% endfor %}
 						</ul>
-						{% if folder.articles.size > 5 %}
+						{% if folder.articles.size > 10 %}
 							{{ folder | link_to_see_all_articles }}
 						{% endif %}
 					</section>

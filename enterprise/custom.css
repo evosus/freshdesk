@@ -53,6 +53,15 @@ nav a.button-collapse:hover {
 	color: #ffffff;
 }
 
+input[type=text]:not(.browser-default) {
+	border-bottom: 2px solid #fff!important;
+}
+
+#search-main input[type="text"]:focus, 
+.search-container input[type="text"]:focus {
+	box-shadow: none;
+}
+
 @media only screen and (max-width: 992px) {
 	.parallax-container .section {
     	top: inherit!important;

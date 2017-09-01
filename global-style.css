@@ -73,6 +73,10 @@ h3 {
   font-size: 1.35em;
 }
 
+.match {
+  background-color: rgba(62, 171, 164, .8)!important;
+}
+
 /* SEARCH CONTAINER */
 .search-container {
   	min-height: 300px;
