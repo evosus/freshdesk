@@ -6,7 +6,7 @@
 			<ul class="search-results-list">
 				{% for result in search.results %}
 				<li class="{{ result.type | downcase }}-item">				
-					<a href="{{result.url}}">{{ result.title }}</a>
+					<a class="topic-title-listing" href="{{result.url}}">{{ result.title }}</a>
 					<span class="label label-small label-light">{{ result.group }}</span>
 					<div>{{ result.desc }}</div>
 					<p class="help-text">

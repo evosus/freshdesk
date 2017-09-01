@@ -47,6 +47,7 @@ h3 {
 /* Pagination fix - css so ugly it hurts*/
 .pagination li a {
   line-height: 41.75px;
+  background: none!important;
 }
 .pagination li {
   height: 43px;
@@ -62,6 +63,14 @@ h3 {
 }
 .pagination li.disabled {
   background-color: #efefef!important;
+}
+.pagination li.disabled a {
+  text-decoration: none;
+}
+
+/* Search Results/Folder List Fixes*/
+.topic-title-listing {
+  font-size: 1.35em;
 }
 
 /* SEARCH CONTAINER */

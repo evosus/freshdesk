@@ -13,7 +13,7 @@
 					{% for article in paginate.collection %}
 						<div class="c-row c-article-row">
 							<div class="ellipsis article-title"> 
-								<a href="{{ article.url }}" class="c-link">{{ article.title | h }}</a>
+								<a class="topic-title-listing" href="{{ article.url }}" class="c-link">{{ article.title | h }}</a>
 							</div>
 							<div>
 								{{  article.body_plain | h | truncate:250 }}
