@@ -1,6 +1,6 @@
 jQuery_2_1_1 ( document ).ready(function($) {
 	// replace search text
-  $('#support-search-input').attr("placeholder", "Search all products...");
+  $('#support-search-input').attr("placeholder", "How can we help you today?");
 	
   // login page button fix 
   $('#forgot_password').click(function() {

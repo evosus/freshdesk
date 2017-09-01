@@ -37,10 +37,6 @@ nav a.button-collapse:hover {
 }
 
 /* Search box text - Header*/
-#search-main input[type="text"],
-.search-container input[type="text"] {
-	color: #fff;
-}
 #search-main input[type=text]:not(.browser-default),
 .search-container input[type=text]:not(.browser-default) {
 	font-size: 2em;
