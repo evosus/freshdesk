@@ -28,7 +28,7 @@ jQuery_2_1_1 ( document ).ready(function($) {
 
    //
 
-    var carouselAutoSlide = setInterval(carouselNext, 3000); //carousel moves to next slide every 3 seconds
+    var carouselAutoSlide = setInterval(carouselNext, 7000); //carousel moves to next slide every 3 seconds
 
     function carouselNext() {
       $('#main-carousel').carousel('next');
