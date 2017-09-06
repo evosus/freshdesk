@@ -20,10 +20,19 @@ jQuery_2_1_1 ( document ).ready(function($) {
 
   //SIDE MENU
   $(".button-collapse").sideNav();
-  // Initialize collapsible (uncomment the line below if you use the dropdown variation)
-  //$('.collapsible').collapsible();
+
    //COMPONENT INIT
    $('.parallax').parallax();
    $('.carousel').carousel();
-   $('.carousel.carousel-slider').carousel({fullWidth: true});
+   $('#main-carousel').carousel({fullWidth: true, indicators: true}); //
+
+   //
+
+    var carouselAutoSlide = setInterval(carouselNext, 3000); //carousel moves to next slide every 3 seconds
+
+    function carouselNext() {
+      $('#main-carousel').carousel('next');
+    }
+
+
 });
