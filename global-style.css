@@ -133,39 +133,6 @@ h3 {
     display: block;
 }
 
-/* OLD MENU */
-.hover-underline-menu  {
-  width: 100%;
-  overflow: hidden;
-  height: 60px;
-}
-
-.hover-underline-menu .menu a {
-  color: #fefefe;
-  padding: 1.2rem 1.5rem;
-  text-decoration: none;
-}
-
-.hover-underline-menu .menu .underline-from-center {
-  position: relative;
-}
-
-.hover-underline-menu .menu .underline-from-center::after {
-  content: "";
-  position: absolute;
-  top: calc(100% - 0.125rem);
-  border-bottom: 0.125rem solid #fefefe;
-  left: 50%;
-  right: 50%;
-  transition: all 0.5s ease;
-}
-
-.hover-underline-menu .menu .underline-from-center:hover::after {
-  left: 0;
-  right: 0;
-  transition: all 0.5s ease;
-}
-
 /* SIDE MENU */
 nav.main-nav {
   height: 3.5em;
@@ -208,6 +175,16 @@ nav.main-nav {
   color: #fff;
   background-color: transparent;
   box-shadow:0 5px 10px rgba(0,0,0,0.25);
+}
+
+/* MAIN PAGE AUTO SLIDE CAROUSEL*/
+.carousel .indicators {
+  text-align: right;
+}
+
+.carousel .indicators .indicator-item {
+  height: 12px;
+  width: 12px;
 }
 
 /* EVOSUS THEME COLORS */
