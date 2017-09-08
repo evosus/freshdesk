@@ -38,7 +38,11 @@ function _classCallCheck(t,e){if(!(t instanceof e))throw new TypeError("Cannot c
    $('.carousel.carousel-slider').carousel({fullWidth: true});
 
 
+console.log( "$ inside code block = " + $.fn.jquery);
+console.log( "jQuery_3_2_1  = " + jQuery_3_2_1.fn.jquery);
+
+
 }(jQuery_3_2_1));
 
-console.log( "$ after = " + $.fn.jquery);
-console.log( "jQuery after =" + jQuery.fn.jquery);
+//console.log( "$ after = " + $.fn.jquery);
+//console.log( "jQuery after =" + jQuery.fn.jquery);
