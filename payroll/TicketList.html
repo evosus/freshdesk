@@ -1,15 +1,19 @@
-<section class="content min-height-on-desktop ticket-page">
-   <nav id="view-tickets">
-    <div class="nav-wrapper">
-      <span class="brand-logo left">Tickets</span>
-      <ul class="right">
-        <li id="ticket-filter-container">
-          {% snippet ticket_filters %}
-        </li>
-        <li><a class="btn-floating btn-large waves-effect waves-light hoverable" href="https://evosus.freshdesk.com/support/tickets/new"><i class="material-icons">add</i></a></li>
-      </ul>
-    </div>
-  </nav>
+<div class="container">
 
-  {% snippet ticket_list %}
-</section>
+  <section class="min-height-on-desktop ticket-view-all">
+     <nav id="view-tickets">
+      <div class="nav-wrapper">
+        <span class="brand-logo left">Tickets</span>
+        <ul class="right">
+          <li id="ticket-filter-container">
+            {% snippet ticket_filters %}
+          </li>
+          <li><a class="btn-floating btn-large waves-effect waves-light hoverable" href="https://payroll.evosus.com/support/tickets/new"><i class="material-icons">add</i></a></li>
+        </ul>
+      </div>
+    </nav>
+
+    {% snippet ticket_list %}
+  </section>
+
+  </div>

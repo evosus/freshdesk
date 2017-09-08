@@ -153,10 +153,14 @@ a.dropdown-toggle:hover
     color: #fff;
     background-color: transparent;
 }
+.ticket-view-all {
+  padding: 20px 0;
+}
+
 #view-tickets .caret {
 	display: none;
 }
-.content .lead {
+.ticket-view-all .lead {
 	margin: 100px 0;
     text-align: center;
     color: #999;

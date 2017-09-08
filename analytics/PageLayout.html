@@ -7,13 +7,7 @@
 
 {{ footer }}
 
-<!-- Materialize -->
-<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-<script type="text/javascript">
-	var jQuery_2_1_1 = $.noConflict();
-</script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/js/materialize.min.js"></script>
-<script type="text/javascript" src="https://rawgit.com/evosus/freshdesk/Phase-1/global-main.js"></script>
-
-<!-- Super hack. Load old jQuery again so the freshdesk js below uses it. --> 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<!-- jQuery for Materialize - freshdesk uses 1.8.3 -->
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<!-- no-conflict block using 3.2.1-->
+<script src="https://rawgit.com/evosus/freshdesk/Phase-1/materialize.noconflict.js"></script>

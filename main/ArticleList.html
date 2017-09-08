@@ -1,0 +1,31 @@
+<div class="page-content">
+
+	<div class="container" id="folder-show-{{folder.id}}">
+		<div class="breadcrumb-menu">
+			<a href="/support/home"><i class="tiny material-icons">arrow_back</i> Back to home </a>
+			<span><i class="tiny material-icons">chevron_right</i> <a href="{{ folder.category.url }}">{{ folder.category.name | h}}</a></span>
+		</div>
+		<h2 class="heading">{{ folder.name | h }}</h2>
+		<p class="info-text">{{ folder.description | h}}</p>
+		{% if folder.articles_count > 0 %}
+			{% paginate folder.articles by 25 %}		
+				<section class="article-list c-list">
+					{% for article in paginate.collection %}
+						<div class="c-row c-article-row">
+							<div class="ellipsis article-title"> 
+								<a class="topic-title-listing" href="{{ article.url }}" class="c-link">{{ article.title | h }}</a>
+							</div>
+							<div>
+								{{  article.body_plain | h | truncate:350 }}
+							</div>
+						</div>
+					{% endfor %}
+				</section>
+				{{ paginate | default_pagination }}
+			{% endpaginate %}
+		{% else %}
+			{{ folder| h | filler_for_folders }}
+		{% endif %}
+	</div>
+
+</div>
