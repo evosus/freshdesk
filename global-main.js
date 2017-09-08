@@ -26,13 +26,11 @@ jQuery_2_1_1 ( document ).ready(function($) {
    $('.carousel').carousel();
    $('#main-carousel').carousel({fullWidth: true, indicators: true}); //
 
-   //
-
+   //Main page carousel auto slide
     var carouselAutoSlide = setInterval(carouselNext, 7000); //carousel moves to next slide every 3 seconds
 
     function carouselNext() {
       $('#main-carousel').carousel('next');
     }
-
 
 });

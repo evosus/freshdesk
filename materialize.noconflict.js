@@ -2,7 +2,6 @@ var jQuery_3_2_1 = jQuery.noConflict(true);
 
 (function($) {
 
-
 /*!
  * Materialize v0.100.2 (http://materializecss.com)
  * Copyright 2014-2017 Materialize
@@ -32,9 +31,17 @@ function _classCallCheck(t,e){if(!(t instanceof e))throw new TypeError("Cannot c
   $(".button-collapse").sideNav();
   // Initialize collapsible (uncomment the line below if you use the dropdown variation)
   //$('.collapsible').collapsible();
+
    //COMPONENT INIT
    $('.parallax').parallax();
    $('.carousel').carousel();
-   $('.carousel.carousel-slider').carousel({fullWidth: true});
+   $('#main-carousel').carousel({fullWidth: true, indicators: true}); //
+
+   //Main page carousel auto slide
+    var carouselAutoSlide = setInterval(carouselNext, 7000); //carousel moves to next slide every 3 seconds
+
+    function carouselNext() {
+      $('#main-carousel').carousel('next');
+    }
 
 }(jQuery_3_2_1));
