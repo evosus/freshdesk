@@ -2,127 +2,40 @@
 <div class="parallax-container valign-wrapper">
   <div class="section no-pad-bot">
     <div class="container">
-      <div class="row center">
-        <div id="search-main">
-          <h1 class="searchbox-header">Have a question?</h1>
-          <h2 class="searchbox-subheader">How can we help you today?</h2>
-          {% snippet search_form %}
-        </div>
-      </div>
+ 
+     
     </div>
   </div>
-  <div class="parallax"><img src="https://cdn.rawgit.com/evosus/freshdesk/Phase-1/img/search-image.jpg" alt="Image of man using search feature on this computer"></div>
+  <div class="parallax"><img src="https://cdn.rawgit.com/evosus/freshdesk/Phase-1/img/evopro-lead.jpg" alt="Image of Evosus Retail Pro being used on a computer"></div>
 </div>
 
 
-<!--   New Features   -->
+<!--   Getting Started  -->
 <div class="container">
-  <div class="section">
-    <div class="row">
-      <div class="col s12 m6">
-        <div class="img-block center">
-          <img src="https://cdn.rawgit.com/evosus/freshdesk/Phase-1/img/dashboard.svg">
-          <h3>Dashboard</h3>
+ 
+  <div class="row center">
+      <div class="col s12 m6 offset-m6">
+         <div class="img-block center">
+            <img src="https://cdn.rawgit.com/evosus/freshdesk/Phase-1/img/rocket-primary-bg.svg">
 
-          <p class="light">The dashboard gives you a high-level snapshot of your organization. It's all of the key information that you need, in one place.</p>
-          <a class="waves-effect waves-light btn" href="http://ee-support.evosus.com/support/solutions/articles/14000063232-dashboard">More</a>
-        </div>
-      </div>
 
-      <div class="col s12 m6">
-        <div class="img-block center">
-          <img src="https://rawgit.com/evosus/freshdesk/Phase-1/img/service-routing.svg">
-          <h3>Service Routing</h3>
-
-          <p class="light">Use the new Service Routing feature to optimize the stops on a tech's route using Google Maps, or view the route of all techs to see the distribution of stops.</p>
-          <a class="waves-effect waves-light btn" href="http://ee-support.evosus.com/support/solutions/articles/14000067158-service-routing">More</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- new version -->
-<div class="parallax-container valign-wrapper">
-  <div class="section no-pad-bot">
-    <div class="container">
-      <div class="row center">
+            <h3 class="grey-text text-darken-2">Getting Started</h3>
     
-        <h1>We just released version 6.6.135!</h1>
-        <p class="white-text" style="margin: 25px 0;">This release includes fixes to Evosus Card Services and Evosus Payroll Services.</p>
-        <a class="btn waves-effect white grey-text darken-text-2" href="http://evorelease.s3.amazonaws.com/index.html" target="_blank">Download!</a>
+           <div class="article-links-dk">
+            {% for category in portal.solution_categories %}
+              {% for folder in category.folders %}
+                {% if folder.name == 'Getting Started' %}
+                    {{ folder | article_list:20 }}
+                {% endif %}
+              {% endfor %}
+            {% endfor %}
+          </div>
 
+        </div>
       </div>
-    </div>
   </div>
-  <div class="parallax"><img src="https://cdn.rawgit.com/evosus/freshdesk/Phase-1/img/computer-bg.jpg" alt="Image of a computer"></div>
+
 </div>
-
-<!--   Tips   -->         
-
-
- <!--   Training   -->  
-<div class="section">
-  <div class="container">
-      <div class="row">
-      
-          <div class="img-block center">
-            <img src="https://cdn.rawgit.com/evosus/freshdesk/Phase-1/img/howtovideos-bg.svg" />
-            <h1 style="margin-bottom: 15px; margin-top: 15px;">Tips/Tricks</h1>
-
-            <div id="videoTip" class="video-container">
-              <!-- spinner is replaced by video tip of day using inline .js -->
-              <h3 class="center-align grey-text text-darken-2" style="padding-top: 50px;">Loading...</h3>
-              <div class="center-align">
-                 <div class="preloader-wrapper big active">
-                    <div class="spinner-layer spinner-blue">
-                      <div class="circle-clipper left">
-                        <div class="circle"></div>
-                      </div><div class="gap-patch">
-                        <div class="circle"></div>
-                      </div><div class="circle-clipper right">
-                        <div class="circle"></div>
-                      </div>
-                    </div>
-
-                    <div class="spinner-layer spinner-red">
-                      <div class="circle-clipper left">
-                        <div class="circle"></div>
-                      </div><div class="gap-patch">
-                        <div class="circle"></div>
-                      </div><div class="circle-clipper right">
-                        <div class="circle"></div>
-                      </div>
-                    </div>
-
-                    <div class="spinner-layer spinner-yellow">
-                      <div class="circle-clipper left">
-                        <div class="circle"></div>
-                      </div><div class="gap-patch">
-                        <div class="circle"></div>
-                      </div><div class="circle-clipper right">
-                        <div class="circle"></div>
-                      </div>
-                    </div>
-
-                    <div class="spinner-layer spinner-green">
-                      <div class="circle-clipper left">
-                        <div class="circle"></div>
-                      </div><div class="gap-patch">
-                        <div class="circle"></div>
-                      </div><div class="circle-clipper right">
-                        <div class="circle"></div>
-                      </div>
-                    </div>
-                  </div>
-               </div><!-- end center-align -->
-            </div><!-- end video-container -->      
-
-          </div><!-- end img-block -->
-
-      </div>
-    </div>
-  </div>
 
 
 <!-- min requirements -->
@@ -139,6 +52,62 @@
     </div>
   </div>
   <div class="parallax"><img src="https://cdn.rawgit.com/evosus/freshdesk/Phase-1/img/computer-bg.jpg" alt="Image of computer"></div>
+</div>
+
+
+<!--   Quickbooks Online   -->
+<div class="container">
+ 
+  <div class="row center">
+      <div class="col s12 m6 offset-m6">
+         <div class="img-block center">
+            <img src="https://cdn.rawgit.com/evosus/freshdesk/Phase-1/img/rocket-primary-bg.svg">
+
+
+            <h3 class="grey-text text-darken-2">QuickBooks Online Integration</h3>
+    
+           <div class="article-links-dk">
+            {% for category in portal.solution_categories %}
+              {% for folder in category.folders %}
+                {% if folder.name == 'QuickBooks Online Integration' %}
+                    {{ folder | article_list:20 }}
+                {% endif %}
+              {% endfor %}
+            {% endfor %}
+          </div>
+
+        </div>
+      </div>
+  </div>
+
+</div>
+
+
+<!--   Hardware   -->
+<div class="container">
+ 
+  <div class="row center">
+      <div class="col s12 m6 offset-m6">
+         <div class="img-block center">
+            <img src="https://cdn.rawgit.com/evosus/freshdesk/Phase-1/img/rocket-primary-bg.svg">
+
+
+            <h3 class="grey-text text-darken-2">Hardware</h3>
+    
+           <div class="article-links-dk">
+            {% for category in portal.solution_categories %}
+              {% for folder in category.folders %}
+                {% if folder.name == 'Hardware' %}
+                    {{ folder | article_list:20 }}
+                {% endif %}
+              {% endfor %}
+            {% endfor %}
+          </div>
+
+        </div>
+      </div>
+  </div>
+
 </div>
 
 
@@ -190,81 +159,3 @@
     </div><!-- end section -->
     <div class="parallax"><img src="https://cdn.rawgit.com/evosus/freshdesk/Phase-1/img/am-group.jpg" alt=""></div>
   </div>
-
-
-
-<script type="text/javascript">
-  var selection = Math.round(23 * (Math.random()));
-
-  switch(selection) {
-    case 1:
-      document.getElementById("videoTip").innerHTML = '<iframe width="560" height="315" src="https://www.youtube.com/embed/bAh18X4qFx8?list=PLGNyxm4TBvf801-j-KzI_T_oDaj7TH8T8" frameborder="0" allowfullscreen></iframe>';
-      break;
-    case 2:
-      document.getElementById("videoTip").innerHTML = '<iframe width="560" height="315" src="https://www.youtube.com/embed/Kk6l-9m78HM?list=PLGNyxm4TBvf801-j-KzI_T_oDaj7TH8T8" frameborder="0" allowfullscreen></iframe>';
-      break;
-    case 3:
-      document.getElementById("videoTip").innerHTML = '<iframe width="560" height="315" src="https://www.youtube.com/embed/zXvVa7FtObU?list=PLGNyxm4TBvf801-j-KzI_T_oDaj7TH8T8" frameborder="0" allowfullscreen></iframe>';
-      break;
-    case 4:
-      document.getElementById("videoTip").innerHTML = '<iframe width="560" height="315" src="https://www.youtube.com/embed/8cByE7Vm8Gk?list=PLGNyxm4TBvf801-j-KzI_T_oDaj7TH8T8" frameborder="0" allowfullscreen></iframe>';
-      break;
-    case 5:
-      document.getElementById("videoTip").innerHTML = '<iframe width="560" height="315" src="https://www.youtube.com/embed/i1gdfCYFPxQ?list=PLGNyxm4TBvf801-j-KzI_T_oDaj7TH8T8" frameborder="0" allowfullscreen></iframe>';
-      break;
-    case 6:
-      document.getElementById("videoTip").innerHTML = '<iframe width="560" height="315" src="https://www.youtube.com/embed/wuwRocKJ82s?list=PLGNyxm4TBvf801-j-KzI_T_oDaj7TH8T8" frameborder="0" allowfullscreen></iframe>';
-      break;
-    case 7:
-      document.getElementById("videoTip").innerHTML = '<iframe width="560" height="315" src="https://www.youtube.com/embed/qqZln90k6kw?list=PLGNyxm4TBvf801-j-KzI_T_oDaj7TH8T8" frameborder="0" allowfullscreen></iframe>';
-      break;
-    case 8:
-      document.getElementById("videoTip").innerHTML = '<iframe width="560" height="315" src="https://www.youtube.com/embed/Iwxnyq1qVm4?list=PLGNyxm4TBvf801-j-KzI_T_oDaj7TH8T8" frameborder="0" allowfullscreen></iframe>';
-      break;
-    case 9:
-      document.getElementById("videoTip").innerHTML = '<iframe width="560" height="315" src="https://www.youtube.com/embed/GKiaZp-V5oo?list=PLGNyxm4TBvf801-j-KzI_T_oDaj7TH8T8" frameborder="0" allowfullscreen></iframe>';
-      break;
-    case 10:
-      document.getElementById("videoTip").innerHTML = '<iframe width="560" height="315" src="https://www.youtube.com/embed/beZGDJi_RuI?list=PLGNyxm4TBvf801-j-KzI_T_oDaj7TH8T8" frameborder="0" allowfullscreen></iframe>';
-      break;
-    case 11:
-      document.getElementById("videoTip").innerHTML = '<iframe width="560" height="315" src="https://www.youtube.com/embed/VsVXjG82m_0?list=PLGNyxm4TBvf801-j-KzI_T_oDaj7TH8T8" frameborder="0" allowfullscreen></iframe>';
-      break;
-    case 12:
-      document.getElementById("videoTip").innerHTML = '<iframe width="560" height="315" src="https://www.youtube.com/embed/tDdcs91EY-0?list=PLGNyxm4TBvf801-j-KzI_T_oDaj7TH8T8" frameborder="0" allowfullscreen></iframe>';
-      break;
-    case 13:
-      document.getElementById("videoTip").innerHTML = '<iframe width="560" height="315" src="https://www.youtube.com/embed/EMXN1g6G95s?list=PLGNyxm4TBvf801-j-KzI_T_oDaj7TH8T8" frameborder="0" allowfullscreen></iframe>';
-      break;
-    case 14:
-      document.getElementById("videoTip").innerHTML = '<iframe width="560" height="315" src="https://www.youtube.com/embed/0w3WBa3xgRw?list=PLGNyxm4TBvf801-j-KzI_T_oDaj7TH8T8" frameborder="0" allowfullscreen></iframe>';
-      break;
-    case 15:
-      document.getElementById("videoTip").innerHTML = '<iframe width="560" height="315" src="https://www.youtube.com/embed/O2om16x_Q3E?list=PLGNyxm4TBvf801-j-KzI_T_oDaj7TH8T8" frameborder="0" allowfullscreen></iframe>';
-      break;
-    case 16:
-      document.getElementById("videoTip").innerHTML = '<iframe width="560" height="315" src="https://www.youtube.com/embed/RGfmmbzjgkI?list=PLGNyxm4TBvf801-j-KzI_T_oDaj7TH8T8" frameborder="0" allowfullscreen></iframe>';
-      break;
-    case 17:
-      document.getElementById("videoTip").innerHTML = '<iframe width="560" height="315" src="https://www.youtube.com/embed/HauaYns3b7w?list=PLGNyxm4TBvf801-j-KzI_T_oDaj7TH8T8" frameborder="0" allowfullscreen></iframe>';
-      break;
-    case 18:
-      document.getElementById("videoTip").innerHTML = '<iframe width="560" height="315" src="https://www.youtube.com/embed/KDWsQ_nd-Xo?list=PLGNyxm4TBvf801-j-KzI_T_oDaj7TH8T8" frameborder="0" allowfullscreen></iframe>';
-      break;
-    case 19:
-      document.getElementById("videoTip").innerHTML = '<iframe width="560" height="315" src="https://www.youtube.com/embed/fE6aVN7hZ_g?list=PLGNyxm4TBvf801-j-KzI_T_oDaj7TH8T8" frameborder="0" allowfullscreen></iframe>';
-      break;
-    case 20:
-      document.getElementById("videoTip").innerHTML = '<iframe width="560" height="315" src="https://www.youtube.com/embed/Cnb-dZoEf-w?list=PLGNyxm4TBvf801-j-KzI_T_oDaj7TH8T8" frameborder="0" allowfullscreen></iframe>';
-      break;
-    case 21:
-      document.getElementById("videoTip").innerHTML = '<iframe width="560" height="315" src="https://www.youtube.com/embed/NCzK0EEnkTU?list=PLGNyxm4TBvf801-j-KzI_T_oDaj7TH8T8" frameborder="0" allowfullscreen></iframe>';
-      break;
-    case 22:
-      document.getElementById("videoTip").innerHTML = '<iframe width="560" height="315" src="https://www.youtube.com/embed/r_RBlqsA5hY?list=PLGNyxm4TBvf801-j-KzI_T_oDaj7TH8T8" frameborder="0" allowfullscreen></iframe>';
-      break;
-    default:
-      document.getElementById("videoTip").innerHTML = '<iframe width="560" height="315" src="https://www.youtube.com/embed/ogYFRkzMHHY?list=PLGNyxm4TBvf801-j-KzI_T_oDaj7TH8T8" frameborder="0" allowfullscreen></iframe>';
-      break;
-  }
-</script>
