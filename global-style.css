@@ -131,6 +131,11 @@ h3 {
 #related_articles {
   margin-top: 50px;
 }
+a.no-style,
+a.no-style:hover{
+  color: #fff;
+  text-decoration: none;
+}
 
 /* FIX TO THE LOGIN FORM */
 .alt-login-button a.btn:hover {
