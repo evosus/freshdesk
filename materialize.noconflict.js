@@ -33,6 +33,7 @@ function _classCallCheck(t,e){if(!(t instanceof e))throw new TypeError("Cannot c
   //$('.collapsible').collapsible();
 
    //COMPONENT INIT
+   $('.modal').modal();
    $('.parallax').parallax();
    $('.carousel').carousel();
    $('#main-carousel').carousel({fullWidth: true, indicators: true}); //
