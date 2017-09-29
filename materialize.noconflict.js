@@ -33,10 +33,19 @@ function _classCallCheck(t,e){if(!(t instanceof e))throw new TypeError("Cannot c
   //$('.collapsible').collapsible();
 
    //COMPONENT INIT
-   $('.modal').modal();
    $('.parallax').parallax();
    $('.carousel').carousel();
-   $('#main-carousel').carousel({fullWidth: true, indicators: true}); //
+   $('#main-carousel').carousel({fullWidth: true, indicators: true});
+	$('.modal').modal({
+	    dismissible: true, // Modal can be dismissed by clicking outside of the modal
+	    opacity: .7, // Opacity of modal background
+	    inDuration: 300, // Transition in duration
+	    outDuration: 200, // Transition out duration
+	    startingTop: '10%', // Starting top style attribute
+	    endingTop: '30%', // Ending top style attribute
+	  }
+	);
+
 
    //Main page carousel auto slide
     var carouselAutoSlide = setInterval(carouselNext, 7000); //carousel moves to next slide every 3 seconds
