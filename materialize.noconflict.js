@@ -36,7 +36,7 @@ function _classCallCheck(t,e){if(!(t instanceof e))throw new TypeError("Cannot c
    $('.parallax').parallax();
    $('.carousel').carousel();
    $('#main-carousel').carousel({fullWidth: true, indicators: true});
-	$('.modal-Mat').modal({
+	$('.modal').modal({
 	    dismissible: true, // Modal can be dismissed by clicking outside of the modal
 	    opacity: .7, // Opacity of modal background
 	    inDuration: 300, // Transition in duration
