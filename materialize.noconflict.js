@@ -47,8 +47,8 @@ function _classCallCheck(t,e){if(!(t instanceof e))throw new TypeError("Cannot c
 	    startingTop: '10%', // Starting top style attribute
 	    endingTop: '30%', // Ending top style attribute
 	    complete: function() { 
-	    	console.log("closing");
-	    	$('.youtube-iframe').each(function(index) {
+	    	console.log("closing" + jQuery.fn.jquery);
+	    	jQuery('.youtube-iframe').each(function(index) {
         		$(this).attr('src', $(this).attr('src'));
         		return false;
       			});
