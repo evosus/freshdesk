@@ -47,11 +47,15 @@ function _classCallCheck(t,e){if(!(t instanceof e))throw new TypeError("Cannot c
 	    startingTop: '10%', // Starting top style attribute
 	    endingTop: '30%', // Ending top style attribute
 	    complete: function() { 
+	    	
+	    	$('iframe').get(0).remove();
+	    	/*
 	    	jQuery_3_2_1('.youtube-iframe').each(function(index) {
         		$(this).attr('src', $(this).attr('src'));
         		console.log("jquery: " + jQuery.fn.jquery);
         		return false;
       			});
+      		*/
 	    	} // Callback for Modal close
 	  }
 	);
