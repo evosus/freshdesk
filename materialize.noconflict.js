@@ -48,6 +48,7 @@ function _classCallCheck(t,e){if(!(t instanceof e))throw new TypeError("Cannot c
 	    endingTop: '30%', // Ending top style attribute
 	    complete: function() { 
 	    	var iframe = document.querySelector( 'iframe');
+	    	console.log(iframe);
             var iframeSrc = iframe.src;
             iframe.src = iframeSrc;
 	    	/*
