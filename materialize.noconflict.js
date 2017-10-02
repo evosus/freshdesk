@@ -48,19 +48,13 @@ function _classCallCheck(t,e){if(!(t instanceof e))throw new TypeError("Cannot c
 	    endingTop: '30%', // Ending top style attribute
 	    complete: function() { 
     	  var iframes = document.querySelectorAll( 'iframe'), i;
-                
+          
+          console.log(this); 
 	        for (i=0; i < iframes.length; i++){
 	          var iframeSrc = iframes[i].src;
 	          iframes[i].src=iframeSrc
 	        }
-	    	/*
-	    	jQuery_3_2_1('.youtube-iframe').each(function(index) {
-        		$(this).attr('src', $(this).attr('src'));
-        		console.log("jquery: " + jQuery.fn.jquery);
-        		return false;
-      			});
-      		*/
-	    	} // Callback for Modal close
+	    } // Callback for Modal close
 	  });
 
 	//Open video-carousel on enterprise main page to ramdon video
