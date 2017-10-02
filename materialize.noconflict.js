@@ -48,7 +48,7 @@ function _classCallCheck(t,e){if(!(t instanceof e))throw new TypeError("Cannot c
 	    endingTop: '30%', // Ending top style attribute
 	    complete: function() { 
 	    	console.log("closing " + "jquery: " + jQuery.fn.jquery);
-	    	jQuery('.youtube-iframe').each(function(index) {
+	    	jQuery_3_2_1('.youtube-iframe').each(function(index) {
         		$(this).attr('src', $(this).attr('src'));
         		return false;
       			});
