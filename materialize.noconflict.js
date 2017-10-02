@@ -47,10 +47,10 @@ function _classCallCheck(t,e){if(!(t instanceof e))throw new TypeError("Cannot c
 	    startingTop: '10%', // Starting top style attribute
 	    endingTop: '30%', // Ending top style attribute
 	    complete: function() { 
-	    	var iframe = document.querySelector( 'iframe');
-	    	console.log(iframe);
-            var iframeSrc = iframe.src;
-            iframe.src = iframeSrc;
+	    	var ytIframe = document.querySelector( 'iframe');
+	    	console.log("iframe = " + ytIframe);
+            var iframeSrc = ytIframe.src;
+            ytIframe.src = iframeSrc;
 	    	/*
 	    	jQuery_3_2_1('.youtube-iframe').each(function(index) {
         		$(this).attr('src', $(this).attr('src'));
@@ -59,8 +59,7 @@ function _classCallCheck(t,e){if(!(t instanceof e))throw new TypeError("Cannot c
       			});
       		*/
 	    	} // Callback for Modal close
-	  }
-	);
+	  });
 
 	//Open video-carousel on enterprise main page to ramdon video
 	var selection = Math.round(23 * (Math.random()));
