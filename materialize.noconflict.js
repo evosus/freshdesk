@@ -49,7 +49,6 @@ function _classCallCheck(t,e){if(!(t instanceof e))throw new TypeError("Cannot c
 	    complete: function() { 
     	  var iframes = document.querySelectorAll( 'iframe'), i;
           
-          console.log(this); 
 	        for (i=0; i < iframes.length; i++){
 	          var iframeSrc = iframes[i].src;
 	          iframes[i].src=iframeSrc
