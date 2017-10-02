@@ -45,7 +45,7 @@ function _classCallCheck(t,e){if(!(t instanceof e))throw new TypeError("Cannot c
 	    endingTop: '30%', // Ending top style attribute
 	  }
 	);
-
+	console.log('modalMat');
 
    //Main page carousel auto slide
     var carouselAutoSlide = setInterval(carouselNext, 7000); //carousel moves to next slide every 3 seconds
