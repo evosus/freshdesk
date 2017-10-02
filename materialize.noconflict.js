@@ -32,6 +32,9 @@ function _classCallCheck(t,e){if(!(t instanceof e))throw new TypeError("Cannot c
   // Initialize collapsible (uncomment the line below if you use the dropdown variation)
   //$('.collapsible').collapsible();
 
+  	//Assign class to youtube embeds - allows callback on carousel to turn off video on close
+	$('iframe[src*="https://www.youtube.com/embed/"]').addClass("youtube-iframe");
+
    //COMPONENT INIT
    $('.parallax').parallax();
    $('.carousel').carousel();
@@ -56,9 +59,6 @@ function _classCallCheck(t,e){if(!(t instanceof e))throw new TypeError("Cannot c
 	//Open video-carousel on enterprise main page to ramdon video
 	var selection = Math.round(23 * (Math.random()));
 	$('#video-carousel').carousel('set', selection);
-
-	//Assign class to youtube embed - allows callback to turn off
-	$('iframe[src*="https://www.youtube.com/embed/"]').addClass("youtube-iframe");
 
    //Main page carousel auto slide
     var carouselAutoSlide = setInterval(carouselNext, 7000); //carousel moves to next slide every 3 seconds
