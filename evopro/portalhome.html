@@ -45,15 +45,14 @@
   <h2 class="center">Select a product to find a solution</h2>  
   
 
-  <div class="carousel carousel-product">
+  <div id="video-carousel" class="carousel carousel-product">
     <a class="carousel-item carousel-product-item modal-trigger hoverable" href="#modal1">
-      <img src="https://cdn.rawgit.com/evosus/freshdesk/Phase-1/img/video-previews/1.png" alt="">
+      <img src="https://rawgit.com/evosus/freshdesk/Phase-1/img/video-previews/1.png" alt="">
     </a>
     <a class="carousel-item carousel-product-item modal-trigger hoverable" href="#modal1">
-      <img src="https://cdn.rawgit.com/evosus/freshdesk/Phase-1/img/video-previews/2.png" alt="">
+      <img src="https://rawgit.com/evosus/freshdesk/Phase-1/img/video-previews/2.png" alt="">
     </a>
-  
-      <a class="carousel-item carousel-product-item modal-trigger hoverable" href="#modal1">
+    <a class="carousel-item carousel-product-item modal-trigger hoverable" href="#modal1">
        <img src="https://cdn.rawgit.com/evosus/freshdesk/Phase-1/img/video-previews/3.png" alt="">
     </a>
     <a class="carousel-item carousel-product-item modal-trigger hoverable" href="#modal1">
@@ -319,6 +318,9 @@
 
 <script type="text/javascript">
   var selection = Math.round(23 * (Math.random()));
+
+  // Set to nth slide
+  $('.carousel').carousel('set', 4);
 
   switch(selection) {
     case 1:
