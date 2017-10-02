@@ -43,13 +43,21 @@ function _classCallCheck(t,e){if(!(t instanceof e))throw new TypeError("Cannot c
 	    outDuration: 200, // Transition out duration
 	    startingTop: '10%', // Starting top style attribute
 	    endingTop: '30%', // Ending top style attribute
+	    complete: function() { 
+	    	$('.youtube-iframe').each(function(index) {
+        		$(this).attr('src', $(this).attr('src'));
+        		return false;
+      			});
+	    	} // Callback for Modal close
 	  }
 	);
 
 	//Open video-carousel on enterprise main page to ramdon video
 	var selection = Math.round(23 * (Math.random()));
-	// Set to nth slide
 	$('#video-carousel').carousel('set', selection);
+
+	//Assign class to youtube embed - allows callback to turn off
+	$('iframe[src*="https://www.youtube.com/embed/"]').addClass("youtube-iframe");
 
    //Main page carousel auto slide
     var carouselAutoSlide = setInterval(carouselNext, 7000); //carousel moves to next slide every 3 seconds
