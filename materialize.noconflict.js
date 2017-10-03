@@ -46,6 +46,10 @@ function _classCallCheck(t,e){if(!(t instanceof e))throw new TypeError("Cannot c
 	    outDuration: 200, // Transition out duration
 	    startingTop: '10%', // Starting top style attribute
 	    endingTop: '30%', // Ending top style attribute
+	    ready: function(modal,trigger){
+                  var iframeHtml = $(trigger).data("frame");
+                  $(modal).find('.modalMat-content').html(iframeHtml);
+                },
 	    complete: function() { 
     	  var iframes = document.querySelectorAll( 'iframe'), i;
           
