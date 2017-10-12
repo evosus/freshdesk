@@ -1,25 +1,22 @@
-
-
 <div class="container">
-  <h3 class="heading">{% translate ticket.submit_ticket_title %}</h3>
-
-  <!--
- <div class="row">
-            <h3>Hours</h3>
-            <p class="parallax-text">Monday to Friday from 7AM - 4PM PST</p>
-            <h3>Emergency Hours</h3>
-            <p class="parallax-text">Our emergency hours are only for clients that cannot log into the application.</p>
-            <p class="parallax-text">Monday to Friday 5AM-7AM and 4PM-6PM PST, and Saturday and Sunday 6AM to 3PM PST. </p>
-          </div>
-
--->
-
-
-  <div class="ticket-form">
-      {% snippet new_ticket_form %}
+  <div class="row">
+    <h3>Submit a ticket to contact your Account Manager</h3>
+    <p><strong>Hours: </strong>Monday to Friday from 7AM - 4PM PST</p>
+    <p><strong>Emergency Hours: </strong>Our emergency hours are only for clients that cannot log into the application. Monday to Friday 5AM-7AM and 4PM-6PM PST, and Saturday and Sunday 6AM to 3PM PST. </p>
+  </div>
+  <div class="row">
+    
+    <div class="col s12 m6">
+      <div class="ticket-form">
+        {% snippet new_ticket_form %}
+      </div>
     </div>
-</div>
 
-<div class="container" id="new-ticket-search">
-  <br />
-</div>
+    <div class="col s12 m6">
+      <div id="new-ticket-search">
+        <br />
+      </div>
+    </div>
+
+  </div><!-- end row-->
+</div><!-- end container -->
