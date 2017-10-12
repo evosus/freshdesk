@@ -18,7 +18,7 @@ h3 {
 }
 /* used in submit ticket template*/
 #new-ticket-search.h4 {
-  font-size: 1.6em;
+  font-size: 1.6em!important;
 }
 .page-content {
   margin: 25px 0 50px;
