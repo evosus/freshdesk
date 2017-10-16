@@ -36,87 +36,13 @@ nav a.button-collapse:hover {
 	text-decoration: none!important;
 }
 
-/* Search box text - Header*/
-#search-main input[type="text"],
-.search-container input[type="text"] {
-	color: #fff;
-}
-#search-main input[type=text]:not(.browser-default),
-.search-container input[type=text]:not(.browser-default) {
-	font-size: 2em;
-}
-#search-main input[type="text"]:focus,
-.search-container input[type="text"]:focus {
-	border-color: transparent;
+/* expandible*/
+.collapsible-header {
+	font-size: 1.8em;
 }
 
-/* Search Box - Portal Homepage */
-.searchbox-header {
-	font-size: 3.5em;
-	color: #ffffff;
-}
-
-.searchbox-subheader {
-	font-size: 1.75em;
-	color: #ffffff;
-	margin-bottom: 30px;
-}
-
-@media only screen and (max-width: 992px) {
-	.parallax-container .section {
-    	top: inherit!important;
-	}
-	.searchbox-header {
-		font-size: 2.5em;
-		color: #ffffff;
-	}
-	.searchbox-subheader {
-		font-size: 1.25em;
-	}
-}
-
-/*CAROUSEL - Product*/
-.carousel-product {
-    height: 200px!important;
-}
-.carousel-product-item {
-	text-align: center; 
-	line-height: 100px;
-	height: 100px!important;
-}
-.carousel-product-item:hover {
-	text-decoration: none;
-}
-.carousel-item-title {
-	color: #fff; 
-	font-size: 30px;
-}
 
 /* CAROUSEL - Header*/
-.bg-fun {
-	background-color: #0000000;
-	background-image: url(https://cdn.rawgit.com/evosus/freshdesk/Phase-1/img/social-media.jpg);
-	background-size: cover;
-	background-repeat: no-repeat;
-}
-.bg-computer {
-	background-color: #333333;
-	background-image: url(https://cdn.rawgit.com/evosus/freshdesk/Phase-1/img/computer-bg.jpg);
-	background-size: cover;
-	background-repeat: no-repeat;
-}
-.bg-dashboard {
-	background-color: #333333;
-	background-image: url(https://cdn.rawgit.com/evosus/freshdesk/Phase-1/img/dashboard-bg.jpg);
-	background-size: cover;
-	background-repeat: no-repeat;
-}
-.bg-routing {
-	background-color: #333333;
-	background-image: url(https://cdn.rawgit.com/evosus/freshdesk/Phase-1/img/routing-bg.jpg);
-	background-size: cover;
-	background-repeat: no-repeat;
-}
 .carousel-header {
 	margin-top: 100px;
 	margin-bottom: 25px;
@@ -162,10 +88,6 @@ nav a.button-collapse:hover {
     width: initial;
 }
 
-/* FIX TO THE LOGIN FORM */
-.alt-login-button a.btn:hover {
-    display: block;
-}
 /* Fix to submit button on survey form */
 input#survey_handle_submit:hover {
     display: inherit;
@@ -195,70 +117,6 @@ input#survey_handle_submit:hover {
 	color: #333333; 	
 }
 
-/* new ticket form fixes*/
-.redactor_editor {
-	height: 175px!important;
-}
-.ticket-form input[type="text"] {
-	color: #333;
-}
-#view-tickets {
-	background-color: #02708C;
-}
-.btn-large {
-    line-height: 54px;
-    border-radius: 50%;
-    padding: inherit;
-
-}
-.btn-large:hover {
-	text-decoration: none;
-}
-
-#view-tickets li {
-	line-height: inherit;
-}
-
-#ticket-filters,
-#ticket-sub-toolbar,
-.dropdown-toggle
- {
-	display: inline;
-	font-weight: normal;
-	line-height: 60px;
-	color: #ffffff;
-	font-size: 18px;
-}
-a.dropdown-toggle:hover
-{
-    color: #fff;
-    background-color: transparent;
-}
-#view-tickets .caret {
-	display: none;
-}
-.content .lead {
-	margin: 100px 0;
-    text-align: center;
-    color: #999;
-}
-.ticket-brief a {
-	color: #333;
-	font-weight: normal;
-}
-.ticket-brief .help-text {
-	color: #666;
-	font-weight: normal;
-}
-
-/* CARD ACTION COLOR FIX */
-.card .card-action a:not(.btn):not(.btn-large):not(.btn-large):not(.btn-floating) {
-	color: #333;
-}
-.card .card-action a:not(.btn):not(.btn-large):not(.btn-large):not(.btn-floating):hover {
-	color: #333;
-}
-
 /*BREADCRUMBS FIX */
 a.breadcrumb-item {
 	color: #666666;
@@ -271,11 +129,6 @@ a.breadcrumb-item:hover {
 	text-decoration: none;
 }
 
-/* CARD FIX */
-.card-image {
-	background-color: #3eaba4;
-}
-
 /* PARALLAX SCROLLER */
 .parallax-container {
   min-height: 380px;
@@ -286,18 +139,7 @@ a.breadcrumb-item:hover {
 .parallax-container .section {
     width: 100%;
 }
-.parallax-text {
-	margin: 10px 0;
-	line-height: 1em;
-	font-weight: 400;
-}
 
-.social-media {
-	min-height: 800px;
-	background-image: url(https://cdn.rawgit.com/evosus/freshdesk/Phase-1/img/social-media.jpg);
-	background-size: cover;
-	background-repeat: no-repeat;
-}
 .container-content {
 	padding: 75px 0 50px;
 }
