@@ -40,7 +40,22 @@ nav a.button-collapse:hover {
 .collapsible-header {
 	font-size: 1.8em;
 }
-
+/*CAROUSEL - Product*/
+.carousel-product {
+    height: 200px!important;
+}
+.carousel-product-item {
+	text-align: center; 
+	line-height: 100px;
+	height: 100px!important;
+}
+.carousel-product-item:hover {
+	text-decoration: none;
+}
+.carousel-item-title {
+	color: #fff; 
+	font-size: 30px;
+}
 
 /* CAROUSEL - Header*/
 .carousel-header {
