@@ -18,6 +18,14 @@
 							<div>
 								{{  article.body_plain | h | truncate:350 }}
 							</div>
+							
+							<div>
+								{% for tag in article.tags %}
+									<span>{{ tag.title }}</span>
+					
+								{% endfor %}
+							</div>
+						
 						</div>
 					{% endfor %}
 				</section>
