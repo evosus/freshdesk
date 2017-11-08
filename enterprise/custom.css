@@ -51,6 +51,7 @@ nav a.button-collapse:hover {
 .searchbox-header {
 	font-size: 3.5em;
 	color: #ffffff;
+	margin-bottom: 1em;
 }
 
 input[type=text]:not(.browser-default) {
