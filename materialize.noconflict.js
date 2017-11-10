@@ -39,7 +39,8 @@ function _classCallCheck(t,e){if(!(t instanceof e))throw new TypeError("Cannot c
    $('.parallax').parallax();
    $('.carousel').carousel();
    $('#main-carousel').carousel({fullWidth: true, indicators: true});
-	$('.modalMat').modal({
+   
+   $('.modalMat').modal({ //video modal
 	    dismissible: true, // Modal can be dismissed by clicking outside of the modal
 	    opacity: .7, // Opacity of modal background
 	    inDuration: 300, // Transition in duration
@@ -47,18 +48,27 @@ function _classCallCheck(t,e){if(!(t instanceof e))throw new TypeError("Cannot c
 	    startingTop: '10%', // Starting top style attribute
 	    endingTop: '30%', // Ending top style attribute
 	    ready: function(modal,trigger){
-                  var iframeHtml = $(trigger).data("frame");
-                  $(modal).find('.modalMat-content').html(iframeHtml);
-                },
+	              var iframeHtml = $(trigger).data("frame");
+	              $(modal).find('.modalMat-content').html(iframeHtml);
+	            },
 	    complete: function() { 
-    	  var iframes = document.querySelectorAll( 'iframe'), i;
-          
+		  var iframes = document.querySelectorAll( 'iframe'), i;
+	      
 	        for (i=0; i < iframes.length; i++){
 	          var iframeSrc = iframes[i].src;
 	          iframes[i].src=iframeSrc
 	        }
 	    } // Callback for Modal close
-	  });
+	});
+
+    $('.modalTicket').modal({
+	    dismissible: true, // Modal can be dismissed by clicking outside of the modal
+	    opacity: .7, // Opacity of modal background
+	    inDuration: 300, // Transition in duration
+	    outDuration: 200 // Transition out duration
+	    } // Callback for Modal close
+	});
+
 
 	//Open video-carousel on enterprise main page to ramdon video
 	var selection = Math.round(23 * (Math.random()));
