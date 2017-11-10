@@ -66,7 +66,6 @@ function _classCallCheck(t,e){if(!(t instanceof e))throw new TypeError("Cannot c
 	    opacity: .7, // Opacity of modal background
 	    inDuration: 300, // Transition in duration
 	    outDuration: 200 // Transition out duration
-	    } // Callback for Modal close
 	});
 
 
