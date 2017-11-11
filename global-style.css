@@ -350,20 +350,6 @@ Modal Fix
   width: 100%;
 }
 
-.modal-overlay {
-  position: fixed;
-  z-index: 999;
-  top: -100px;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  height: 125%;
-  width: 100%;
-  background: #000;
-  display: none;
-  will-change: opacity;
-}
-
 .modalTicket .modal-footer .btn, .modalTicket .modal-footer .btn-large, .modalTicket .modal-footer .btn-flat {
   float: right;
   margin: 6px 0;
@@ -384,12 +370,8 @@ Modal Fix
   position: absolute;
   bottom: 0;
 }
-.modal.bottom-sheet {
-  top: auto;
-  bottom: -100%;
-  margin: 0;
-  width: 100%;
-  max-height: 45%;
-  border-radius: 0;
-  will-change: bottom, opacity;
+
+#ticket-list .lead  {
+  padding: 100px 0;
+  text-align: center;
 }

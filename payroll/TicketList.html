@@ -1,19 +1,36 @@
-<div class="container">
 
-  <section class="min-height-on-desktop ticket-view-all">
+<div class="container">
+  <section>
+    <h2>Need more help? <span class="grey-text text-lighten-1">Submit a ticket.</span></h2>
+    <p>Our normal business hours are <strong>Monday to Friday from 7AM - 4PM PST</strong>.</p>
+    <p>We also offer emergency hours for clients that cannot log into the application. Emergency hours are Monday to Friday 5AM-7AM and 4PM-6PM PST, and Saturday and Sunday 6AM to 3PM PST. </p>
+  </section>
+  <section>
      <nav id="view-tickets">
       <div class="nav-wrapper">
-        <span class="brand-logo left">Tickets</span>
+        <span class="brand-logo left hide-on-small-only" style="padding-left: 10px;">Tickets</span>
         <ul class="right">
           <li id="ticket-filter-container">
             {% snippet ticket_filters %}
           </li>
-          <li><a class="btn-floating btn-large waves-effect waves-light hoverable" href="https://payroll.evosus.com/support/tickets/new"><i class="material-icons">add</i></a></li>
+          <li><a class="btn-floating btn-large waves-effect waves-light hoverable modal-trigger" href="#newticketModal"><i class="material-icons">add</i></a></li>
         </ul>
       </div>
     </nav>
 
     {% snippet ticket_list %}
   </section>
+</div>
+
+
+<!-- New Ticket Modal -->
+<div id="newticketModal" class="modalTicket modal-fixed-footer">
+  <div class="modal-content">
+    
+    {% snippet new_ticket_form %}
 
   </div>
+  <div id="new-ticket-search" class="modal-footer">
+
+  </div>
+</div>
