@@ -248,7 +248,9 @@ nav.main-nav {
 .ui-purple { background:#9370DB; }
 .ui-purple-dk { background:#663399; }
 
-/* Modal Fix */
+/*******
+Modal Fix 
+*********/
 .modalMat {
   box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.3);
 }
@@ -282,14 +284,6 @@ nav.main-nav {
   cursor: pointer;
 }
 
-.modalMat .modalMat-footer {
-  border-radius: 0 0 2px 2px;
-  background-color: #fafafa;
-  padding: 4px 6px;
-  height: 56px;
-  width: 100%;
-}
-
 .modalMat-overlay {
   position: fixed;
   z-index: 999;
@@ -304,27 +298,93 @@ nav.main-nav {
   will-change: opacity;
 }
 
-.modalMat .modalMat-footer .btn, .modalMat .modalMat-footer .btn-large, .modalMat .modalMat-footer .btn-flat {
+.modalMat.bottom-sheet {
+  top: auto;
+  bottom: -100%;
+  margin: 0;
+  width: 100%;
+  max-height: 45%;
+  border-radius: 0;
+  will-change: bottom, opacity;
+}
+
+/* New Ticket Modal */
+.modalTicket {
+  box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.3);
+}
+
+.modalTicket {
+  display: none;
+  position: fixed;
+  left: 0;
+  right: 0;
+  background-color: #fafafa;
+  padding: 0;
+  max-height: 70%;
+  width: 55%;
+  margin: auto;
+  overflow-y: auto;
+  border-radius: 2px;
+  will-change: top, opacity;
+}
+
+@media only screen and (max-width: 992px) {
+  .modalTicket {
+    width: 80%;
+  }
+}
+
+.modalTicket .modal-content {
+  padding: 24px;
+}
+
+.modalTicket .modal-close {
+  cursor: pointer;
+}
+
+.modalTicket .modal-footer {
+  border-radius: 0 0 2px 2px;
+  background-color: #fafafa;
+  padding: 4px 6px;
+  height: 56px;
+  width: 100%;
+}
+
+.modal-overlay {
+  position: fixed;
+  z-index: 999;
+  top: -100px;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 125%;
+  width: 100%;
+  background: #000;
+  display: none;
+  will-change: opacity;
+}
+
+.modalTicket .modal-footer .btn, .modalTicket .modal-footer .btn-large, .modalTicket .modal-footer .btn-flat {
   float: right;
   margin: 6px 0;
 }
-.modalMat.modalMat-fixed-footer {
+.modalTicket.modal-fixed-footer {
   padding: 0;
   height: 70%;
 }
-.modalMat.modalMat-fixed-footer .modalMat-content {
+.modalTicket.modal-fixed-footer .modal-content {
   position: absolute;
   height: calc(100% - 56px);
   max-height: 100%;
   width: 100%;
   overflow-y: auto;
 }
-.modalMat.modalMat-fixed-footer .modalMat-footer {
+.modalTicket.modal-fixed-footer .modal-footer {
   border-top: 1px solid rgba(0, 0, 0, 0.1);
   position: absolute;
   bottom: 0;
 }
-.modalMat.bottom-sheet {
+.modal.bottom-sheet {
   top: auto;
   bottom: -100%;
   margin: 0;
