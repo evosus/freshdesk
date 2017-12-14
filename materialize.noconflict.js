@@ -80,10 +80,11 @@ function _classCallCheck(t,e){if(!(t instanceof e))throw new TypeError("Cannot c
       $('#main-carousel').carousel('next');
     }
 
+    /*
     //Fix to new ticket form
     $("#helpdesk_ticket_group_id").addClass("hide");
   	$("#helpdesk_ticket_group_id").prop("selectedIndex", 1);
   	$('label[for="helpdesk_ticket_group"]').addClass("hide");
-	
+	*/
 
 }(jQuery_3_2_1));

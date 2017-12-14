@@ -1,18 +1,20 @@
 <div class="container">
-	<h3 class="heading">{% translate ticket.submit_ticket_title %}</h3>
-	
-	<script type="text/javascript" src="http://assets.freshdesk.com/widget/freshwidget.js"></script>
-	<style type="text/css" media="screen, projection">
-	@import url(http://assets.freshdesk.com/widget/freshwidget.css); 
-	</style> 
-	<iframe title="Feedback Form" class="freshwidget-embedded-form" id="freshwidget-embedded-form" src="https://support.evosus.com/widgets/feedback_widget/new?&widgetType=embedded&submitTitle=Create+Ticket&submitThanks=Thanks+for+submitting+a+ticket.+We'll+get+back+to+you+shortly.+&screenshot=no&searchArea=no" scrolling="no" height="750px" width="100%" frameborder="0" >
-	</iframe>
+  <div class="row">
+    <h3>Submit a ticket</h3>
+  </div>
+  <div class="row">
+    
+    <div class="col s12 m6">
+      <div class="ticket-form">
+        {% snippet new_ticket_form %}
+      </div>
+    </div>
 
-	<div class="ticket-form">
-  		{% snippet new_ticket_form %}
-  	</div>
-</div>
+    <div class="col s12 m6">
+      <div id="new-ticket-search">
+        <br />
+      </div>
+    </div>
 
-<div class="container" id="new-ticket-search">
-	<br />
-</div>
+  </div><!-- end row-->
+</div><!-- end container -->
