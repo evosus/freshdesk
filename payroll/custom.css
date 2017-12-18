@@ -193,12 +193,3 @@ a.dropdown-toggle:hover
 .article-links-dk a:hover {
   color: #444444!important;
 }
-
-/* portal home backgrounds */
-.mobile-bg {
-  background-image: url(https://cdn.rawgit.com/evosus/freshdesk/Phase-1/img/mobile-bg.jpg); 
-  background-repeat: no-repeat;  
-  background-size: cover;
-  padding-top: 75px;
-  padding-bottom: 75px;
-}

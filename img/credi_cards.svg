@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 18.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 130 130" enable-background="new 0 0 130 130" xml:space="preserve">
+<g>
+	<circle fill="#FFFFFF" cx="65" cy="65" r="64"/>
+	<g>
+		<path fill="#F09419" d="M99.5,92.3H30.5c-2.9,0-5.3-2.4-5.3-5.3V42.9c0-2.9,2.4-5.3,5.3-5.3h69.1c2.9,0,5.3,2.4,5.3,5.3v44.1
+			C104.8,90,102.4,92.3,99.5,92.3z"/>
+		<rect x="25.2" y="46.5" fill="#324A5E" width="79.6" height="12.1"/>
+		<rect x="33.9" y="66.5" fill="#324A5E" width="22.7" height="4.3"/>
+		<rect x="81.5" y="70" fill="#FFD05B" width="16.7" height="16.7"/>
+		<polygon fill="#F9B54C" points="90.5,71.7 90.5,76.4 86.4,76.4 86.4,70 85.4,70 85.4,78.6 81.5,78.6 81.5,79.6 86.4,79.6 
+			86.4,77.4 91.5,77.4 91.5,72.7 98.2,72.7 98.2,71.7 		"/>
+		<polygon fill="#F9B54C" points="92.9,81.1 88.9,81.1 88.9,79.1 87.9,79.1 87.9,82.9 81.5,82.9 81.5,83.9 88.9,83.9 88.9,82.1 
+			92.4,82.1 92.4,86.6 93.4,86.6 93.4,82.1 98.2,82.1 98.2,81.1 93.4,81.1 		"/>
+		<polygon fill="#324A5E" points="99.3,62.1 99.3,67.9 103.5,65 		"/>
+		<rect x="30.5" y="83.7" fill="#FFFFFF" width="6.6" height="3.2"/>
+		<rect x="30.5" y="75.9" fill="#FFFFFF" width="18.7" height="3.4"/>
+		<rect x="42.6" y="83.7" fill="#FFFFFF" width="6.6" height="3.2"/>
+		<rect x="54.7" y="84.7" fill="#84DBFF" width="6.6" height="2"/>
+		<rect x="66.8" y="84.7" fill="#84DBFF" width="6.6" height="2"/>
+		<path fill="#02708C" d="M70.1,108.7L21.3,59.9c-2.1-2.1-2.1-5.4,0-7.4l31.2-31.2c2.1-2.1,5.4-2.1,7.4,0l48.8,48.8
+			c2.1,2.1,2.1,5.4,0,7.4l-31.2,31.2C75.5,110.8,72.2,110.8,70.1,108.7z"/>
+		
+			<rect x="34" y="50.1" transform="matrix(0.7071 0.7071 -0.7071 0.7071 61.3446 -35.7489)" fill="#324A5E" width="79.6" height="12.1"/>
+		
+			<rect x="34.2" y="50.3" transform="matrix(0.7071 0.7071 -0.7071 0.7071 50.8994 -18.0336)" fill="#FF6347" width="26" height="4.3"/>
+		
+			<rect x="64.9" y="83.7" transform="matrix(0.7071 0.7071 -0.7071 0.7071 86.4757 -24.8052)" fill="#FFFFFF" width="16.7" height="16.7"/>
+		<polygon fill="#ACB3BA" points="78.3,87.8 75,91.1 72.1,88.2 76.6,83.6 75.9,82.9 69.8,89.1 67.1,86.3 66.4,87 69.8,90.5 
+			71.4,88.9 75,92.5 78.3,89.2 83,93.9 83.7,93.2 		"/>
+		<polygon fill="#ACB3BA" points="73.3,96.2 70.5,93.3 71.9,91.9 71.2,91.2 68.5,93.9 64,89.4 63.3,90.1 68.5,95.3 69.8,94 
+			72.3,96.5 69.1,99.7 69.8,100.4 73,97.2 76.4,100.6 77.1,99.9 73.7,96.5 		"/>
+		<polygon fill="#FFFFFF" points="91.3,87.2 87.2,91.3 92.2,92.2 		"/>
+		
+			<rect x="25.5" y="55.5" transform="matrix(-0.7071 -0.7071 0.7071 -0.7071 8.748 117.8979)" fill="#324A5E" width="6.6" height="3.2"/>
+		
+			<rect x="28.8" y="54.9" transform="matrix(-0.7071 -0.7071 0.7071 -0.7071 25.3328 123.1291)" fill="#324A5E" width="18.7" height="2.9"/>
+		
+			<rect x="34" y="64.1" transform="matrix(-0.7071 -0.7071 0.7071 -0.7071 17.3045 138.5553)" fill="#324A5E" width="6.6" height="3.2"/>
+		
+			<rect x="42.6" y="72.6" transform="matrix(0.7071 0.7071 -0.7071 0.7071 65.9478 -10.7119)" fill="#324A5E" width="6.6" height="3.2"/>
+		
+			<rect x="52.8" y="79.5" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -42.6018 62.7628)" fill="#324A5E" width="3.2" height="6.6"/>
+	</g>
+</g>
+</svg>
