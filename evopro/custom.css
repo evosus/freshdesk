@@ -18,14 +18,6 @@ nav.sub-nav {
     background-color: rgba(0,0,0,.65);
 }
 
-/*
-nav.banner-nav {
-	background-color: transparent;
-	color: #333;
-	box-shadow: none;
-}
-*/
-
 .nav-wrapper a.dropdown-button{
     line-height: 64px;
 }
