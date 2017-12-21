@@ -99,7 +99,8 @@ function _classCallCheck(t,e){if(!(t instanceof e))throw new TypeError("Cannot c
   		$('#group_id').prop('selectedIndex', 8);
   	}
   	if(sessionStorage.getItem("ticketType") == 'evopro'){
-  		$('#group_id').val("14000109863");
+  		$('#group_id>option[value="14000109863"]').prop('selected', true);
+  		console.log("Retrieved sessionStorage");
   	}
 	
 
