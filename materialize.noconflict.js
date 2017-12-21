@@ -82,7 +82,7 @@ function _classCallCheck(t,e){if(!(t instanceof e))throw new TypeError("Cannot c
 
 
     //Gets variables in URL - currently only used for passing evopro variable from pro to enterprise ticketing
-  	$.urlParam = function(name){
+  	var urlParam = function(name){
 		var results = new RegExp('[\?&]' + name + '=([^&#]*)').exec(window.location.href);
 		return results[1] || 0;
 	}
@@ -102,7 +102,7 @@ function _classCallCheck(t,e){if(!(t instanceof e))throw new TypeError("Cannot c
   		console.log('Retrieved: ' + sessionStorage.getItem('ticketType'));
   	}
 
-  	if($.urlParam('ticket') == 'evopro'){
+  	if(urlParam('ticket') == 'evopro'){
   		sessionStorage.setItem("ticketType", "evopro");
   		console.log('assigned: ' + sessionStorage.getItem('ticketType'));
   	}
