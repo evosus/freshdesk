@@ -82,10 +82,12 @@ function _classCallCheck(t,e){if(!(t instanceof e))throw new TypeError("Cannot c
 
     
     //Fix to new ticket form
-    $('#helpdesk_ticket_group_id').addClass('hide');
-  	$('#helpdesk_ticket_group_id').prop('selectedIndex', 1);
-  	$('#helpdesk_ticket_group_id>option:nth-child(1)').attr('selected', true);
-  	$('label[for="helpdesk_ticket_group"]').addClass("hide");
+    $('label[for="helpdesk_ticket_group"]').addClass("hide");
+    $('#helpdesk_ticket_group_id').addClass('hide');    
+  	$('#helpdesk_ticket_group_id').attr("id","group_id");
+  	$('#group_id').prop('selectedIndex', 1);
+  	//$('#helpdesk_ticket_group_id>option:nth-child(1)').attr('selected', true);
+  
 	
 
 }(jQuery_3_2_1));
