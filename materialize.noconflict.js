@@ -100,7 +100,8 @@ function _classCallCheck(t,e){if(!(t instanceof e))throw new TypeError("Cannot c
   		console.log('Retrieved sessionStorage');
   	}
   	if(sessionStorage.getItem("ticketType") == 'evopro'){
-  		$('#group_id>option[value="14000109863"]').prop('selected', true);
+  		$('#group_id').prop('selectedIndex', 9);
+  		//$('#group_id>option[value="14000109863"]').prop('selected', true);
   		console.log("Retrieved sessionStorage");
   	}
 	
