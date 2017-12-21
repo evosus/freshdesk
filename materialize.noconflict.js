@@ -82,8 +82,8 @@ function _classCallCheck(t,e){if(!(t instanceof e))throw new TypeError("Cannot c
 
     
     //Fix to new ticket form
-    $("#helpdesk_ticket_group_id").addClass("hide");
-  	$("#helpdesk_ticket_group_id").val('14000045185');
+    $('#helpdesk_ticket_group_id').addClass('hide');
+  	$('helpdesk_ticket_group_id>option:eq(1)').attr('selected', true);
   	$('label[for="helpdesk_ticket_group"]').addClass("hide");
 	
 
