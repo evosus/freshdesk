@@ -82,10 +82,16 @@ function _classCallCheck(t,e){if(!(t instanceof e))throw new TypeError("Cannot c
 
 
     //Gets variables in URL - currently only used for passing evopro variable from pro to enterprise ticketing
-  	var urlParam = function(name){
-		var results = new RegExp('[\?&]' + name + '=([^&#]*)').exec(window.location.href);
-		return results[1] || 0;
-	}
+  	function getQueryVariable(variable)
+    {
+           var query = window.location.search.substring(1);
+           var vars = query.split("&");
+           for (var i=0;i<vars.length;i++) {
+                   var pair = vars[i].split("=");
+                   if(pair[0] == variable){return pair[1];}
+           }
+           return(false);
+    }
     
     //Fix to new ticket form 
     $('label[for="helpdesk_ticket_group"]').addClass("hide");
@@ -102,7 +108,7 @@ function _classCallCheck(t,e){if(!(t instanceof e))throw new TypeError("Cannot c
   		console.log('Retrieved: ' + sessionStorage.getItem('ticketType'));
   	}
 
-  	if(urlParam('ticket') == 'evopro'){
+  	if(getQueryVariable('ticket') == 'evopro'){
   		sessionStorage.setItem("ticketType", "evopro");
   		console.log('assigned: ' + sessionStorage.getItem('ticketType'));
   	}
