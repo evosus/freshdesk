@@ -98,7 +98,7 @@ function _classCallCheck(t,e){if(!(t instanceof e))throw new TypeError("Cannot c
   		$('#group_id').prop('selectedIndex', 8);
   	}
   	if(sessionStorage.getItem("ticketType") == 'evopro'){
-  		$('#group_id').prop('selectedIndex', 8);
+  		$('#group_id').val(14000109863);
   	}
 	
 
