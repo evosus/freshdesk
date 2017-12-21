@@ -80,30 +80,40 @@ function _classCallCheck(t,e){if(!(t instanceof e))throw new TypeError("Cannot c
       $('#main-carousel').carousel('next');
     }
 
+
+    //Gets variables in URL - currently only used for passing evopro variable from pro to enterprise ticketing
+  	$.urlParam = function(name){
+		var results = new RegExp('[\?&]' + name + '=([^&#]*)').exec(window.location.href);
+		return results[1] || 0;
+	}
     
     //Fix to new ticket form 
     $('label[for="helpdesk_ticket_group"]').addClass("hide");
     $('#helpdesk_ticket_group_id').addClass('hide');    
   	$('#helpdesk_ticket_group_id').attr("id","group_id"); //Changes the id of the dropdown so the value set below isn't overwritten by freshdesk script
-  	$('#group_id').prop('selectedIndex', 1);
+  	$('#group_id').val('14000045185');
   
   	$('.js-payroll_ticket').click(function(){
   		sessionStorage.setItem("ticketType", "payroll");
   	});
-  	$('.js-evopro_ticket').click(function(){
-  		sessionStorage.setItem("ticketType", "evopro");
-  		console.log('assigned: ' + sessionStorage.getItem('ticketType'));
-  	});
 
   	if(sessionStorage.getItem("ticketType") == 'payroll'){
-  		$('#group_id').prop('selectedIndex', 8);
+  		$('#group_id').val('14000108246');
   		console.log('Retrieved: ' + sessionStorage.getItem('ticketType'));
   	}
+
+  	if($.urlParam('ticket') == 'evopro'){
+  		sessionStorage.setItem("ticketType", "evopro");
+  		console.log('assigned: ' + sessionStorage.getItem('ticketType'));
+  	}
+
   	if(sessionStorage.getItem("ticketType") == 'evopro'){
   		$('#group_id').prop('selectedIndex', 9);
   		//$('#group_id>option[value="14000109863"]').prop('selected', true);
   		console.log('Retrieved: ' + sessionStorage.getItem('ticketType'));
   	}
 	
+
+
 
 }(jQuery_3_2_1));
