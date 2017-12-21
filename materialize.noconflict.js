@@ -92,6 +92,7 @@ function _classCallCheck(t,e){if(!(t instanceof e))throw new TypeError("Cannot c
   	});
   	$('.js-evopro_ticket').click(function(){
   		sessionStorage.setItem("ticketType", "evopro");
+  		console.log('assigned: ' + sessionStorage.getItem('ticketType'));
   	});
 
   	if(sessionStorage.getItem("ticketType") == 'payroll'){
