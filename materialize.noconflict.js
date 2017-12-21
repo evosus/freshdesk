@@ -87,11 +87,17 @@ function _classCallCheck(t,e){if(!(t instanceof e))throw new TypeError("Cannot c
   	$('#helpdesk_ticket_group_id').attr("id","group_id"); //Changes the id of the dropdown so the value set below isn't overwritten by freshdesk script
   	$('#group_id').prop('selectedIndex', 1);
   
-  	$('#payroll_ticket').click(function(){
+  	$('.js-payroll_ticket').click(function(){
   		sessionStorage.setItem("ticketType", "payroll");
+  	});
+  	$('.js-evopro_ticket').click(function(){
+  		sessionStorage.setItem("ticketType", "evopro");
   	});
 
   	if(sessionStorage.getItem("ticketType") == 'payroll'){
+  		$('#group_id').prop('selectedIndex', 8);
+  	}
+  	if(sessionStorage.getItem("ticketType") == 'evopro'){
   		$('#group_id').prop('selectedIndex', 8);
   	}
 	
