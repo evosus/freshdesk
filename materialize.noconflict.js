@@ -81,13 +81,19 @@ function _classCallCheck(t,e){if(!(t instanceof e))throw new TypeError("Cannot c
     }
 
     
-    //Fix to new ticket form
+    //Fix to new ticket form 
     $('label[for="helpdesk_ticket_group"]').addClass("hide");
     $('#helpdesk_ticket_group_id').addClass('hide');    
-  	$('#helpdesk_ticket_group_id').attr("id","group_id");
+  	$('#helpdesk_ticket_group_id').attr("id","group_id"); //Changes the id of the dropdown so the value set below isn't overwritten by freshdesk script
   	$('#group_id').prop('selectedIndex', 1);
-  	//$('#helpdesk_ticket_group_id>option:nth-child(1)').attr('selected', true);
   
+  	$('#payroll_ticket').click(function(){
+  		sessionStorage.setItem("ticketType", "payroll");
+  	});
+
+  	if(sessionStorage.getItem("ticketType") == 'payroll'){
+  		$('#group_id').prop('selectedIndex', 8);
+  	}
 	
 
 }(jQuery_3_2_1));
