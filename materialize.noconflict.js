@@ -74,7 +74,7 @@ function _classCallCheck(t,e){if(!(t instanceof e))throw new TypeError("Cannot c
 	$('#video-carousel').carousel('set', selection);
 
    //Main page carousel auto slide
-    var carouselAutoSlide = setInterval(carouselNext, 7000); //carousel moves to next slide every 3 seconds
+    var carouselAutoSlide = setInterval(carouselNext, 9000); //carousel moves to next slide every 3 seconds
 
     function carouselNext() {
       $('#main-carousel').carousel('next');
