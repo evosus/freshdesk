@@ -29,8 +29,6 @@ function _classCallCheck(t,e){if(!(t instanceof e))throw new TypeError("Cannot c
 
   //SIDE MENU
   $(".button-collapse").sideNav();
-  // Initialize collapsible (uncomment the line below if you use the dropdown variation)
-  //$('.collapsible').collapsible();
 
   	//Assign class to youtube embeds - allows callback on carousel to turn off video on close
 	$('iframe[src*="https://www.youtube.com/embed/"]').addClass("youtube-iframe");
@@ -40,7 +38,9 @@ function _classCallCheck(t,e){if(!(t instanceof e))throw new TypeError("Cannot c
    $('.carousel').carousel();
    $('#main-carousel').carousel({fullWidth: true, indicators: true});
    
-   $('.modalMat').modal({ //video modal
+
+   //VIDEO MODAL
+   $('.modalMat').modal({
 	    dismissible: true, // Modal can be dismissed by clicking outside of the modal
 	    opacity: .7, // Opacity of modal background
 	    inDuration: 300, // Transition in duration
@@ -61,12 +61,14 @@ function _classCallCheck(t,e){if(!(t instanceof e))throw new TypeError("Cannot c
 	    } // Callback for Modal close
 	});
 
+   /*
     $('.modalTicket').modal({
 	    dismissible: true, // Modal can be dismissed by clicking outside of the modal
 	    opacity: .7, // Opacity of modal background
 	    inDuration: 300, // Transition in duration
 	    outDuration: 200 // Transition out duration
 	});
+	*/
 
 
 	//Open video-carousel on enterprise main page to ramdon video
@@ -74,7 +76,12 @@ function _classCallCheck(t,e){if(!(t instanceof e))throw new TypeError("Cannot c
 	$('#video-carousel').carousel('set', selection);
 
    //Main page carousel auto slide
-    var carouselAutoSlide = setInterval(carouselNext, 9000); //carousel moves to next slide every 3 seconds
+    var carouselAutoSlide = setInterval(carouselNext, 9000); //carousel moves to next slide every 9 seconds
+
+    $('.indicator-item').click(function(){
+    	clearInterval(carouselAutoSlide);
+    	carouselAutoSlide = setInterval(carouselNext, 9000); 
+    });
 
     function carouselNext() {
       $('#main-carousel').carousel('next');
