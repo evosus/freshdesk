@@ -93,6 +93,12 @@ nav a.button-collapse:hover {
 }
 
 /* CAROUSEL - Header*/
+.bg-holidays {
+	background-color: #0000000;
+	background-image: url(https://cdn.rawgit.com/evosus/freshdesk/Phase-1/img/happy_holidays.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
 .bg-fun {
 	background-color: #0000000;
 	background-image: url(https://cdn.rawgit.com/evosus/freshdesk/Phase-1/img/social-media.jpg);
