@@ -62,8 +62,16 @@ nav a.button-collapse:hover {
 	font-size: 1.2em!important;
     margin-bottom: 25px;
 }
+/* QBO CAROUSEL */
+#qbo-videos .carousel-item .card {
+	height: 200px;
+}
 
-/* button */
+#qbo-videos .carousel-item:hover {
+	text-decoration: none!important;
+}
+
+/* BUTTON */
 .btn, 
 .btn:hover,
 .btn:active {
