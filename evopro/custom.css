@@ -71,6 +71,18 @@ nav a.button-collapse:hover {
 	text-decoration: none!important;
 }
 
+/* ARTICLES SECTIOM - homepage*/
+.article-links a,
+.article-links a:hover,
+{
+	color: #ffffff;
+}
+
+/* ARTICLES */
+.article-body h2 {
+	margin: 25px;
+}
+
 /* BUTTON */
 .btn, 
 .btn:hover,
