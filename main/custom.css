@@ -75,21 +75,13 @@ nav a.button-collapse:hover {
 	}
 }
 
-/*CAROUSEL - Product*/
-.carousel-product {
-    height: 200px!important;
+/* CAROUSEL - Product*/
+#product-select .carousel-item .card {
+	height: 200px;
 }
-.carousel-product-item {
-	text-align: center; 
-	line-height: 100px;
-	height: 100px!important;
-}
-.carousel-product-item:hover {
-	text-decoration: none;
-}
-.carousel-item-title {
-	color: #fff; 
-	font-size: 30px;
+
+#product-select .carousel-item:hover {
+	text-decoration: none!important;
 }
 
 /* CAROUSEL - Header*/
