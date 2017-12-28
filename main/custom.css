@@ -77,7 +77,7 @@ nav a.button-collapse:hover {
 
 /* CAROUSEL - Product*/
 #product-select .carousel-item .card {
-	height: 200px;
+	height: 120px!important;
 }
 
 #product-select .carousel-item:hover {
