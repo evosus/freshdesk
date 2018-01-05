@@ -91,6 +91,12 @@ nav a.button-collapse:hover {
 	background-size: cover;
 	background-repeat: no-repeat;
 }
+.bg-adp {
+	background-color: #0000000;
+	background-image: url(https://cdn.rawgit.com/evosus/freshdesk/Phase-1/img/adp-banner.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
 .bg-fun {
 	background-color: #0000000;
 	background-image: url(https://cdn.rawgit.com/evosus/freshdesk/Phase-1/img/social-media.jpg);
