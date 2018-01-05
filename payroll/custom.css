@@ -193,3 +193,13 @@ a.dropdown-toggle:hover
 .article-links-dk a:hover {
   color: #444444!important;
 }
+
+/* chat */
+#lc_chat_layout #lc_chat_container .lc-guest, 
+#lc_chat_layout #lc_chat_container .lc-welcome-message
+{
+  background: rgba(2,112,140,.5)!important; 
+}
+#lc_chat_layout #lc_chat_header {
+  background-color: rgba(119,119,119,.85)!important;
+}
