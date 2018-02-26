@@ -118,7 +118,7 @@ footer.page-footer {
 
 /* section backgrounds */
 .tech-bg {
-  background-image: url(https://cdn.rawgit.com/evosus/freshdesk/Phase-1/img/mobile-tech.jpg); 
+  background-image: url(https://cdn.evosus.com/ems/freshdesk/mobile-tech.jpg); 
   background-repeat: no-repeat;  
   background-size: cover;
   padding-top: 100px;
@@ -126,7 +126,7 @@ footer.page-footer {
 }
 
 .mobile-bg {
-  background-image: url(https://cdn.rawgit.com/evosus/freshdesk/Phase-1/img/mobile-bg.jpg); 
+  background-image: url(https://cdn.evosus.com/ems/freshdesk/mobile-bg.jpg); 
   background-repeat: no-repeat;  
   background-size: cover;
   padding-top: 75px;
