@@ -86,38 +86,38 @@ nav a.button-collapse:hover {
 
 /* CAROUSEL - Header*/
 .bg-mobile {
-	background-color: #0000000;
-	background-image: url(https://cdn.rawgit.com/evosus/freshdesk/Phase-1/img/mobile-banner.jpg);
+	background-color: #333333;
+	background-image: url(https://cdn.evosus.com/ems/freshdesk/mobile-banner.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
 }
 .bg-adp {
-	background-color: #0000000;
-	background-image: url(https://cdn.rawgit.com/evosus/freshdesk/Phase-1/img/adp-banner.jpg);
+	background-color: #333333;
+	background-image: url(https://cdn.evosus.com/fs/freshdesk/adp-banner.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
 }
 .bg-fun {
-	background-color: #0000000;
-	background-image: url(https://cdn.rawgit.com/evosus/freshdesk/Phase-1/img/social-media.jpg);
+	background-color: #333333;
+	background-image: url(https://cdn.evosus.com/ee/freshdesk/social-media.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
 }
 .bg-computer {
 	background-color: #333333;
-	background-image: url(https://cdn2.hubspot.net/hubfs/1835951/Evosus-Dec2015-Image/schedule-a-demo-bg.jpg?t=1496207419083);
+	background-image: url(https://cdn.evosus.com/ee/freshdesk/schedule-a-demo.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
 }
 .bg-dashboard {
 	background-color: #333333;
-	background-image: url(https://cdn.rawgit.com/evosus/freshdesk/Phase-1/img/dashboard-bg.jpg);
+	background-image: url(https://cdn.evosus.com/ee/freshdesk/dashboard-bg.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
 }
 .bg-routing {
 	background-color: #333333;
-	background-image: url(https://cdn.rawgit.com/evosus/freshdesk/Phase-1/img/routing-bg.jpg);
+	background-image: url(https://cdn.evosus.com/ee/freshdesk/routing-bg.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
 }
@@ -274,7 +274,7 @@ a.breadcrumb-item:hover {
 
 .social-media {
 	min-height: 800px;
-	background-image: url(https://cdn.rawgit.com/evosus/freshdesk/Phase-1/img/social-media.jpg);
+	background-image: url(https://cdn.evosus.com/ee/freshdesk/social-media.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
 }

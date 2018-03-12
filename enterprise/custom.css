@@ -96,25 +96,25 @@ input[type=text]:not(.browser-default) {
 /* CAROUSEL - Header*/
 .bg-fun {
 	background-color: #0000000;
-	background-image: url(https://cdn.rawgit.com/evosus/freshdesk/Phase-1/img/social-media.jpg);
+	background-image: url(https://cdn.evosus.com/ee/freshdesk/social-media.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
 }
 .bg-computer {
 	background-color: #333333;
-	background-image: url(https://cdn.rawgit.com/evosus/freshdesk/Phase-1/img/computer-bg.jpg);
+	background-image: url(https://cdn.evosus.com/ee/freshdesk/schedule-a-demo.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
 }
 .bg-dashboard {
 	background-color: #333333;
-	background-image: url(https://cdn.rawgit.com/evosus/freshdesk/Phase-1/img/dashboard-bg.jpg);
+	background-image: url(https://cdn.evosus.com/ee/freshdesk/dashboard-bg.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
 }
 .bg-routing {
 	background-color: #333333;
-	background-image: url(https://cdn.rawgit.com/evosus/freshdesk/Phase-1/img/routing-bg.jpg);
+	background-image: url(https://cdn.evosus.com/ee/freshdesk/routing-bg.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
 }
@@ -282,7 +282,7 @@ a.breadcrumb-item:hover {
 
 .social-media {
 	min-height: 800px;
-	background-image: url(https://cdn.rawgit.com/evosus/freshdesk/Phase-1/img/social-media.jpg);
+	background-image: url(https://cdn.evosus.com/ee/freshdesk/social-media.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
 }
