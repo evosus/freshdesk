@@ -121,8 +121,8 @@ function _classCallCheck(t,e){if(!(t instanceof e))throw new TypeError("Cannot c
   	if(sessionStorage.getItem("ticketType") == 'evopro'){
   		$('#group_id').val('14000109863');
   		$('label[for="helpdesk_ticket_evosus_version_354500"]').addClass("hide");
-  		$('#helpdesk_ticket_evosus_version_354500').addClass('hide'); 
-  		$('#helpdesk_ticket_evosus_version_354500').attr("id","version_id"); //Changes the id of the dropdown so the value set below isn't overwritten by freshdesk script
+  		$('#helpdesk_ticket_custom_field_evosus_version_354500').addClass('hide'); 
+  		$('#helpdesk_ticket_custom_field_evosus_version_354500').attr("id","version_id"); //Changes the id of the dropdown so the value set below isn't overwritten by freshdesk script
   		$('#version_id').val('14000328261'); 
   	}
 	
