@@ -92,7 +92,7 @@ h4 {
 /* SEARCH CONTAINER */
 .search-container {
   	min-height: 300px;
-	background: no-repeat center url("https://cdn.rawgit.com/evosus/freshdesk/Phase-1/img/search-image.jpg");
+	background: no-repeat center url("https://cdn.jsdelivr.net/gh/evosus/freshdesk@Phase-1/img/search-image.jpg");
 	background-size: cover;
 }
 
